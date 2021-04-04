@@ -1,0 +1,7 @@
+# t = (1, 2, 3)
+# new_t = t + (9, 8)
+# print(new_t)
+t = (9, 1, 2, 4, 5, 6, 7, 8)
+print(t)
+print(type(t))
+print(len(t))
