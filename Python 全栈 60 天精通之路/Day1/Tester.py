@@ -13,6 +13,7 @@
 # def __str__(self, *args, **kwargs):  # real signature unknown
 # 	""" Return str(self). """
 
+
 class Vector(object):
 	def __init__(self, a, b):
 		self.a = a
