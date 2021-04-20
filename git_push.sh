@@ -1,5 +1,6 @@
 git status
 git add .
 git commit . -m "update"
-git status
+#git status
 git push
+

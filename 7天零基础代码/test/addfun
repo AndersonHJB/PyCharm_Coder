@@ -1,7 +1,0 @@
-def add(a, b):
-	sum_add = a + b
-	# print(sum_add)
-	return sum_add
-
-if __name__ == '__main__':
-	add(1, 2)
