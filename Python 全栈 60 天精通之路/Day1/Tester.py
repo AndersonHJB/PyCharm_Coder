@@ -10,6 +10,8 @@
 # 	""" Return self+value. """
 # 	pass
 
+# def __str__(self, *args, **kwargs):  # real signature unknown
+# 	""" Return str(self). """
 
 class Vector(object):
 	def __init__(self, a, b):
@@ -17,7 +19,8 @@ class Vector(object):
 		self.b = b
 	
 	def __str__(self):
-		return 'Vector (%d, %d)' % (self.a, self.b)
+		# return 'Vector (%d, %d)' % (self.a, self.b)
+		return 'Vector ({}, {})'.format(self.a, self.b)
 	
 	def __add__(self, other):
 		return Vector(self.a + other.a, self.b + other.b)
