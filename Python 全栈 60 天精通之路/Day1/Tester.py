@@ -32,3 +32,37 @@ v2 = Vector(5, -2)
 v3 = Vector(10, 10)
 print(v1 + v2 + v3)
 print(v1)
+
+
+class A:
+	def __add__(self, other):
+		print("A __add__")
+	
+	def __radd__(self, other):
+		print("A __radd__")
+
+
+class B:
+	pass
+
+# >> > a = A()
+# >> > b = B()
+# >> > a + b
+# A
+# __add__
+# >> > b + a
+# A
+# __radd__
+# >> > c = B()
+# >> > b + c
+# Traceback(most
+# recent
+# call
+# last):
+# File
+# "<stdin>", line
+# 1, in < module >
+# TypeError: unsupported
+# operand
+# type(s)
+# for +: 'instance' and 'instance'
