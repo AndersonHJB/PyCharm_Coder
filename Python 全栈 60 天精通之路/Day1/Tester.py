@@ -6,8 +6,12 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 
+# def __add__(self, *args, **kwargs):  # real signature unknown
+# 	""" Return self+value. """
+# 	pass
 
-class Vector:
+
+class Vector(object):
 	def __init__(self, a, b):
 		self.a = a
 		self.b = b
