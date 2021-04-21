@@ -1,0 +1,3 @@
+{"list_data": [1, 2, 3], "tuple_data": [1, 2, 3], "str_data": "string_data", "int_data": 10, "blo": true, "none_data": null, "dict_data": {"a": 1, "b": 2}}
+,{"list_data": [1, 2, 3], "tuple_data": [1, 2, 3], "str_data": "string_data", "int_data": 10, "blo": true, "none_data": null, "dict_data": {"a": 1, "b": 2}}
+{'list_data': [1, 2, 3], 'tuple_data': (1, 2, 3), 'str_data': 'string_data', 'int_data': 10, 'blo': True, 'none_data': None, 'dict_data': {'a': 1, 'b': 2}}{"list_data": [1, 2, 3], "tuple_data": [1, 2, 3], "str_data": "string_data", "int_data": 10, "blo": true, "none_data": null, "dict_data": {"a": 1, "b": 2}}{"list_data": [1, 2, 3], "tuple_data": [1, 2, 3], "str_data": "string_data", "int_data": 10, "blo": true, "none_data": null, "dict_data": {"a": 1, "b": 2}}

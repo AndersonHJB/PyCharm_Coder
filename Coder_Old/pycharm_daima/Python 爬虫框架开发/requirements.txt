@@ -1,0 +1,10 @@
+lxml
+pyquery
+selenium
+requests
+nltk
+numpy
+wxPython
+python_dateutil
+beautifulsoup4
+XlsxWriter
