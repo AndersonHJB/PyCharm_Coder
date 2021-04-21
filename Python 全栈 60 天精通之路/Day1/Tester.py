@@ -52,10 +52,8 @@ if __name__ == '__main__':
 	b = B()
 	print(a + b)  # 当执行类的加法时候，自动调用 add 方法
 	print(b + a)
-# A
-# __radd__
-# >> > c = B()
-# >> > b + c
+	c = B()
+	print(b + c)
 # Traceback(most
 # recent
 # call
