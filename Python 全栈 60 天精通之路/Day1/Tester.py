@@ -13,7 +13,7 @@
 # def __str__(self, *args, **kwargs):  # real signature unknown
 # 	""" Return str(self). """
 
-
+# 示例一
 class Vector(object):
 	def __init__(self, a, b):
 		self.a = a
@@ -27,14 +27,15 @@ class Vector(object):
 		return Vector(self.a + other.a, self.b + other.b)
 
 
-v1 = Vector(2, 10)
-v2 = Vector(5, -2)
-v3 = Vector(10, 10)
-print(v1 + v2 + v3)
-print(v1)
+# if __name__ == '__main__':
+# 	v1 = Vector(2, 10)
+# 	v2 = Vector(5, -2)
+# 	v3 = Vector(10, 10)
+# 	print(v1 + v2 + v3)
+# 	print(v1)
 
-
-class A:
+# 示例二
+class A(object):
 	def __add__(self, other):
 		print("A __add__")
 	
@@ -45,12 +46,12 @@ class A:
 class B:
 	pass
 
-# >> > a = A()
-# >> > b = B()
-# >> > a + b
-# A
-# __add__
-# >> > b + a
+
+if __name__ == '__main__':
+	a = A()
+	b = B()
+	print(a + b)  # 当执行类的加法时候，自动调用 add 方法
+	print(b + a)
 # A
 # __radd__
 # >> > c = B()
