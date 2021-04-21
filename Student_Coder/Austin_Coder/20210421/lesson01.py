@@ -14,7 +14,7 @@ bool1 = True
 bool2 = False
 
 # 字符串
-str1 = 'Hello, Austin!'
+str1 = 'Hello, Austin!'  # 有序
 str2 = "Hello, Austin!"
 str3 = '''Hello, Austin!'''
 
@@ -35,3 +35,14 @@ dict2 = {student: name}
 # 学生：小明
 # 年龄：20
 # 学校：清华大学
+
+# dict1 = {"学生": "小明", "年龄": "20", "学校": "清华大学"}
+dict1 = {"Student": "小明", "Age": "20", "School": "清华大学"}
+print(type(dict1))
+print(dict1)
+# dict1 = {"学生":"小明", "年龄":"20", "学校":"清华大学"}
+# print(type(dict1))
+# print(dict1)
+
+# 集合
+set1 = {1, 2, 3, 4, 5, 6}
