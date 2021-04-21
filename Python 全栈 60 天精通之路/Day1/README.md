@@ -9,7 +9,7 @@ Python 语言使用率越来越高，使用 Python 不仅可以做 GUI 开发、
 基于 Python 的包更是枝繁叶茂，遍地开花，“Tiobe 编程语言排行榜” 最新统计显示 Python 是增长最快的语言。
 
 
-![image.png](Day 1：Python 两大特性和四大基本语法.assets/1610540823197-91301e44-60ee-40d2-b9a2-523c05c9de94.png)
+![image.png](assets.assets/1610540823197-91301e44-60ee-40d2-b9a2-523c05c9de94.png)
 
 
 
