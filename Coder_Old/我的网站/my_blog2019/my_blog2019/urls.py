@@ -1,0 +1,31 @@
+"""my_blog2019 URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+# from django.urls import path
+from django.urls import path,include
+# from blog.views import index
+# from blog.views import blog_detail
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
+    # path('about', include('blog.urls')),
+    # path('Hello/', include('blog.urls')),
+    # path('Hello',index, name = 'index'),
+    # path('int',blog_detail, name = 'blog_detail')
+    # 第一个是我们的路径，第二个是我们的函数，第三个是给他取个名字
+
+]
