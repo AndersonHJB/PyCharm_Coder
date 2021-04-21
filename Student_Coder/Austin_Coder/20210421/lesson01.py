@@ -6,4 +6,19 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 
-print(help("keywords"))
+# print(help("keywords"))
+
+# 变量赋值
+bool1 = True
+bool2 = False
+
+str1 = 'Hello, Austin!'
+str2 = "Hello, Austin!"
+str3 = '''Hello, Austin!'''
+
+tup = (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+dict1 = {}
+print(type(dict1))
