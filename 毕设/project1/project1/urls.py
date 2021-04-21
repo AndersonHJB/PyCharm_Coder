@@ -20,7 +20,7 @@ from django.http import HttpResponseRedirect
 from django.urls import path
 from django.shortcuts import HttpResponse, render,redirect
 
-from form import UploadFileForm
+from UploadFileForm_from import UploadFileForm
 from settings import BASE_DIR
 
 # def cha(request):
