@@ -146,14 +146,18 @@ data = data + 'xiaoming' //string 和 int 结合自动转化为 string
 如下，按照是否为静态/动态语言，弱类型/强类型两个维度，总结常用的语言分类。
 
 
-![](https://cdn.nlark.com/yuque/0/2020/png/1359959/1596939172255-4022759f-f10a-4ad4-9253-e2498b384263.png#height=855&id=qpQ26&margin=%5Bobject%20Object%5D&originHeight=855&originWidth=1380&originalType=binary&size=0&status=done&style=none&width=1380)
+![](README.assets/1596939172255-4022759f-f10a-4ad4-9253-e2498b384263-20210421162802110.png)
+
 
 
 # 2. 四大基本语法
+
 分别从变量命名规则、缩进原则、特殊关键字和特殊运算符四个方面，总结 Python 的基本语法。
 
 
+
 ## 2.1 命名规则
+
 Python 的变量命名规则主要包括两条：
 
 - 允许包括英文、数字以及下划线( `_` )，不能以数字开头
