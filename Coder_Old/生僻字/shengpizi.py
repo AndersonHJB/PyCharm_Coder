@@ -1,0 +1,1 @@
+from pypinyin import pinyin
