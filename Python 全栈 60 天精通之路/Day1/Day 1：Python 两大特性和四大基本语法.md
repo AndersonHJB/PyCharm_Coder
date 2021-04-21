@@ -1,3 +1,5 @@
+# Day 1：Python 两大特性和四大基本语法
+
 你好，我是悦创。
 
 
@@ -7,7 +9,8 @@ Python 语言使用率越来越高，使用 Python 不仅可以做 GUI 开发、
 基于 Python 的包更是枝繁叶茂，遍地开花，“Tiobe 编程语言排行榜” 最新统计显示 Python 是增长最快的语言。
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/1359959/1610540823197-91301e44-60ee-40d2-b9a2-523c05c9de94.png#height=600&id=UVZXM&margin=%5Bobject%20Object%5D&name=image.png&originHeight=600&originWidth=1397&originalType=binary&size=753437&status=done&style=none&width=1397)
+![image.png](Day 1：Python 两大特性和四大基本语法.assets/1610540823197-91301e44-60ee-40d2-b9a2-523c05c9de94.png)
+
 
 
 这得益于 Python 语言语法简单，开发效率高，集成系统非常方便。
@@ -37,8 +40,9 @@ Python 相关的就业机会也是非常多，待遇也很优厚。
 
 让我们开始吧。
 
-
 **首先问大家一个问题，你知道 Python 是一门什么样的语言吗？**
+
+
 
 
 # 1. Python 语言两大特性
@@ -50,7 +54,9 @@ Python 相关的就业机会也是非常多，待遇也很优厚。
 要了解什么是动态语言，要首先了解 `类型检查` 。类型检查是验证类型约束的过程，编译器或解释器通常在编译阶段或运行阶段做类型检查。
 
 
+
 类型检查就是查看`变量`和它们的`类型`，然后判断表达式是否合理。例如，不能拿一个 `string类型` 变量除以 `浮点数` 变量。否则就会出现报错。
+
 ```python
 In [1]: str1 = "6"
 
@@ -125,7 +131,7 @@ data = data + 'xiaoming' //string 和 int 结合自动转化为 string
 ```
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/1359959/1618888898328-0882aec3-1dfb-4fab-bd03-cd5648065e2c.png#clientId=u7e579203-5b90-4&from=paste&height=86&id=u3ef92b79&margin=%5Bobject%20Object%5D&name=image.png&originHeight=172&originWidth=2310&originalType=binary&size=50120&status=done&style=none&taskId=ub5ee8c01-0126-48fa-82ab-68c388e81ff&width=1155)
+![image.png](Day 1：Python 两大特性和四大基本语法.assets/1618888898328-0882aec3-1dfb-4fab-bd03-cd5648065e2c.png)
 
 
 常见的弱类型语言有：
