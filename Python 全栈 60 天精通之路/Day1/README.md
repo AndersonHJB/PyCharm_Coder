@@ -272,7 +272,8 @@ if __name__ == '__main__':
 #     print(b + c)
 # TypeError: unsupported operand type(s) for +: 'B' and 'B'
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/1359959/1618969397608-4a0ee3d4-eef7-4251-892d-81ec1b51869d.png#clientId=u675abbd0-ecfc-4&from=paste&id=ud72b202a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=422&originWidth=555&originalType=binary&size=89214&status=done&style=none&taskId=u7b127307-b781-4542-a170-271559352af)
+![image.png](README.assets/1618969397608-4a0ee3d4-eef7-4251-892d-81ec1b51869d-20210421163216252.png)
+
 下面代码，创建一个 Book 类：「示例一与二没啥区别」
 
 
@@ -319,19 +320,20 @@ print(sales_cnt)  # 300
 如下是代码执行结果的演示图，打印总销量 300。结合图形，辅助大家快速理解代码。
 
 
-![](https://cdn.nlark.com/yuque/0/2020/png/1359959/1596939172158-07e0e07e-96ec-4576-b5fe-29eb789bb794.png#height=720&id=S41FB&originHeight=720&originWidth=1303&originalType=binary&size=0&status=done&style=none&width=1303)
+![](README.assets/1596939172158-07e0e07e-96ec-4576-b5fe-29eb789bb794-20210421163226374.png)
 
 
 为了帮助新手更容易理解代码整个执行过程，专栏会配备相应的演示动画：
 
 
-![](https://cdn.nlark.com/yuque/0/2020/gif/1359959/1596939172203-ab55aeb5-33a8-447d-b100-35917c18603c.gif#height=679&id=fnJF3&originHeight=679&originWidth=1035&originalType=binary&size=0&status=done&style=none&width=1035)
+![](README.assets/1596939172203-ab55aeb5-33a8-447d-b100-35917c18603c-20210421163230742.gif)
 
 
 缩进格式，行间空行数，变量和等号空格等 Python `编码规范` 参考 `PEP8` .
 
-
 `autopep8` 包遵循 `PEP8` 的所有规范，安装此包，做好相关配置，便可自动实现 `PEP8` 制定的编码规范。
+
+
 
 
 ## 2.3 特殊关键字
@@ -374,6 +376,8 @@ async      elif       if         or         yield
 
 
 这些关键字的用法，会在后续文章，更为详细的介绍。在此，先构建一个整体上的认识，即可。
+
+
 
 
 ## 2.4 特殊运算符
