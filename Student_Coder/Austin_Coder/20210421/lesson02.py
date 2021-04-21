@@ -6,3 +6,4 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 
+# dict1 = {{1, 2, 3, 4}: "AI悦创"}

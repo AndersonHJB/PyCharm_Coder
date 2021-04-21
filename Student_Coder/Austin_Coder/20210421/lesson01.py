@@ -26,7 +26,7 @@ list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 # command + option + L：代码美化/格式化
 dict1 = {"student": "Austin", "teacher": "AI悦创"}
-print(type(dict1))
+# print(type(dict1))
 
 student = "student"
 name = "Austin"
@@ -38,11 +38,13 @@ dict2 = {student: name}
 
 # dict1 = {"学生": "小明", "年龄": "20", "学校": "清华大学"}
 dict1 = {"Student": "小明", "Age": "20", "School": "清华大学"}
-print(type(dict1))
-print(dict1)
+# print(type(dict1))
+# print(dict1)
 # dict1 = {"学生":"小明", "年龄":"20", "学校":"清华大学"}
 # print(type(dict1))
 # print(dict1)
 
 # 集合
-set1 = {1, 2, 3, 4, 5, 6}
+set1 = {1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 1, 1, 1}
+# 无序性、确定性、互异性
+print(set1)
