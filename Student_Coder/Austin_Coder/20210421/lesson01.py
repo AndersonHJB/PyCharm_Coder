@@ -20,5 +20,6 @@ tup = (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
 
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
+# command + option + L：代码美化/格式化
 dict1 = {}
 print(type(dict1))
