@@ -131,7 +131,7 @@ data = data + 'xiaoming' //string 和 int 结合自动转化为 string
 ```
 
 
-![image.png](Day 1：Python 两大特性和四大基本语法.assets/1618888898328-0882aec3-1dfb-4fab-bd03-cd5648065e2c.png)
+![image.png](assets.assets/1618888898328-0882aec3-1dfb-4fab-bd03-cd5648065e2c.png)
 
 
 常见的弱类型语言有：
