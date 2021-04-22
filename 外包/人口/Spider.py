@@ -8,6 +8,8 @@
 import requests
 import cchardet
 import traceback
+import re
+from bs4 import BeautifulSoup
 
 
 def downloader(url, timeout=10, headers=None, debug=False, binary=False):
@@ -40,7 +42,11 @@ def downloader(url, timeout=10, headers=None, debug=False, binary=False):
 	return status, html, redirected_url
 
 
+def parse(html):
+	pass
+
+
 if __name__ == '__main__':
-	url = 'http://news.baidu.com/'
+	url = 'https://www.hongheiku.com/category/xianjirank'
 	s, html, lost_url = downloader(url)
-	print(s, len(html), lost_url)
+	print(s, html, lost_url)
