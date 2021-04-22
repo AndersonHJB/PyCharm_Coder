@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.top{
+	width:100px;
+	width:960px;
+	background:#CCC;
+	margin: 0 auto;
+}
+
+.nav{
+	width:960px;
+	height:40px;
+	margin: 0 auto;
+}
+
+.nav div:nth-child(2n){
+	background: orange;
+	height: 40px;
+}
+.nav div:nth-child(2n+1){
+	background: orange;
+	height: 40px;
+}

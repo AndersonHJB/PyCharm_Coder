@@ -1,0 +1,21 @@
+<html>
+
+<!-- <style>
+.last{
+	color:red;
+}
+</style>
+ -->
+<body>
+	<p id="first">这是段落。</p>
+	<p>这是段落。</p>
+	<p>这是段落。</p>
+	<p class="last">段落元素由 p 标签定义</p>
+</body>
+<!--
+<script>
+	first = document.getElementById("first");
+	first.innerHTML = "我说这是什么就是什么";
+</script>
+-->
+</html>

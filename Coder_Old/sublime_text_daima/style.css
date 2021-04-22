@@ -1,0 +1,19 @@
+*{margin:0;padding:0;}
+.poem{
+	padding: 5px;
+	height: 200px;
+	width: 500px;
+	background:pink;
+	margin: 0 auto;
+	letter-spacing: 5px;
+	line-height: 1.5;
+	/*text-indent:2em;*/
+	/*首行缩进*/
+}
+#text{
+	color: red;
+	text-indent: 2em;
+}
+.c{
+	text-align: center;
+}

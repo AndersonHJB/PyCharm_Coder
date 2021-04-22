@@ -1,0 +1,10 @@
+{"index": "1", "image": "https://p0.meituan.net/movie/ce4da3e03e655b5b88ed31b5cd7896cf62472.jpg@160w_220h_1e_1c", "title": "霸王别姬", "actor": "", "time": "1993-07-26", "score": "9.5"}
+{"index": "2", "image": "https://p0.meituan.net/movie/283292171619cdfd5b240c8fd093f1eb255670.jpg@160w_220h_1e_1c", "title": "肖申克的救赎", "actor": "鲍勃·冈顿", "time": "1994-09-10(加拿大)", "score": "9.5"}
+{"index": "3", "image": "https://p1.meituan.net/movie/6bea9af4524dfbd0b668eaa7e187c3df767253.jpg@160w_220h_1e_1c", "title": "这个杀手不太冷", "actor": "莉·波特曼", "time": "1994-09-14(法国)", "score": "9.5"}
+{"index": "4", "image": "https://p0.meituan.net/movie/289f98ceaa8a0ae737d3dc01cd05ab052213631.jpg@160w_220h_1e_1c", "title": "罗马假日", "actor": ",埃迪·艾伯特", "time": "1953-08-20(意大利)", "score": "9.0"}
+{"index": "5", "image": "https://p1.meituan.net/movie/b607fba7513e7f15eab170aac1e1400d878112.jpg@160w_220h_1e_1c", "title": "泰坦尼克号", "actor": "温丝莱特,比利·赞恩", "time": "1998-04-03", "score": "9.4"}
+{"index": "6", "image": "https://p0.meituan.net/movie/da64660f82b98cdc1b8a3804e69609e041108.jpg@160w_220h_1e_1c", "title": "唐伯虎点秋香", "actor": "", "time": "1993-07-01(中国香港)", "score": "9.1"}
+{"index": "7", "image": "https://p0.meituan.net/movie/223c3e186db3ab4ea3bb14508c709400427933.jpg@160w_220h_1e_1c", "title": "乱世佳人", "actor": "维娅·德哈维兰", "time": "1939-12-15(美国)", "score": "9.1"}
+{"index": "8", "image": "https://p0.meituan.net/movie/58782fa5439c25d764713f711ebecd1e201941.jpg@160w_220h_1e_1c", "title": "魂断蓝桥", "actor": "尔·沃特森", "time": "1940-05-17(美国)", "score": "9.2"}
+{"index": "9", "image": "https://p0.meituan.net/movie/b0d986a8bf89278afbb19f6abaef70f31206570.jpg@160w_220h_1e_1c", "title": "辛德勒的名单", "actor": "本·金斯利", "time": "1993-11-30(美国)", "score": "9.2"}
+{"index": "10", "image": "https://p0.meituan.net/movie/1f0d671f6a37f9d7b015e4682b8b113e174332.jpg@160w_220h_1e_1c", "title": "喜剧之王", "actor": "", "time": "1999-02-13(中国香港)", "score": "9.1"}
