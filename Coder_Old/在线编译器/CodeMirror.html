@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="codemirror-5.31.0/lib/codemirror.css"/>
+    <script src="CodeMirror/lib/codemirror.js"></script>
+    <!--groovy代码高亮-->
+    <script src="CodeMirror/mode/groovy/groovy.js"></script>
+    <!--Java代码高亮必须引入-->
+    <script src="CodeMirror/clike.js"></script>
+    <!--引入css文件，用以支持主题-->
+    <link rel="stylesheet" href="CodeMirror/theme/dracula.css"/>
+    <!--支持代码折叠-->
+    <link rel="stylesheet" href="codemirror-5.31.0/addon/fold/foldgutter.css"/>
+    <script src="CodeMirror/addon/fold/foldcode.js"></script>
+    <script src="CodeMirror/addon/fold/foldgutter.js"></script>
+    <script src="CodeMirror/addon/fold/brace-fold.js"></script>
+    <script src="CodeMirror/addon/fold/comment-fold.js"></script>
+
+</head>
+<body>
+<!-- begin code -->
+<textarea class="form-control" id="code" name="code"></textarea>
+<!-- end code-->
+//根据DOM元素的id构造出一个编辑器
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+});
+
+</body>
+</html>
