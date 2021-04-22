@@ -15,3 +15,6 @@ def is_rotation(s1: str, s2: str) -> bool:
 		return s1 in s2
 	
 	return is_substring(s1, s2 + s2)
+
+
+
