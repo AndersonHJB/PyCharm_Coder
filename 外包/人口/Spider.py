@@ -43,10 +43,13 @@ def downloader(url, timeout=10, headers=None, debug=False, binary=False):
 
 
 def parse(html):
-	pass
+	soup = BeautifulSoup(html, "lxml")
+	# print(soup.title)
+	# print(soup.prettify())
 
 
 if __name__ == '__main__':
 	url = 'https://www.hongheiku.com/category/xianjirank'
 	s, html, lost_url = downloader(url)
-	print(s, html, lost_url)
+	# print(s, html, lost_url)
+	parse(html)
