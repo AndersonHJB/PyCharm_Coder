@@ -12,4 +12,6 @@ def score_mean(lst):
 
 
 lst = [9.1, 9.0, 8.1, 9.7, 19, 8.2, 8.6, 9.8]
-score_mean(lst)  # 9.1
+print(score_mean(lst))  # 9.1
+
+
