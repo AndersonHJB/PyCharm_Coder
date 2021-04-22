@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+       {% load static %}
+<script src="{% static 'js/echarts.js' %}" ></script>
+<script src="{% static 'js/echarts-wordcloud.js' %}"></script>
+</head>
+<body>
+<form action="/searchProjects/" method="post">
+    {% csrf_token %}  <!--跨站请求伪造-->
+    项目名称：<input type="text" name="pname"><input type="submit" value="查询">
+</form>
+
+<table border="1" width="1000px">
+    <tr>
+        <td>序号</td>
+        <td>项目批准号</td>
+        <td>类别</td>
+        <td>学科分类</td>
+        <td>项目名称</td>
+        <td>立项时间</td>
+    </tr>
+        {% for project in projects %}
+    <tr>
+        <td>{{project.sspid}}</td>
+        <td>{{project.xmpzh}}</td>
+        <td>{{project.xmlb}}</td>
+        <td>{{project.xkfl}}</td>
+        <td>{{project.xmmc}}</td>
+        <td>{{project.lxsj|date:'Y-m-d'}}</td>
+         {% endfor %}
+    </tr>
+</table>
+        <style>
+            html, body, #main {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+        <div id='main'></div>
+        <script>
+            var chart = echarts.init(document.getElementById('main'));
+
+            var keywords = {{worddic|safe}};
+
+            var data = [];
+            for (var name in keywords) {
+                data.push({
+                    name: name,
+                    value: Math.sqrt(keywords[name])
+                })
+            }
+
+            var maskImage = new Image();
+
+            var option = {
+                series: [ {
+                    type: 'wordCloud',
+                    sizeRange: [10, 100],
+                    rotationRange: [-90, 90],
+                    rotationStep: 45,
+                    gridSize: 2,
+                    shape: 'pentagon',
+                    maskImage: maskImage,
+                    drawOutOfBound: false,
+                    textStyle: {
+                        normal: {
+                            color: function () {
+                                return 'rgb(' + [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160)
+                                ].join(',') + ')';
+                            }
+                        },
+                        emphasis: {
+                            color: 'red'
+                        }
+                    },
+                    data: data.sort(function (a, b) {
+                        return b.value  - a.value;
+                    })
+                } ]
+            };
+
+            maskImage.onload = function () {
+                option.series[0].maskImage
+                chart.setOption(option);
+            }
+
+            maskImage.src ="{% static 'images/logo.png' %}";
+
+            window.onresize = function () {
+                chart.resize();
+            }
+
+        </script>
+
+</body>
+</html>
