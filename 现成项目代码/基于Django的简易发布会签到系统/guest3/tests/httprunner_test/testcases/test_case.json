@@ -1,0 +1,53 @@
+{
+     
+    "config": {
+        "name": "basic test config",
+        "base_url": "http://127.0.0.1:8000/api",
+        "validate": [
+            {"eq": ["status_code", 200]}
+        ]
+    },
+
+    "teststeps": [
+        { 
+            "name": " test_add_event_all_null",
+            "request": {
+                "url": "/add_event/",
+                "method": "POST",
+                "data":{"eid":"","limit":"","address":"","start_time":""}
+            },
+            "validate": [
+                {"eq": ["body.status", 10021]},
+                {"eq": ["body.message", "parameter error"]}
+            ]
+            
+        },
+        {
+            "name": " test_add_event_eid_exist",
+            "request": {
+                "url": "/add_event/",
+                "method": "POST",
+                "data":{"eid":1,"name":"oneplus","limit":2000,"address":"shenzhen","start_time":"2017"}
+            },
+            "validate": [
+                {"eq": ["body.status", 10022]},
+                {"eq": ["body.message", "event id already exists"]}
+            ]
+
+        },
+        {
+            "name": " test_add_event_success",
+            "request": {
+                "url": "/add_event/",
+                "method": "POST",
+                "data":{"eid":25,"name":"oneplus9","limit":2000,
+                        "address": "shenzhen","start_time":"2017-05-10 12:00:00"
+                    }
+            },
+            "validate": [
+                {"eq": ["body.status", 10200]},
+                {"eq": ["body.message", "add event success"]}
+            ]
+        }
+    ]   
+}
