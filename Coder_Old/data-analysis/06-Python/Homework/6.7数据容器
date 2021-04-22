@@ -1,0 +1,21 @@
+练习1
+names = ["Carol", "Albert", "Ben", "Donna"]
+names.append(“Eugenia") # 添加数据
+print(sorted(names)) # 排序
+
+答案：['Albert', 'Ben', 'Carol', 'Donna', 'Eugenia']
+
+
+练习2
+names = ["Carol", "Albert", "Ben", “Donna","Carol", "Albert", ]
+print(set(names))
+
+答案：{'Carol', 'Donna', 'Albert', 'Ben'}
+
+
+练习3
+users = {“name”:”Amy”,”age”:”30”,”sex”:”female”}
+Users[“name”] = “John” 
+print(users)
+
+答案：{'name': 'John', 'age': '30', 'sex': 'female'}

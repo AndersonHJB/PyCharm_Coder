@@ -1,0 +1,12 @@
+# 查询
+SELECT * FROM POSITION;
+SELECT * FROM POSITION WHERE '招聘岗位' = '数据分析';
+
+# 更新
+UPDATE POSITION WHERE '招聘岗位' = '数据分析';
+
+# 删除
+DELETE FROM POSITION WHERE '招聘岗位' = '数据分析';
+
+# 插入
+INSERT INTO POSITION VALUES();
