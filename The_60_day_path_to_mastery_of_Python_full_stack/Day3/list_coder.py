@@ -60,3 +60,7 @@ print(a)  # [1, 4, 7, 10, 13, 16, 19]
 
 def reverse(lst):
 	return lst[::-1]
+
+
+ra = reverse(a)
+print(ra)  # [19, 16, 13, 10, 7, 4, 1]
