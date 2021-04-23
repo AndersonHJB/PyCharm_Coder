@@ -5,7 +5,7 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-每秒花费 = 100
-秒数 = 20
-单位值 = 60
-print()
+Spend_every_second = 100
+s = 20
+Unit_value = 60
+print(Spend_every_second * s * Unit_value)
