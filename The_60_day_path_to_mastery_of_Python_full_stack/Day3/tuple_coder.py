@@ -19,3 +19,4 @@ from numpy import random
 a = random.randint(1, 5, 10)  # 从 [1,5) 区间内随机选择 10 个数
 at = tuple(a)  # 转 tuple：(1, 4, 2, 1, 3, 3, 2, 3, 4, 2)
 at.count(3)  # 统计 3 出现次数，恰好也为 3 次
+
