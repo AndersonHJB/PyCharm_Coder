@@ -1,0 +1,7 @@
+# Python 全栈 60 天精通之路
+
+<div id="media_image-2" class="widget widget_media_image"><h5 class="widget-title">AI悦创</h5><figure style="width: 258px" class="wp-caption alignnone"><a href="https://images-aiyc-1301641396.cos.ap-guangzhou.myqcloud.com/20200712080135.jpg"><img class="image " src="https://images-aiyc-1301641396.cos.ap-guangzhou.myqcloud.com/20200712080135.jpg" alt="公众号：AI悦创" width="258" height="258"></a><figcaption class="wp-caption-text">公众号：AI悦创「技术公众号」</figcaption></figure></div>
+
+<div id="media_image-4" class="widget widget_media_image"><h5 class="widget-title">悦创摄影研习社</h5><figure style="width: 258px" class="wp-caption alignnone"><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzI4Mjc4MjUyMg==&amp;hid=1&amp;sn=ab17d7c2e3f8fc94e1afd15a221aa4b1&amp;scene=18#wechat_redirect"><img class="image " src="https://images-aiyc-1301641396.cos.ap-guangzhou.myqcloud.com/20200811105120.jpg" alt="悦创摄影研习社" width="258" height="258"></a><figcaption class="wp-caption-text">公众号：悦创摄影研习社</figcaption></figure></div>
+
+<div id="media_image-7" class="widget widget_media_image"><h5 class="widget-title">赞助本网站</h5><img width="221" height="300" src="https://www.aiyc.top/wp-content/uploads/2021/02/1612267155-816c20683ac499b.jpg?x-oss-process=image/resize,m_fill,w_221,h_300#" class="image wp-image-1413  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;"></div>
