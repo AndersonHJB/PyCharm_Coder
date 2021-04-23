@@ -15,6 +15,7 @@ cd meetingroom
 python manage.py runserver 0.0.0.0:8080
 ```
 
-
-访问项目
+#### 3. 访问项目
+```python
 http://127.0.0.1:8080
+```
