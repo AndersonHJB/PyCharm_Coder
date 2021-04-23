@@ -51,5 +51,12 @@ a = [1, 2, [3, 4, 5]]
 ac = deepcopy(a)
 ac[0] = 10
 ac[2][1] = 40
-print(a[0] == ac[0])
-print(a[2][1] == ac[2][1])
+print(a[0] == ac[0])  # False
+print(a[2][1] == ac[2][1])  # False
+
+a = list(range(1, 20, 3))
+print(a)  # [1, 4, 7, 10, 13, 16, 19]
+
+
+def reverse(lst):
+	return lst[::-1]
