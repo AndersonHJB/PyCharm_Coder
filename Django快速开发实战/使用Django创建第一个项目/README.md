@@ -48,3 +48,15 @@ python manage.py createsuperuser
 
 ![image-20210423225346899](README.assets/image-20210423225346899.png)
 
+#### 6. 代码文件
+
+| 名称        | 作用                                                      |
+| ----------- | --------------------------------------------------------- |
+| asgi.py     | 异步网关接口                                              |
+| wsgi.py     | 是 gateway interface 的简写，web server gateway interface |
+| settings.py | Django 项目的配置文件                                     |
+
+
+
+#### 7. Settings.py 部分解析
+
