@@ -40,5 +40,11 @@ python manage.py makemigrations
 python manage.py migrate 
 ```
 
+#### 5. 创建管理员帐号
 
+```python
+python manage.py createsuperuser
+```
+
+![image-20210423225346899](README.assets/image-20210423225346899.png)
 
