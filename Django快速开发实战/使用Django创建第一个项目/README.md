@@ -15,6 +15,8 @@ cd meetingroom
 python manage.py runserver 0.0.0.0:8080
 ```
 
+> 0.0.0.0 这个表示监听本机所有的 IP 地址
+
 #### 3. 访问项目
 ```python
 http://127.0.0.1:8080
