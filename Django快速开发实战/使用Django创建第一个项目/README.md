@@ -35,3 +35,10 @@ manage.py   meetingroom
 
 首先我们使用 makemigrations 创建数据库迁移，产生 SQL 脚本。然后我们使用 migrate 命令，把默认的 Model 同步到数据库。Django 会自动在数据库里面，为这些 Model 建立相应的表。
 
+```python
+python manage.py makemigrations 
+python manage.py migrate 
+```
+
+
+
