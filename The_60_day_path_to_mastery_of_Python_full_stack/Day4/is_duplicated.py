@@ -12,8 +12,8 @@ def is_duplicated(lst):
 	return False
 
 
-def is_duplicated(lst):
-	return len(lst) != len(set(lst))
+# def is_duplicated(lst):
+# 	return len(lst) != len(set(lst))
 
 
 if __name__ == '__main__':
