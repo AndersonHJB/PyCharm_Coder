@@ -5,3 +5,5 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+str1 = "123456789"
+print(str1[0])
