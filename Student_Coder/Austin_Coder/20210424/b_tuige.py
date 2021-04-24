@@ -5,5 +5,7 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-str1 = "aiyc,austin"
-print(str1)
+str1 = input("Please your input name1:")
+str2 = input("Please your input name2:")
+print(str1, str2)
+print(str1 + str2)
