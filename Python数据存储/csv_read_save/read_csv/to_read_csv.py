@@ -18,7 +18,7 @@ def get_csv():
 	with open("test.csv", encoding="utf-8")as f:
 		f_csv = csv.reader(f)
 		header = next(f_csv)
-		print(headerw)
+		print(header)
 		for row in f_csv:
 			print(row)
 
