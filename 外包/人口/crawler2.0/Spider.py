@@ -69,15 +69,14 @@ def parse(html):
 		permanent_resident_population = data.select(".even .column-3")
 		area = data.select(".even .column-4")
 		# print("index:>>>", index)
-		if ranking:
-			print("ranking:", ranking[0].string, end=',')
-		if region:
-			print("region", region[0].string, end=',')
-		if permanent_resident_population:
-			print("permanent_resident_population", permanent_resident_population[0].string, end=', ')
-		if area:
-			print("area", area[0].string, end=',')
-		print()
+		if ranking and region and permanent_resident_population and area:
+			yield {
+				"ranking": ranking[0].string,
+				"region": region[0].string,
+				"permanent_resident_population": permanent_resident_population[0].string,
+				"area": area[0].string
+			}
+
 
 
 if __name__ == '__main__':
