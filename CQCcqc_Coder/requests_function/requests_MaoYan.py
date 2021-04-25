@@ -13,6 +13,7 @@ from requests.exceptions import RequestException
 import re
 import json
 import csv
+from multiprocessing import Pool
 
 
 # json 可以直接看源码
@@ -57,8 +58,9 @@ def write_to_file(content):
 		f.close()
 
 
-def main():
-	url = "https://maoyan.com/board/4"
+def main(offset):
+	# url = "https://maoyan.com/board/4"
+	url = "https://maoyan.com/board/4?offset=" + str(offset)
 	html = crawler(url)
 	# print(html)
 	for item in parse(html):
@@ -67,4 +69,7 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+	# for i in range(10):
+	# 	main(i * 10)
+	pool = Pool()
+	pool.map(main, [i*10 for i in range(10)])
