@@ -46,6 +46,31 @@ def parse(html):
 	soup = BeautifulSoup(html, "lxml")
 	# print(soup.title)
 	# print(soup.prettify())
+	# data_list = soup.select("#tablepress-48 .row-hover .even")
+	data_list = soup.select("#tablepress-48 .row-hover .even")
+	# print(data)
+	for index, data in enumerate(data_list):
+		# print(data)
+		"""
+		ranking：排名
+		region：地区
+		permanent_resident_population：常驻人口
+		area：面积
+		"""
+		ranking = data.select(".even .column-1")
+		region = data.select(".even .column-2")
+		permanent_resident_population = data.select(".even .column-3")
+		area = data.select(".even .column-4")
+		# print("index:>>>", index)
+		if ranking:
+			print("ranking:", ranking[0].string, end=',')
+		if region:
+			print("region", region[0].string, end=',')
+		if permanent_resident_population:
+			print("permanent_resident_population", permanent_resident_population[0].string, end=', ')
+		if area:
+			print("area", area[0].string, end=',')
+		print()
 
 
 if __name__ == '__main__':
