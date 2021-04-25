@@ -10,6 +10,7 @@ import cchardet
 import traceback
 import re
 from bs4 import BeautifulSoup
+import csv
 
 
 def downloader(url, timeout=10, headers=None, debug=False, binary=False):
@@ -71,7 +72,12 @@ def parse(html):
 		if area:
 			print("area", area[0].string, end=',')
 		print()
-		
+
+
+def write_csv(csv_file_name):
+	with open(csv_file_name + ".csv", "a+")as f:
+		f_csv = csv.writer(f)
+		f_csv.writerow()
 
 
 if __name__ == '__main__':
