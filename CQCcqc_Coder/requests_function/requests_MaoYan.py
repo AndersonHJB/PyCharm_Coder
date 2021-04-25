@@ -38,7 +38,7 @@ def parse(html):
 		'<dd>.*?board-index.*?>(\d+)</i>.*?data-src="(.*?)".*?name"><a.*?>(.*?)</a>.*?star">(.*?)'
 		+ '</p>.*?releasetime">(.*?)</p>.*?integer">(.*?)</i>.*?fraction">(.*?)</i>.*?</dd>', re.S)
 	items = re.findall(pattern, html)
-	# print(items)
+	print(items)
 	for item in items:
 		yield {
 			"index": item[0],
