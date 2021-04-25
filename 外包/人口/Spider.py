@@ -71,6 +71,7 @@ def parse(html):
 		if area:
 			print("area", area[0].string, end=',')
 		print()
+		
 
 
 if __name__ == '__main__':
