@@ -5,8 +5,12 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+"""
+抓取猫眼 TOP100，并简单的爬虫请求
+"""
 import requests
 from requests.exceptions import RequestException
+import re
 
 
 def crawler(url):
@@ -22,10 +26,22 @@ def crawler(url):
 		return None
 
 
+def parse(html):
+	"""
+	起始和结束符都需要指定一下。
+	"""
+	pattern = re.compile(
+		'<dd>.*?board-index.*?>(\d+)</i>.*?data-src="(.*?)".*?name"><a.*?>(.*?)</a>.*?star">(.*?)'
+		+ '</p>.*?releasetime">(.*?)</p>.*?integer">(.*?)</i>.*?fraction">(.*?)</i>.*?</dd>', re.S)
+	items = re.findall(pattern, html)
+	print(items)
+
+
 def main():
 	url = "https://maoyan.com/board/4"
 	html = crawler(url)
-	print(html)
+	# print(html)
+	parse(html)
 
 
 if __name__ == '__main__':
