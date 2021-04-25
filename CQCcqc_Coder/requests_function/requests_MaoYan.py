@@ -11,6 +11,10 @@
 import requests
 from requests.exceptions import RequestException
 import re
+import json
+
+
+# json 可以直接看源码
 
 
 def crawler(url):
@@ -45,11 +49,19 @@ def parse(html):
 			"score": item[5] + item[6]
 		}
 
+
+def write_to_file(content):
+	with open("result.txt", 'a+')as f:
+		f.write(json.dumps(content) + "\n")
+		f.close()
+
+
 def main():
 	url = "https://maoyan.com/board/4"
 	html = crawler(url)
 	# print(html)
-	parse(html)
+	for item in parse(html):
+		print(item)
 
 
 if __name__ == '__main__':
