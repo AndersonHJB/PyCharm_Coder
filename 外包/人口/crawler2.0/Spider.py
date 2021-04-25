@@ -43,10 +43,18 @@ def downloader(url, timeout=10, headers=None, debug=False, binary=False):
 	return status, html, redirected_url
 
 
-def write_csv(csv_file_name, data):
-	with open(csv_file_name + ".csv", "a+")as f:
+def write_csv(data):
+	with open("stocks.csv", "a+")as f:
 		f_csv = csv.writer(f)
 		f_csv.writerow(data)
+
+
+def write_dict_csv(data):
+	headers = ['ranking', 'region', 'permanent_resident_population', 'area']
+	with open("stocks.csv", "a+")as f:
+		f_csv = csv.DictWriter(f, headers)
+		f_csv.writeheader()
+		f_csv.writerows(data)
 
 
 def parse(html):
@@ -78,9 +86,11 @@ def parse(html):
 			}
 
 
-
 if __name__ == '__main__':
 	url = 'https://www.hongheiku.com/category/xianjirank'
 	s, html, lost_url = downloader(url)
 	# print(s, html, lost_url)
-	parse(html)
+	# print(list(parse(html)))
+	for item in parse(html):
+		print(item)
+		write_dict_csv(list(item))
