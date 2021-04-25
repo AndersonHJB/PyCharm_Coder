@@ -34,8 +34,16 @@ def parse(html):
 		'<dd>.*?board-index.*?>(\d+)</i>.*?data-src="(.*?)".*?name"><a.*?>(.*?)</a>.*?star">(.*?)'
 		+ '</p>.*?releasetime">(.*?)</p>.*?integer">(.*?)</i>.*?fraction">(.*?)</i>.*?</dd>', re.S)
 	items = re.findall(pattern, html)
-	print(items)
-
+	# print(items)
+	for item in items:
+		yield {
+			"index": item[0],
+			"image": item[1],
+			"title": item[2],
+			"actor": item[3].strip()[3:],
+			"time": item[4].strip()[5:],
+			"score": item[5] + item[6]
+		}
 
 def main():
 	url = "https://maoyan.com/board/4"
