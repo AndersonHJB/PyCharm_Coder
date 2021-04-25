@@ -43,6 +43,12 @@ def downloader(url, timeout=10, headers=None, debug=False, binary=False):
 	return status, html, redirected_url
 
 
+def write_csv(csv_file_name, data):
+	with open(csv_file_name + ".csv", "a+")as f:
+		f_csv = csv.writer(f)
+		f_csv.writerow(data)
+
+
 def parse(html):
 	soup = BeautifulSoup(html, "lxml")
 	# print(soup.title)
@@ -72,12 +78,6 @@ def parse(html):
 		if area:
 			print("area", area[0].string, end=',')
 		print()
-
-
-def write_csv(csv_file_name):
-	with open(csv_file_name + ".csv", "a+")as f:
-		f_csv = csv.writer(f)
-		f_csv.writerow()
 
 
 if __name__ == '__main__':
