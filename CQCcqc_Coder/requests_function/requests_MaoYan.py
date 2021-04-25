@@ -62,6 +62,7 @@ def main():
 	# print(html)
 	for item in parse(html):
 		print(item)
+		write_to_file(item)
 
 
 if __name__ == '__main__':
