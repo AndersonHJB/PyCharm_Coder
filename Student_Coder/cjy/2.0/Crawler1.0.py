@@ -54,23 +54,32 @@ def parse(html):
 	permanent_resident_population：常驻人口
 	area：面积
 	"""
+	# for item in items:
+	# 	links = soup.select(".column-2 a")
+	# for index, link in enumerate(links):
+	# 	detail_link = link.get("href")
+	# 	print("index:", index, detail_link)
+
+
 	for item in items:
 		ranking = item.select(".column-1")
-		if ranking:
-			ranking = ranking[0].string
-			print(ranking, end=", ")
 		region = item.select(".column-2")
-		if region:
-			region = region[0].string
-			print(region, end=", ")
 		permanent_resident_population = item.select(".column-3")
-		if permanent_resident_population:
-			permanent_resident_population = permanent_resident_population[0].string
-			print(permanent_resident_population, end=", ")
 		area = item.select(".column-4")
-		if area:
+		links = soup.select(".column-2 a")
+		if ranking and region and permanent_resident_population and area:
+			ranking = ranking[0].string
+			region = region[0].string
+			permanent_resident_population = permanent_resident_population[0].string
 			area = area[0].string
+			print(ranking, end=", ")
+			print(region, end=", ")
+			print(permanent_resident_population, end=", ")
 			print(area, end=", ")
+			print()
+	for index, link in enumerate(links):
+		detail_link = link.get("href")
+		print("index:", index, detail_link, end=", ")
 		print()
 
 
