@@ -12,6 +12,7 @@ import requests
 from requests.exceptions import RequestException
 import re
 import json
+import csv
 
 
 # json 可以直接看源码
