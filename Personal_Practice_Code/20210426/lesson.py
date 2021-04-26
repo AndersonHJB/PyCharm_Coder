@@ -5,13 +5,6 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-dict([('a', 1), ('b', 2)], c=3)
 
-{}.fromkeys(['k1', 'k2', 'k3'], [1, 2, 3])
-
-{'a': 1, 'b': 2}.fromkeys(['c', 'd'], [1, 2])
-
-d = {'a': 1, 'b': 2, 'c': 3}
-
-d = {'a': 1, 'b': 2, 'c': 3}
-
+dict1 = {"name": "Aiyuechuang", "age": 18}
+print(dict1)
