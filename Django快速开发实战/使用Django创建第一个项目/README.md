@@ -87,6 +87,17 @@ python manage.py createsuperuser
 
 # 2. 10分钟如何创建一个可以管理职位的后台
 
+创建项目：
+
+```python
+# 1. 创建项目
+django-admin startproject recruitment
+# 2. 创建管理员
+python manage.py createsuperuser
+```
+
+
+
 ## 2.1 目标：招聘系统的职位管理
 
 - 产品需求

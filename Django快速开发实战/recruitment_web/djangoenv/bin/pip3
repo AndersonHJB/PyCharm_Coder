@@ -1,4 +1,4 @@
-#!/Users/apple/Desktop/GitHub/PyCharm_Coder/Django快速开发实战/recruitment_web/djangoenv/bin/python3
+#!/Users/apple/Desktop/GitHub/PyCharm_Coder/Django快速开发实战/recruitment_web/djangoenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
