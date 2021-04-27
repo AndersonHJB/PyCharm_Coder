@@ -124,6 +124,6 @@ python manage.py startapp jobs
 
 接下来，我们在项目的 settings.py 里面添加，这个 app：
 
-![image-20210426171837607](README.assets/image-20210426171837607.png)
+![](README.assets/image-20210426171837607.png)
 
 接下来，在 app jobs 中的 models.py 里面，定义我们的职位模型。
