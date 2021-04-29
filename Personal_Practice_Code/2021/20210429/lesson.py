@@ -5,7 +5,16 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-num1 = 10
-num2 = 15
-sum_num = num1 + num2
-print(sum_num)
+# 3. 直接删掉
+# num1 = 10
+# num2 = 15
+# sum_num = num1 + num2
+# print(sum_num)
+
+
+def add_sum(num1, num2):
+	return num1 + num2
+
+
+if __name__ == '__main__':
+	print(add_sum(10, 15))
