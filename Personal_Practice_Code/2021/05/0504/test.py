@@ -6,4 +6,4 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 print("Hello AI悦创。")
-print("")
+print("Life is short, You need Python!")
