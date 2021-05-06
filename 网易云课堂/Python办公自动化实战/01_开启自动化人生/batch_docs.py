@@ -22,3 +22,7 @@ def qr_code():
 	filename = '%s.png' % signin_code
 	img.save('qr/%s' % filename)
 	return filename
+
+def excel_read():
+	file = xlrd.open_workbook('students.xlsx')
+	sheet = file.sheet_by_name(file.sheet_names()[0])
