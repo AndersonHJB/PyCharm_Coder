@@ -5,10 +5,6 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-import random
 import qrcode
-# signin_code = random.randint(1000, 9999)
-signin_code = "https://austinhuang1.github.io/"
-img = qrcode.make('%s' % signin_code)
-# filename = '%s.png' % signin_code
+img = qrcode.make('改成你需要的内容。')
 img.save('filename.png')
