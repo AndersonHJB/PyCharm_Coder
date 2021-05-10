@@ -8,3 +8,4 @@
 import qrcode
 img = qrcode.make('改成你需要的内容。')
 img.save('filename.png')
+img.show()
