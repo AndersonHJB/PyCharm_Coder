@@ -5,4 +5,20 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-info = {'姓名': '张三', '年龄': 20, '性别': '男'}
+username = input("请输入您的姓名：")
+sex = input("请输入您的性别：")
+user_age = input("请输入您的年龄")
+
+print("正在生成您的简历......")
+print("****************")
+print("简历")
+print("姓名：", username)
+print("性别：" + sex)
+print("年龄：", user_age)
+
+# input('''
+# Name：黄家宝
+# gender：男
+# age：21
+# school：厦门工学院
+# ''')
