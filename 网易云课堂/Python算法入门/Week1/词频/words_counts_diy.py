@@ -6,6 +6,8 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 word_list = []
+
+
 def words_count():
 	words_dict = {}
 	for word in word_list:
