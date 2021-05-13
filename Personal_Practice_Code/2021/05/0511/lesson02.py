@@ -7,5 +7,4 @@
 # @公众号   ：AI悦创
 import os
 
-# os.rename("image", "newimage")
-os.rename("test.py", "newdingding.py")
+os.makedirs("dist/src/code")
