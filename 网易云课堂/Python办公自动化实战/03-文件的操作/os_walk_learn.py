@@ -7,6 +7,6 @@
 # @公众号   ：AI悦创
 import os
 
-path = 'data_file'
+path = '.'
 for i in os.walk(path):
 	print(i)
