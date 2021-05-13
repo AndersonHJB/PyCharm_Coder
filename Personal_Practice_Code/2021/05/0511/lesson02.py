@@ -5,4 +5,7 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-print('考试及格')
+import os
+
+# os.rename("image", "newimage")
+os.rename("test.py", "newdingding.py")
