@@ -5,3 +5,8 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+import os
+from os import walk, mkdir, remove
+from shutil import copy, move
+
+# 桌面的数据整理，基于名字
