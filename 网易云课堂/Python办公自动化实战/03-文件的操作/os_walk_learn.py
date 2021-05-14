@@ -8,5 +8,14 @@
 import os
 
 path = '.'
-for i in os.walk(path):
-	print(i)
+# for i in os.walk(path):
+# 	print(i)
+# ("当前文件夹的地址", "当前文件夹下的文件夹名称", "当前文件夹下的文件，不包含子目录文件")
+
+# import os
+
+for root, dirs, files in os.walk(".", topdown=False):
+	for name in files:
+		print(os.path.join(root, name))
+	for name in dirs:
+		print(os.path.join(root, name))
