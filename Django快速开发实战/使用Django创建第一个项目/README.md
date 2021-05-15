@@ -173,28 +173,6 @@ class Job(models.Model):
 ```python
 (djangoenv) ➜  recruitment git:(master) ✗ ls
 db.sqlite3  jobs        manage.py   recruitment
-(djangoenv) ➜  recruitment git:(master) ✗ python manage.py migrate 
-Operations to perform:
-  Apply all migrations: admin, auth, contenttypes, sessions
-Running migrations:
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying auth.0008_alter_user_username_max_length... OK
-  Applying auth.0009_alter_user_last_name_max_length... OK
-  Applying auth.0010_alter_group_name_max_length... OK
-  Applying auth.0011_update_proxy_permissions... OK
-  Applying auth.0012_alter_user_first_name_max_length... OK
-  Applying sessions.0001_initial... OK
 (djangoenv) ➜  recruitment git:(master) ✗ python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
@@ -210,5 +188,31 @@ Quit the server with CONTROL-C.
 
 ![](README.assets/image-20210515142423360.png)
 
-我们发现并没有我们的 Job，那是我们还没有在后台注册。
+我们发现并没有我们的 Job，那是我们还没有在 jobs 里面的 `admin.py` 后台注册。
+
+![](README.assets/image-20210515143832853.png)
+
+这回我们看后台：
+
+![](README.assets/image-20210515143906330.png)
+
+点进去看看：
+
+![](README.assets/image-20210515144800618.png)
+
+这是什么问题呢？
+
+就是数据库表还没有同步！
+
+```python
+(djangoenv) ➜  recruitment git:(master) ✗ python manage.py migrate 
+```
+
+```python
+(djangoenv) ➜  recruitment git:(master) ✗ python manage.py migrate 
+```
+
+当然，我们还可以查看修改数据的信息：
+
+![image-20210515145928571](README.assets/image-20210515145928571.png)
 
