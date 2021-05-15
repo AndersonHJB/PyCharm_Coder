@@ -96,6 +96,15 @@ django-admin startproject recruitment
 python manage.py createsuperuser
 ```
 
+**本项目帐号密码：**
+
+```python
+帐号：aiyuechuang
+密码：123123
+```
+
+
+
 
 
 ## 2.1 目标：招聘系统的职位管理
@@ -127,3 +136,79 @@ python manage.py startapp jobs
 ![](README.assets/image-20210426171837607.png)
 
 接下来，在 app jobs 中的 models.py 里面，定义我们的职位模型。
+
+```python
+from django.db import models
+from django.contrib.auth.models import User
+
+# Create your models here.
+
+JobTypes = [
+	(0, "技术类"),
+	(1, "产品类"),
+	(2, "运营类"),
+	(3, "设计类"),
+]
+
+Cities = [
+	(0, "北京"),
+	(1, "上海"),
+	(2, "深圳"),
+]
+
+
+class Job(models.Model):
+	job_type = models.SmallIntegerField(blank=False, choices=JobTypes, verbose_name="职位类别")
+	job_name = models.CharField(max_length=250, blank=False, verbose_name="职位名称")
+	job_city = models.SmallIntegerField(choices=Cities, blank=False, verbose_name="工作地点")
+	job_reponsibility = models.TextField(max_length=1024, verbose_name="职位职责")
+	job_requirement = models.TextField(max_length=1024, blank=False, verbose_name="职位要求")
+	creator = models.ForeignKey(User, verbose_name="创建人", null=True, on_delete=models.SET_NULL)
+	created_date = models.DateTimeField(verbose_name="创建日期")
+	modified_date = models.DateTimeField(verbose_name="修改时间")
+```
+
+接下来，运行应用看看情况。
+
+```python
+(djangoenv) ➜  recruitment git:(master) ✗ ls
+db.sqlite3  jobs        manage.py   recruitment
+(djangoenv) ➜  recruitment git:(master) ✗ python manage.py migrate 
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(djangoenv) ➜  recruitment git:(master) ✗ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2021 - 06:20:38
+Django version 3.2, using settings 'recruitment.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+
+然后，我们访问后台链接：[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) 
+
+![](README.assets/image-20210515142423360.png)
+
+我们发现并没有我们的 Job，那是我们还没有在后台注册。
+

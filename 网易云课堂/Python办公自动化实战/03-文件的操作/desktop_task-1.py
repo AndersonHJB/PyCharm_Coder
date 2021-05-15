@@ -10,8 +10,9 @@ from os import walk, mkdir, remove
 from shutil import copy, move
 
 # 桌面的数据整理，基于名字
-import requests
-
-url = "https://7843ww.com/v/lottery/getTopResults?gameId=70&topNums=6"
-h = requests.get(url)
-print(h.text)
+# import requests
+#
+# # url = "https://7843ww.com/v/lottery/getTopResults?gameId=70&topNums=6"
+# url = "https://7843ww.com/anls-api/data/lhc/lotteryList/30.do"
+# h = requests.get(url)
+# print(h.text)
