@@ -250,3 +250,46 @@ Quit the server with CONTROL-C.
 
 我们先把上门的尾巴先解决掉，添加默认值。「用户、日期」
 
+![image-20210516121840790](README.assets/image-20210516121840790.png)
+
+记得保存所修改的代码，接下来我刷新然后进去看看，点击添加按钮，看作者和日期是否会有默认时间。
+
+![](README.assets/image-20210516121937750.png)
+
+默认生成了。
+
+
+
+接下来我们需要优化如下页面：
+
+![](README.assets/image-20210516122131800.png)
+
+明显很不直观，我们希望可以达到如下效果：
+
+![](README.assets/image-20210516122213933.png)
+
+我们直接修改该 app 下的 `admin.py` ：
+
+![](README.assets/image-20210516150802848.png)
+
+```python
+from django.contrib import admin
+from jobs.models import Job
+
+
+# Register your models here.
+
+class JobAdmin(admin.ModelAdmin):
+	list_display = ('job_name', 'job_type', 'job_city', 'creator', 'created_date',
+	                'modified_date')  # 在 ModelAdmin 中有特定含义的属性，当我们配置这个列表之后，列表页就会把这些字段展现出来。
+
+
+# 把 JobAdmin 注册到站点里面
+admin.site.register(Job, JobAdmin)
+# admin.site.register(Job)
+```
+
+我们希望把下面的部分进行隐藏：
+
+![](README.assets/image-20210516152009157.png)
+
