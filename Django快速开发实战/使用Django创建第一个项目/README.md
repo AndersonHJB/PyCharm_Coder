@@ -289,6 +289,10 @@ admin.site.register(Job, JobAdmin)
 # admin.site.register(Job)
 ```
 
+效果：
+
+![image-20210516152117792](README.assets/image-20210516152117792.png)
+
 我们希望把下面的部分进行隐藏：
 
 ![](README.assets/image-20210516152009157.png)
