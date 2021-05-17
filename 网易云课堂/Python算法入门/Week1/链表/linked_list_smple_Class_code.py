@@ -9,4 +9,3 @@ class IntList(object):
 	def __init__(self):
 		self.first = None
 		self.rest = None
-		
