@@ -5,3 +5,8 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+class IntList(object):
+	def __init__(self):
+		self.first = None
+		self.rest = None
+		
