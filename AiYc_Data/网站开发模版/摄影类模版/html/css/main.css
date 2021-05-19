@@ -1,0 +1,340 @@
+/*========================================
+Default values are with a mobile-first perspective
+======================================
+
+Project: responsive mobile-first navigation bar;
+Author: Brandon Dail;
+Copyright: MIT;
+Max-usefullness: minimal;
+
+*/
+
+
+/*           Wrapper
+==============================*/
+
+#wrapper {
+    /*background-image: url('../yosemite.jpg');
+background-size: cover;*/
+    background: tomato;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+/*classes used to push the wrapper down when the navbar is expanded
+*/
+
+.open_wrapper {
+    top: 200px !important;
+}
+.closed_wrapper {
+    top: 0px !important;
+}
+/*      Navigation Bar
+==============================*/
+
+#m_nav_container {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    position: fixed;
+    display: none;
+    /*	opacity: 0;*/
+    top: 0px;
+}
+#m_nav_bar {
+    width: 80%;
+    margin: auto;
+}
+#m_nav_list {
+	list-style: none;
+    padding: 0;
+    margin: 1.5em 0 0 0;
+}
+.m_nav_item {
+    margin-top: 15px;
+}
+.m_nav_item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    -webkit-transition-duration: 0.5s;
+	 padding: 0.5em;
+}
+.m_nav_item a:hover {
+    color: #ff9800;
+	background: white;
+   
+
+}
+/*classes for jQuery function*/
+
+.container_open {
+    position: fixed !important;
+    display: block;
+    height: 120px;
+}
+/*  Navigation Hamburger Icon
+==============================*/
+
+/*icon container*/
+
+#m_nav_menu {
+    position: fixed;
+    top: 30px;
+    right: 221px;
+    z-index: 3;
+    cursor: pointer;
+    padding: .5em;
+    background:#ff6c5f;
+}
+/*class applied to create the lines*/
+
+.m_nav_ham {
+    width: 35px;
+    height: 5px;
+    background: #000;
+    margin: 5px auto;
+}
+.m_nav_ham_1_open {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 15px;
+}
+.m_nav_ham_2_open {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -10px;
+}
+.m_nav_ham_3_open {
+    opacity: 0;
+}
+/*classes used to change the button's format based on jquery toggle
+In future releases this will be used to animate the m_nav_ham divs to form 
+an X*/
+
+.button_open {
+    background: #000;
+    /*	-webkit-transform: rotate(45deg);*/
+}
+.button_closed {}
+/*      Header
+==============================*/
+
+#header {
+    width: 100%;
+    height: 700px;
+    /*background-image: url('../yosemite.jpg');
+	background-size: cover;*/
+    /*	background: #4787ff*/
+    float: left;
+    text-align: center;
+    margin-top: 0px;
+}
+/*#header*/
+
+/*      Sections
+==============================*/
+
+.main_sections {
+    width: 100%;
+    height: 1100px;
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+}
+/*      Section 1
+==============================*/
+
+#section_1 {
+    background-color: #df32df;
+}
+/*      Section 2
+==============================*/
+
+#section_2 {
+    background-color: #47e3ff;
+}
+/*      Section 3
+==============================*/
+
+#section_3 {
+    background-color: #47ffbf;
+}
+#section_3 p, #section_3 h1 {
+    color: #333 !important;
+}
+/*      Section 4
+==============================*/
+
+#section_4 {
+    background-color: #6347ff;
+}
+/*      Section 5
+==============================*/
+
+#section_5 {
+    background-color: #ffbf47;
+}
+/*      Media Queries
+==============================*/
+
+/*Media query for all non-mobile devices*/
+
+@media screen and (min-width: 780px) {
+    /*Nav bar media queries!*/
+    #m_nav_container {
+        text-align: left;
+        height: 120px !important;
+    }
+    .m_nav_item {
+        display: inline;
+        line-height: 100px;
+        margin-right: 50px;
+    }
+    .m_nav_item a {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+    #m_nav_item_1 {
+        margin-left: 5px;
+    }
+    /*wrapper media queries*/
+    .open_wrapper {
+        top: 130px !important;
+    }
+}
+/*Media query for larger, non-mobile devices*/
+@media screen and (max-width: 1366px){
+	#m_nav_menu {
+      right: 139px;
+	}
+}
+@media screen and (min-width: 1280px){
+	#m_nav_menu {
+    right:146px}
+}
+@media screen and (min-width: 1150px){
+    #m_nav_container {
+		background:#000;
+        text-align: center;
+		height: 125px !important;
+		box-shadow: 0 0 2px #000;
+    }
+
+
+	#m_nav_menu {
+		top: 37px;
+	}
+
+    .m_nav_item {
+        display: inline;
+        line-height: 70px;
+        margin-right: 52px;
+        padding: 0.5em;
+        background: black;
+    }
+    .m_nav_item a {
+        margin-top: 10px;
+		font-size: 1.2em;
+		font-weight: 600;
+    }
+    /*#toggle_m_nav{
+	display: none;
+}*/
+}
+/*
+Media query for mid-size non-mobile devices*/
+@media screen and (max-width: 1080px){
+#m_nav_list {
+margin: .5em 0 0 8em;}
+#m_nav_menu {
+	right:109px;
+}
+
+}
+@media screen and (max-width: 991px){
+	#m_nav_list {
+margin: 1.5em 0 0 5em;}
+#m_nav_menu {
+	right:120px;
+}
+}
+@media screen and (max-width: 900px){
+	#m_nav_menu {
+    top: 45px;
+    right: 82px;
+}
+	#m_nav_list {
+    margin: 1.5em 0 0 2em;
+}
+}
+@media screen and (max-width: 800px){
+#m_nav_menu {right: 43px;
+    top: 46px;
+}
+#m_nav_list {
+    margin: 1.5em 0 0 2em;
+}
+}
+@media screen and (max-width: 768px){
+
+#m_nav_menu {
+    
+    top: 45px;
+    right: 61px;
+
+}
+#m_nav_list {
+    margin: 0em 0em 0 22em;
+}
+#m_nav_container {
+    height: 215px;
+}
+}
+@media screen and (max-width:667px){
+.m_nav_ham {
+    width: 26px;
+    height: 4px;
+}
+.m_nav_item a {
+    font-size: 14px;
+	}
+	
+}
+@media screen and (max-width: 600px){
+#m_nav_list {
+    margin: 0em 0em 0 18em;
+}
+}
+@media screen and (max-width: 480px){
+#m_nav_list {
+    margin: 0em 0em 0 13em;
+}
+}
+@media screen and (max-width: 414px){
+#m_nav_list {
+    margin: 0em 0em 0 10em;
+}
+}
+@media screen and (max-width: 385px){
+	#m_nav_menu {
+    top: 30px;
+    right: 35px;
+}
+#m_nav_list {
+    margin: 0em 0em 0 8em;
+}
+}
+@media screen and (max-width:320px){
+#m_nav_menu {
+	top: 23px;
+    right: 16px;
+}
+}

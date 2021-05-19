@@ -1,0 +1,72 @@
+body { background-color:#ECF0F1;}
+.skills-grid p{
+	margin: 20px 0 0 0;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.skills-grid {
+    float: left;
+    margin-right: 0%;
+    width: 25%;
+    padding: 0 2.5em;
+}
+.skills-grid:nth-child(3){
+  margin-right:0%;
+}
+.circle{
+	color:#ffffff;
+	font-size:25px;
+}
+span.circles-number {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 3.1em;
+}
+span.circles-text {
+  font-size: 25px;
+   font-weight:700;
+   display:none!important;
+}
+.circles-text-wrp {
+  line-height:122px!important;
+}
+span.circles-text {
+    font-size: 20px!important;
+	display:none;
+}
+
+/*--Responsive--*/
+@media (max-width:1366px){
+	.skill-grids {
+		margin-top: 0em;
+	}
+}
+@media (max-width:991px){
+
+
+}
+@media (max-width:800px){
+	.skills-grid{
+		float: left;
+		margin-right: 0%;
+		width:50%;
+		padding: 1em 0 0;
+	}
+}
+@media (max-width:768px){
+
+
+}
+@media (max-width:667px){
+
+}
+@media screen and (max-width:414px){
+	.skills-grid {
+    width: 100%
+}
+.cir_agile_info {
+    padding: 1em 0;
+}
+}
+/*--//Responsive--*/
