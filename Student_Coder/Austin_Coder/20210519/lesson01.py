@@ -5,3 +5,6 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+l = [1, 3, 2, 5, 4, 7, 6, 8, 9]
+l.sort()
+print(l)
