@@ -15,12 +15,6 @@
 # 过滤后缀
 from urllib.parse import urlparse
 
-# 新闻链接后缀
-g_news_postfix = [
-    '.html?', '.htm?', '.shtml?',
-    '.shtm?',
-]
-
 
 # 适当的使用 not 会精简代码。如果，不使用 not 代码结果如果为 True 的话，则会继续进入。
 def clean_url(url):
