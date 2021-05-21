@@ -5,7 +5,29 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-# 4. 去掉标识流量来源的参数
+# -*- coding: utf-8 -*-
+# @Time    : 2021/5/17 10:42 上午
+# @Author  : AI悦创
+# @FileName: clean_url.py
+# @Software: PyCharm
+# @Blog    ：http://www.aiyc.top
+# @公众号   ：AI悦创
+# 过滤后缀
+from urllib.parse import urlparse
+
+# 新闻链接后缀
+g_news_postfix = [
+    '.html?', '.htm?', '.shtml?',
+    '.shtm?',
+]
+
+
+# 适当的使用 not 会精简代码。如果，不使用 not 代码结果如果为 True 的话，则会继续进入。
+def clean_url(url):
+    # 3. 不下载二进制类内容的链接
+    up = urlparse(url)
+
+    # 4. 去掉标识流量来源的参数
     # badquery = ['spm', 'utm_source', 'utm_source', 'utm_medium', 'utm_campaign']
     good_queries = []
     for query in up.query.split('&'):
@@ -25,3 +47,8 @@
         ''  # crawler do not care fragment
     ))
     return url
+
+
+if __name__ == '__main__':
+    url = "http://app.cctv.com/special/cportal/detail/arti/index.html?id=ArtiLJYd8ExpiOe8H9ytXu8c210520&amp;fromapp=cctvnews&amp;version=809&amp;allow_comment=1&amp;allow_comment=1"
+    clean_url()

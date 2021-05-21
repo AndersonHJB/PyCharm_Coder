@@ -28,4 +28,3 @@ postfix = path.split('.')[-1].lower()
 if postfix in g_bin_postfix:
     print("No")
 
-"http://app.cctv.com/special/cportal/detail/arti/index.html?id=ArtiLJYd8ExpiOe8H9ytXu8c210520&amp;fromapp=cctvnews&amp;version=809&amp;allow_comment=1&amp;allow_comment=1"
