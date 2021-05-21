@@ -22,7 +22,6 @@ up = urlparse(url)
 print(up)
 # path = up.path
 # if not path:
-
 #     path = '/'
 # postfix = path.split('.')[-1].lower()
 # if postfix in g_bin_postfix:
