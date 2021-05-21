@@ -36,7 +36,7 @@ def clean_url(url):
             url = url[:p]
             return url
     # 3. 不下载二进制类内容的链接
-    up = urlparse.urlparse(url)
+    up = urlparse(url)
     path = up.path
     if not path:
         path = '/'
