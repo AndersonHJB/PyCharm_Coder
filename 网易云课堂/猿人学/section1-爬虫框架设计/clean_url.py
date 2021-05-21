@@ -23,12 +23,12 @@ g_news_postfix = [
     '.shtm?',
 ]
 
-# 适当的使用 not 会精简代码。
+# 适当的使用 not 会精简代码。如果，不使用 not 代码结果如果为 True 的话，则会继续进入。
 def clean_url(url):
     # 1. 是否为合法的 http url
     if not url.startswith('http'):
         return ''
-    # 2. 去掉静态化url后面的参数
+    # 2. 去掉静态化 url 后面的参数
     for np in g_news_postfix:
         p = url.find(np)
         if p > -1:
