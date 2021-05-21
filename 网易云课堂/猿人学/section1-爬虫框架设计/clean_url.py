@@ -23,7 +23,7 @@ g_news_postfix = [
     '.shtm?',
 ]
 
-
+# 适当的使用 not 会精简代码。
 def clean_url(url):
     # 1. 是否为合法的 http url
     if not url.startswith('http'):
