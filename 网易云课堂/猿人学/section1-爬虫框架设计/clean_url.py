@@ -25,7 +25,7 @@ g_news_postfix = [
 
 
 def clean_url(url):
-    # 1. 是否为合法的http url
+    # 1. 是否为合法的 http url
     if not url.startswith('http'):
         return ''
     # 2. 去掉静态化url后面的参数
