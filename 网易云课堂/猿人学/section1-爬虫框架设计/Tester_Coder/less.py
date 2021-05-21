@@ -19,11 +19,13 @@ g_bin_postfix = set([
 url = "http://contentcms-bj.cdn.bcebos.com/cmspic/a3c04b79b29dc05ca5b82a3d3eaf245b.jpeg?x-bce-process=image/crop,x_0,y_0,w_700,h_381"
 
 up = urlparse(url)
-# print(up)
+print(up)
 path = up.path
-print(path)
+# print(path)
 if not path:
     path = '/'
 postfix = path.split('.')[-1].lower()
 if postfix in g_bin_postfix:
     print("No")
+
+"http://app.cctv.com/special/cportal/detail/arti/index.html?id=ArtiLJYd8ExpiOe8H9ytXu8c210520&amp;fromapp=cctvnews&amp;version=809&amp;allow_comment=1&amp;allow_comment=1"
