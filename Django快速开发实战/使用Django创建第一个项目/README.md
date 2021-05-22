@@ -83,6 +83,8 @@ python manage.py createsuperuser
 | DATABASES          | 数据库引擎                                                   |
 | LANGUAGE_CODE      | 语言                                                         |
 
+**代码链接：**[https://github.com/AndersonHJB/Django_Leraning/tree/main/1-使用Django创建第一个项目](https://github.com/AndersonHJB/Django_Leraning/tree/main/1-使用Django创建第一个项目)
+
 
 
 # 2. 10分钟如何创建一个可以管理职位的后台
@@ -131,11 +133,11 @@ python manage.py createsuperuser
 python manage.py startapp jobs
 ```
 
-接下来，我们在项目的 settings.py 里面添加，这个 app：
+接下来，我们在项目的 `settings.py` 里面添加，这个 app：
 
 ![](README.assets/image-20210426171837607.png)
 
-接下来，在 app jobs 中的 models.py 里面，定义我们的职位模型。
+接下来，在 app jobs 中的 `models.py` 里面，定义我们的职位模型。
 
 ```python
 from django.db import models
@@ -200,12 +202,10 @@ Quit the server with CONTROL-C.
 
 ![](README.assets/image-20210515144800618.png)
 
-这是什么问题呢？
-
-就是数据库表还没有同步！
+**这是什么问题呢？** —— 就是数据库表还没有同步！
 
 ```python
-(djangoenv) ➜  recruitment git:(master) ✗ python manage.py migrate 
+(djangoenv) ➜  recruitment git:(master) ✗ python manage.py makemigrations 
 ```
 
 ```python
@@ -226,6 +226,8 @@ Quit the server with CONTROL-C.
 
 ![image-20210515150337226](README.assets/image-20210515150337226.png)
 
+
+
 ## demo 文本：
 
 | 名称          | 文本                                                         |
@@ -244,6 +246,8 @@ Quit the server with CONTROL-C.
 
 还有就是不太好的地方就是上图红色框中的名称，还是默认的并不是我们的职位名称。
 
+**代码链接：**[https://github.com/AndersonHJB/Django_Leraning/tree/main/2-10分钟如何创建一个可以管理职位的后台](https://github.com/AndersonHJB/Django_Leraning/tree/main/2-10分钟如何创建一个可以管理职位的后台)
+
 
 
 # 3. 产品体验优化：快速迭代完善应用
@@ -256,11 +260,7 @@ Quit the server with CONTROL-C.
 
 ![](README.assets/image-20210516121937750.png)
 
-默认生成了。
-
-
-
-接下来我们需要优化如下页面：
+默认生成了。接下来我们需要优化如下页面：
 
 ![](README.assets/image-20210516122131800.png)
 
