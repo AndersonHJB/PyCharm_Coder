@@ -6,7 +6,7 @@
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
 # 过滤后缀
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse
 
 g_bin_postfix = set([
     'exe', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx',
@@ -55,12 +55,16 @@ def clean_url(url):
             continue
         good_queries.append(query)
     query = '&'.join(good_queries)
-    url = urlparse.urlunparse((
+    url = urlunparse(
         up.scheme,
         up.netloc,
         path,
         up.params,
         query,
         ''  # crawler do not care fragment
-    ))
+    )
     return url
+
+if __name__ == '__main__':
+    url = "http://app.cctv.com/special/cportal/detail/arti/index.html?id=ArtiLJYd8ExpiOe8H9ytXu8c210520&amp;fromapp=cctvnews&amp;version=809&amp;allow_comment=1&amp;allow_comment=1"
+    print(clean_url(url))
