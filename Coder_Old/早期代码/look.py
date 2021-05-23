@@ -26,7 +26,7 @@ while not game_over:
 	for event in event_list:
 		if event.type == pygame.QUIT:
 			game_over = True
-		if if event.type == pygame.KEYDOWN:
+		if  event.type == pygame.KEYDOWN:
 			# 判断按键是否有按下的操作
 			# 如果有，就判断被按下的类类型
 			if event.key == pygame.K_ESCAPE:
