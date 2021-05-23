@@ -5,8 +5,14 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-import requests
+x = 1
+x = x + 10
+print(x)
+# 代码美化：option + command + L
+name1 = "lilei"
+name2 = name1
+print(name2)
 
-html = requests.get("https://www.aiyc.top/")
-print(html.text)
-# control + shift +r
+name1 = 'lilei'
+name1 = "hanmeimei"
+print(name1)

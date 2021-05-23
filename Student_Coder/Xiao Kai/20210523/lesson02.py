@@ -5,4 +5,11 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-print("AIYC")
+# x = y = z = 90
+# print("x value:>>>" + str(x), "y value:>>>" + str(y), "z value:>>>" + str(z))
+# print(x)
+# print(y)
+# print(z)
+# tup = (1, )
+a = 1
+print(a)
