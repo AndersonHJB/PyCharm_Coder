@@ -5,10 +5,10 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-import redis
+from redis import Redis
 
 
-class UrlDB:
+class UrlDB(object):
     '''
     Use redis to store URLs what have been done(succeed or faile)
     '''
@@ -16,34 +16,43 @@ class UrlDB:
     status_success = b'1'
 
     def __init__(self, db_name):
-        self.name = db_name + '.urldb'
-        self.db = leveldb.LevelDB(self.name)
+        self.name = db_name
+        self.db = Redis(host='localhost', port=6379, db=self.name)
 
     def set_success(self, url):
+        """
+        请求成功的 url
+        """
         if isinstance(url, str):
             url = url.encode('utf8')
         try:
-            self.db.Put(url, self.status_success)
+            self.db.set(url, self.status_success)
             s = True
         except:
             s = False
         return s
 
     def set_failure(self, url):
+        """
+        请求失败的 url
+        """
         if isinstance(url, str):
             url = url.encode('utf8')
         try:
-            self.db.Put(url, self.status_failure)
+            self.db.set(url, self.status_failure)
             s = True
         except:
             s = False
         return s
 
     def has(self, url):
+        """
+        判断我们的 url 是否存在
+        """
         if isinstance(url, str):
             url = url.encode('utf8')
         try:
-            attr = self.db.Get(url)
+            attr = self.db.get(url)
             return attr
         except:
             pass
