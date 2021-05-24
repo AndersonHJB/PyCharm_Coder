@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021/5/24 5:42 下午
+# @Time    : 2021/5/24 5:46 下午
 # @Author  : AI悦创
-# @FileName: test.py
+# @FileName: simple_crawler.py
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
+
 import re
 import time
 import requests
