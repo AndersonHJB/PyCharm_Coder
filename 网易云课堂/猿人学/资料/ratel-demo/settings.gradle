@@ -1,0 +1,11 @@
+include ':base-lib-ratel-extension',
+        ':crack-yuanrenxue',
+        ':crack-xhs',
+        ':crack-zb91live',
+        ':base-lib-ratel-api',
+        ':demoapp',
+        ':crack-snkrs',
+        ':createhelper',
+        ':crack-demoapp',
+        ':crack-cz-order',
+        ':crack-cz-order-config'
