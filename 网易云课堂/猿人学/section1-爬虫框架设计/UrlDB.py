@@ -52,7 +52,8 @@ class UrlDB(object):
         if isinstance(url, str):
             url = url.encode('utf8')
         try:
-            attr = self.db.get(url)
+            # attr = self.db.get(url)
+            attr = self.db.exists(url)
             return attr
         except:
             pass
