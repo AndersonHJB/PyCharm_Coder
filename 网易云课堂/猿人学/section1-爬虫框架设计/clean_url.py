@@ -23,6 +23,7 @@ g_news_postfix = [
     '.shtm?',
 ]
 
+
 # 适当的使用 not 会精简代码。如果，不使用 not 代码结果如果为 True 的话，则会继续进入。
 def clean_url(url):
     # 1. 是否为合法的 http url
@@ -55,15 +56,9 @@ def clean_url(url):
             continue
         good_queries.append(query)
     query = '&'.join(good_queries)
-    url = urlunparse(
-        up.scheme,
-        up.netloc,
-        path,
-        up.params,
-        query,
-        ''  # crawler do not care fragment
-    )
+    url = urlunparse((up.scheme, up.netloc, path, up.params, query, ''))  # crawler do not care fragment
     return url
+
 
 if __name__ == '__main__':
     url = "http://app.cctv.com/special/cportal/detail/arti/index.html?id=ArtiLJYd8ExpiOe8H9ytXu8c210520&amp;fromapp=cctvnews&amp;version=809&amp;allow_comment=1&amp;allow_comment=1"

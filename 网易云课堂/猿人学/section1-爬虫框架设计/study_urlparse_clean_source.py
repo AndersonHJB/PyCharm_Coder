@@ -20,6 +20,7 @@ from urllib.parse import urlparse, urlunparse
 def clean_url(url):
     up = urlparse(url)
     print(up.query.split('&'))
+    path = up.path
     # 4. 去掉标识流量来源的参数
     # badquery = ['spm', 'utm_source', 'utm_source', 'utm_medium', 'utm_campaign']
     good_queries = []
@@ -40,6 +41,7 @@ def clean_url(url):
         query,
         ''  # crawler do not care fragment
     ))
+    print("uuu", url)
     return url
 
 
