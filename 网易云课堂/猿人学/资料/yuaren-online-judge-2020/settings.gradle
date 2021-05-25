@@ -1,0 +1,6 @@
+include 'judge-server','YuanrenXue2020'
+
+if (new File('.idea').exists()) {
+    // 只有存在AndroidStudio的时候，才编译下面两个module。避免服务器依赖Android
+    include 'YuanrenXue2020'
+}

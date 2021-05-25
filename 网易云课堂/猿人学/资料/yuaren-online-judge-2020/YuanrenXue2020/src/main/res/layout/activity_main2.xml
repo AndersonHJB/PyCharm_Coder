@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下方输入框，可以填入0-9999之间的一万个数字，每个数字可以查询得到一个新数字，请遍历0-9999的所有数字，将结果求和。并提交求和结果" />
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询" />
+
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入一个数字"
+            android:inputType="number"
+            android:text="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前值为:" />
+
+            <TextView
+                android:id="@+id/id_result"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="未查询" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交答案" />
+
+            <EditText
+                android:id="@+id/edt_team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="你的队名"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edt_sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请提交结果"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1. 请尽量破解协议\n 2.提交的时候带上队名，我们根据队名判断你的最终评分 \n 3.提交成功之后你将会得到一个证书，这是您拿到结果的凭证。文件将会保存到内存卡，如果通过协议访问，直接保存提交后得到的json数据即可。 \n4.题目解释权归猿人学所有，请不要使用作弊手段。" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
