@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dispatch-list>
+    <!--<delegate>com.ctrip.ibu.myctrip.base.MyctripAppLifecycleDelegate</delegate>-->
+    <!--<delegate>com.ctrip.ibu.framework.baseview.widget.AppStartDelegateForBaseView</delegate>-->
+    <!--<delegate>com.ctrip.ibu.train.support.TrainAppLifeCycleDelegate</delegate>-->
+    <!--<delegate>com.ctrip.ibu.hotel.HotelAppLifecycleDelegate</delegate>-->
+    <!--<delegate>com.ctrip.ibu.flight.FlightAppLifecycleDelegate</delegate>-->
+
+</dispatch-list>

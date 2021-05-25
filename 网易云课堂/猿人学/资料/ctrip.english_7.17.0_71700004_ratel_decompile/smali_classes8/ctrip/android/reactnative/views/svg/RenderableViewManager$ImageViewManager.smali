@@ -1,0 +1,391 @@
+.class public Lctrip/android/reactnative/views/svg/RenderableViewManager$ImageViewManager;
+.super Lctrip/android/reactnative/views/svg/RenderableViewManager;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lctrip/android/reactnative/views/svg/RenderableViewManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ImageViewManager"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lctrip/android/reactnative/views/svg/RenderableViewManager$SVGClass;->RNSVGImage:Lctrip/android/reactnative/views/svg/RenderableViewManager$SVGClass;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Lctrip/android/reactnative/views/svg/RenderableViewManager;-><init>(Lctrip/android/reactnative/views/svg/RenderableViewManager$SVGClass;Lf/a/y/g/j/u;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic addEventEmitters(Le/j/s/m/C;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    check-cast p2, Lf/a/y/g/j/F;
+
+    invoke-super {p0, p1, p2}, Lctrip/android/reactnative/views/svg/RenderableViewManager;->addEventEmitters(Le/j/s/m/C;Lf/a/y/g/j/F;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic createShadowNodeInstance()Le/j/s/m/u;
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lctrip/android/reactnative/views/svg/RenderableViewManager;->createShadowNodeInstance()Le/j/s/m/f;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic createViewInstance(Le/j/s/m/C;)Landroid/view/View;
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lctrip/android/reactnative/views/svg/RenderableViewManager;->createViewInstance(Le/j/s/m/C;)Lf/a/y/g/j/F;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic onAfterUpdateTransaction(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lf/a/y/g/j/F;
+
+    invoke-super {p0, p1}, Lctrip/android/reactnative/views/svg/RenderableViewManager;->onAfterUpdateTransaction(Lf/a/y/g/j/F;)V
+
+    return-void
+.end method
+
+.method public setAlign(Lf/a/y/g/j/k;Ljava/lang/String;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "align"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x6
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object p2, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setAlign(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public setHeight(Lf/a/y/g/j/k;Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "height"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x4
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object p2, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setHeight(Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+.end method
+
+.method public setMeetOrSlice(Lf/a/y/g/j/k;I)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "meetOrSlice"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x7
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    new-instance v3, Ljava/lang/Integer;
+
+    invoke-direct {v3, p2}, Ljava/lang/Integer;-><init>(I)V
+
+    aput-object v3, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setMeetOrSlice(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setOpacity(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Le/j/s/m/a/a;
+        defaultFloat = 1.0f
+        name = "opacity"
+    .end annotation
+
+    .line 1
+    check-cast p1, Lf/a/y/g/j/F;
+
+    invoke-super {p0, p1, p2}, Lctrip/android/reactnative/views/svg/RenderableViewManager;->setOpacity(Lf/a/y/g/j/F;F)V
+
+    return-void
+.end method
+
+.method public setSrc(Lf/a/y/g/j/k;Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "src"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x5
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object p2, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setSrc(Lcom/facebook/react/bridge/ReadableMap;)V
+
+    return-void
+.end method
+
+.method public setWidth(Lf/a/y/g/j/k;Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "width"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x3
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object p2, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setWidth(Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+.end method
+
+.method public setX(Lf/a/y/g/j/k;Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "x"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    aput-object p2, v2, v1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setX(Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+.end method
+
+.method public setY(Lf/a/y/g/j/k;Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 4
+    .annotation runtime Le/j/s/m/a/a;
+        name = "y"
+    .end annotation
+
+    const-string v0, "904ee4cd422e54731125e4e14faf2a10"
+
+    const/4 v1, 0x2
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v0, v1}, Lcom/hotfix/patchdispatcher/ASMUtils;->getInterface(Ljava/lang/String;I)Lcom/hotfix/patchdispatcher/IChangeDispatcher;
+
+    move-result-object v0
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object p2, v2, p1
+
+    invoke-interface {v0, v1, v2, p0}, Lcom/hotfix/patchdispatcher/IChangeDispatcher;->accessFunc(I[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1, p2}, Lf/a/y/g/j/k;->setY(Lcom/facebook/react/bridge/Dynamic;)V
+
+    return-void
+.end method

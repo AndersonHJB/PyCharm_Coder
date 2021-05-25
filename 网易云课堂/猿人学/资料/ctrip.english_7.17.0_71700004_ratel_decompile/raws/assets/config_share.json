@@ -1,0 +1,166 @@
+{
+  "public": {
+    "ru_RU": [
+      "facebook_moment",
+      "facebook",
+      "vk",
+      "whatsapp",
+      "viber",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy"
+    ],
+    "en_US": [
+      "facebook_moment",
+      "facebook",
+      "whatsapp",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "zh_HK": [
+      "whatsapp",
+      "facebook_moment",
+      "facebook",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "copy",
+      "more"
+    ],
+    "ja_JP": [
+      "facebook",
+      "line",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "ko_KR": [
+      "kakaotalk",
+      "kakaostory",
+      "facebook",
+      "naver",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "en_SG": [
+      "facebook",
+      "whatsapp",
+      "line",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "zh_TW": [
+      "whatsapp",
+      "facebook_moment",
+      "facebook",
+      "line",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy"
+    ],
+    "th_TH": [
+      "facebook",
+      "line",
+      "whatsapp",
+      "wechat",
+      "wechatmoment",
+      "message",
+      "email",
+      "copy"
+    ]
+  },
+  "private": {
+    "th_TH": [
+      "facebook",
+      "line",
+      "wechat",
+      "whatsapp",
+      "message",
+      "email",
+      "copy"
+    ],
+    "ru_RU": [
+      "facebook_moment",
+      "facebook",
+      "wechat",
+      "vk",
+      "whatsapp",
+      "viber",
+      "message",
+      "email",
+      "copy"
+    ],
+    "zh_TW": [
+      "whatsapp",
+      "facebook",
+      "line",
+      "wechat",
+      "message",
+      "email",
+      "copy"
+    ],
+    "en_US": [
+      "facebook_moment",
+      "facebook",
+      "whatsapp",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "zh_HK": [
+      "facebook",
+      "whatsapp",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "ja_JP": [
+      "facebook",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "ko_KR": [
+      "kakaotalk",
+      "facebook",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ],
+    "en_SG": [
+      "facebook",
+      "whatsapp",
+      "wechat",
+      "message",
+      "email",
+      "copy",
+      "more"
+    ]
+  }
+}

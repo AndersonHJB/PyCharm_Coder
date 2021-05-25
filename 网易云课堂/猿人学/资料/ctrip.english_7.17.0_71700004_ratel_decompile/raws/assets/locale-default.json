@@ -1,0 +1,264 @@
+{
+	"isForceFlush": 1,
+	"configSignMD5": "06f224e63cbbed3381111e07d3af9009",
+	"appConfigModel": {
+		"siteList": [{
+			"locale": "en_US",
+			"localeName": "English",
+			"host": "trip.com",
+			"site": "en",
+			"language": "ENGLISH",
+			"flagUrl": "https://pages.english.ctrip.com/flags/english.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 1
+		}, {
+			"locale": "zh_HK",
+			"localeName": "繁體中文",
+			"host": "cn.trip.com",
+			"site": "hk",
+			"language": "TC",
+			"flagUrl": "https://pages.english.ctrip.com/flags/zh-Hant.png",
+			"topCurrency": ["CNY", "USD", "HKD", "TWD"],
+			"rank": 2
+		}, {
+			"locale": "ko_KR",
+			"localeName": "한국어",
+			"host": "ko.trip.com",
+			"site": "kr",
+			"language": "KR",
+			"flagUrl": "https://pages.english.ctrip.com/flags/kr.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 3
+		}, {
+			"locale": "ja_JP",
+			"localeName": "日本語",
+			"host": "jp.trip.com",
+			"site": "jp",
+			"language": "JP",
+			"flagUrl": "https://pages.english.ctrip.com/flags/jp.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 4
+		}, {
+			"locale": "en_SG",
+			"localeName": "English (Singapore)",
+			"host": "sg.trip.com",
+			"site": "sg",
+			"language": "SG",
+			"flagUrl": "https://pages.english.ctrip.com/flags/sg.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 5
+		}, {
+			"locale": "en_AU",
+			"localeName": "English (Australia)",
+			"host": "au.trip.com",
+			"site": "au",
+			"language": "ENGLISH",
+			"flagUrl": "https://pages.english.ctrip.com/flags/au.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 6
+		}, {
+			"locale": "de_DE",
+			"localeName": "Deutsch",
+			"host": "de.trip.com",
+			"site": "de",
+			"language": "DE",
+			"flagUrl": "https://pages.english.ctrip.com/flags/de.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 7
+		}, {
+			"locale": "fr_FR",
+			"localeName": "Français",
+			"host": "fr.trip.com",
+			"site": "fr",
+			"language": "FR",
+			"flagUrl": "https://pages.english.ctrip.com/flags/fr.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 8
+		}, {
+			"locale": "es_ES",
+			"localeName": "Español",
+			"host": "es.trip.com",
+			"site": "es",
+			"language": "ES",
+			"flagUrl": "https://pages.english.ctrip.com/flags/es.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 9
+		}, {
+			"locale": "ru_RU",
+			"localeName": "Pусский",
+			"host": "ru.trip.com",
+			"site": "ru",
+			"language": "RU",
+			"flagUrl": "https://pages.english.ctrip.com/flags/ru.png",
+			"topCurrency": ["CNY", "USD", "HKD"],
+			"rank": 10
+		}, {
+			"locale": "th_TH",
+			"localeName": "ภาษาไทย",
+			"host": "th.trip.com",
+			"site": "th",
+			"language": "",
+			"flagUrl": "https://pages.english.ctrip.com/flags/th.png",
+			"topCurrency": ["THB", "USD", "CNY"],
+			"rank": 11
+		}, {
+			"locale": "id_ID",
+			"localeName": "Bahasa Indonesia",
+			"host": "id.trip.com",
+			"site": "id",
+			"language": "",
+			"flagUrl": "https://pages.english.ctrip.com/flags/id.png",
+			"topCurrency": ["IDR", "USD", "CNY"],
+			"rank": 12
+		}, {
+			"locale": "ms_MY",
+			"localeName": "Bahasa Malaysia",
+			"host": "my.trip.com",
+			"site": "my",
+			"language": "",
+			"flagUrl": "https://pages.english.ctrip.com/flags/my.png",
+			"topCurrency": ["MYR", "USD", "CNY"],
+			"rank": 13
+		}, {
+			"locale": "tl_PH",
+			"localeName": "Tagalog",
+			"host": "ph.trip.com",
+			"site": "ph",
+			"language": "",
+			"flagUrl": "https://pages.english.ctrip.com/flags/ph.png",
+			"topCurrency": ["PHP", "HKD", "USD", "CNY"],
+			"rank": 14
+		}, {
+			"locale": "vi_VN",
+			"localeName": "Tiếng Việt",
+			"host": "vn.trip.com",
+			"site": "vn",
+			"language": "",
+			"flagUrl": "https://pages.english.ctrip.com/flags/vn.png",
+			"topCurrency": ["USD", "CNY"],
+			"rank": 15
+		}, {
+			"locale": "zh_TW",
+			"localeName": "繁體中文",
+			"host": "tw.trip.com",
+			"site": "tw",
+			"language": "",
+			"flagUrl": "",
+			"topCurrency": ["TWD", "CNY", "HKD", "USD"],
+			"rank": 16
+		}],
+		"currencyList": [{
+			"name": "CNY",
+			"sharkKey": "key.currency.china.cny",
+			"symbol": "￥"
+		}, {
+			"name": "USD",
+			"sharkKey": "key.currency.usd",
+			"symbol": "＄"
+		}, {
+			"name": "EUR",
+			"sharkKey": "key.currency.eur",
+			"symbol": "€"
+		}, {
+			"name": "GBP",
+			"sharkKey": "key.currency.gbp",
+			"symbol": "￡"
+		}, {
+			"name": "AUD",
+			"sharkKey": "key.currency.aud",
+			"symbol": "＄"
+		}, {
+			"name": "CAD",
+			"sharkKey": "key.currency.cad",
+			"symbol": "＄"
+		}, {
+			"name": "CHF",
+			"sharkKey": "key.currency.chf",
+			"symbol": "Fr"
+		}, {
+			"name": "HKD",
+			"sharkKey": "key.currency.hk",
+			"symbol": "$"
+		}, {
+			"name": "JPY",
+			"sharkKey": "key.currency.jpy",
+			"symbol": "￥"
+		}, {
+			"name": "KRW",
+			"sharkKey": "key.currency.krw",
+			"symbol": "₩"
+		}, {
+			"name": "MYR",
+			"sharkKey": "key.currency.myr",
+			"symbol": "RM"
+		}, {
+			"name": "NZD",
+			"sharkKey": "key.currency.nzd",
+			"symbol": "＄"
+		}, {
+			"name": "SGD",
+			"sharkKey": "key.currency.sgd",
+			"symbol": "＄"
+		}, {
+			"name": "PHP",
+			"sharkKey": "key.currency.php",
+			"symbol": "₱"
+		}, {
+			"name": "RUB",
+			"sharkKey": "key.currency.rub",
+			"symbol": "руб"
+		}, {
+			"name": "TWD",
+			"sharkKey": "key.currency.twd",
+			"symbol": "$"
+		}, {
+			"name": "THB",
+			"sharkKey": "key.currency.thb",
+			"symbol": "฿"
+		}, {
+			"name": "IDR",
+			"sharkKey": "key.currency.idr",
+			"symbol": "Rp"
+		}, {
+			"name": "INR",
+			"sharkKey": "key.currency.inr",
+			"symbol": "Rs"
+		}, {
+			"name": "PLN",
+			"sharkKey": "key.currency.pln",
+			"symbol": "zł"
+		}, {
+			"name": "BRL",
+			"sharkKey": "key.currency.brl",
+			"symbol": "R$"
+		}, {
+			"name": "TRY",
+			"sharkKey": "key.currency.try",
+			"symbol": "₺"
+		}]
+	},
+	"ResponseStatus": {
+		"Timestamp": "/Date(1517818932504+0800)/",
+		"Ack": "Success",
+		"Errors": [],
+		"Build": null,
+		"Version": null,
+		"Extension": [{
+			"Id": "CLOGGING_TRACE_ID",
+			"Version": null,
+			"ContentType": null,
+			"Value": "5118949767042778149"
+		}, {
+			"Id": "RootMessageId",
+			"Version": null,
+			"ContentType": null,
+			"Value": "921812-0a1c84b2-421616-1732941"
+		}]
+	},
+	"ResponseHead": {
+		"TimeSpan": null,
+		"ErrorMessage": null,
+		"ErrorCode": null,
+		"ShowErrorMsg": null
+	}
+}

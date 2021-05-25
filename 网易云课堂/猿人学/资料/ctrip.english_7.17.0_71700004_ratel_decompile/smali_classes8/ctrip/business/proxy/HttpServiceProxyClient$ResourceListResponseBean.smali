@@ -1,0 +1,43 @@
+.class public Lctrip/business/proxy/HttpServiceProxyClient$ResourceListResponseBean;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lctrip/business/proxy/HttpServiceProxyClient;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "ResourceListResponseBean"
+.end annotation
+
+
+# instance fields
+.field public message:Ljava/lang/String;
+
+.field public result:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lctrip/business/proxy/HttpServiceProxyClient$ResourceResponseData;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public resultCode:I
+
+.field public succeed:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,995 @@
+.class public Lgnu/trove/TByteLongHashMap;
+.super Lgnu/trove/TByteHash;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lgnu/trove/TByteLongHashMap$a;,
+        Lgnu/trove/TByteLongHashMap$b;
+    }
+.end annotation
+
+
+# instance fields
+.field public transient _values:[J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lgnu/trove/TByteHash;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lgnu/trove/TByteHash;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IF)V
+    .locals 0
+
+    .line 3
+    invoke-direct {p0, p1, p2}, Lgnu/trove/TByteHash;-><init>(IF)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IFLgnu/trove/TByteHashingStrategy;)V
+    .locals 0
+
+    .line 6
+    invoke-direct {p0, p1, p2, p3}, Lgnu/trove/TByteHash;-><init>(IFLgnu/trove/TByteHashingStrategy;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(ILgnu/trove/TByteHashingStrategy;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0, p1, p2}, Lgnu/trove/TByteHash;-><init>(ILgnu/trove/TByteHashingStrategy;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lgnu/trove/TByteHashingStrategy;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0, p1}, Lgnu/trove/TByteHash;-><init>(Lgnu/trove/TByteHashingStrategy;)V
+
+    return-void
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/ClassNotFoundException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
+
+    .line 2
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
+
+    move-result v0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lgnu/trove/TByteLongHashMap;->setUp(I)I
+
+    :goto_0
+    add-int/lit8 v1, v0, -0x1
+
+    if-lez v0, :cond_0
+
+    .line 4
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readByte()B
+
+    move-result v0
+
+    .line 5
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readLong()J
+
+    move-result-wide v2
+
+    .line 6
+    invoke-virtual {p0, v0, v2, v3}, Lgnu/trove/TByteLongHashMap;->put(BJ)J
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method private writeObject(Ljava/io/ObjectOutputStream;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+
+    .line 2
+    iget v0, p0, Lg/a/Aa;->_size:I
+
+    invoke-static {p1, v0, p1}, Le/c/b/a/a;->a(Ljava/io/ObjectOutputStream;ILjava/io/ObjectOutputStream;)Lg/a/e;
+
+    move-result-object p1
+
+    .line 3
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteLongHashMap;->forEachEntry(Lg/a/y;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    iget-object p1, p1, Lg/a/e;->b:Ljava/io/IOException;
+
+    throw p1
+.end method
+
+
+# virtual methods
+.method public adjustValue(BJ)Z
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->index(B)I
+
+    move-result p1
+
+    if-gez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aget-wide v1, v0, p1
+
+    add-long/2addr v1, p2
+
+    aput-wide v1, v0, p1
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public clear()V
+    .locals 7
+
+    .line 1
+    invoke-super {p0}, Lg/a/Aa;->clear()V
+
+    .line 2
+    iget-object v0, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 3
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    if-nez v1, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    iget-object v2, p0, Lg/a/Ub;->_states:[B
+
+    .line 5
+    array-length v3, v0
+
+    :goto_0
+    add-int/lit8 v4, v3, -0x1
+
+    if-lez v3, :cond_1
+
+    const/4 v3, 0x0
+
+    .line 6
+    aput-byte v3, v0, v4
+
+    const-wide/16 v5, 0x0
+
+    .line 7
+    aput-wide v5, v1, v4
+
+    .line 8
+    aput-byte v3, v2, v4
+
+    move v3, v4
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+.end method
+
+.method public clone()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Lgnu/trove/TByteHash;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lgnu/trove/TByteLongHashMap;
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v1}, [J->clone()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, [J
+
+    :goto_0
+    iput-object v1, v0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    return-object v0
+.end method
+
+.method public containsKey(B)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->contains(B)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public containsValue(J)Z
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    array-length v2, v0
+
+    :goto_0
+    add-int/lit8 v3, v2, -0x1
+
+    if-lez v2, :cond_1
+
+    .line 4
+    aget-byte v2, v0, v3
+
+    const/4 v4, 0x1
+
+    if-ne v2, v4, :cond_0
+
+    aget-wide v5, v1, v3
+
+    cmp-long v2, p1, v5
+
+    if-nez v2, :cond_0
+
+    return v4
+
+    :cond_0
+    move v2, v3
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    instance-of v0, p1, Lgnu/trove/TByteLongHashMap;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 2
+    :cond_0
+    check-cast p1, Lgnu/trove/TByteLongHashMap;
+
+    .line 3
+    invoke-virtual {p1}, Lg/a/Aa;->size()I
+
+    move-result v0
+
+    invoke-virtual {p0}, Lg/a/Aa;->size()I
+
+    move-result v2
+
+    if-eq v0, v2, :cond_1
+
+    return v1
+
+    .line 4
+    :cond_1
+    new-instance v0, Lgnu/trove/TByteLongHashMap$a;
+
+    invoke-direct {v0, p1}, Lgnu/trove/TByteLongHashMap$a;-><init>(Lgnu/trove/TByteLongHashMap;)V
+
+    invoke-virtual {p0, v0}, Lgnu/trove/TByteLongHashMap;->forEachEntry(Lg/a/y;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public forEachEntry(Lg/a/y;)Z
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 3
+    iget-object v2, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    const/4 v3, 0x1
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    array-length v4, v0
+
+    :goto_0
+    add-int/lit8 v5, v4, -0x1
+
+    if-lez v4, :cond_1
+
+    .line 5
+    aget-byte v4, v0, v5
+
+    if-ne v4, v3, :cond_0
+
+    aget-byte v4, v1, v5
+
+    aget-wide v6, v2, v5
+
+    invoke-interface {p1, v4, v6, v7}, Lg/a/y;->a(BJ)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    move v4, v5
+
+    goto :goto_0
+
+    :cond_1
+    return v3
+.end method
+
+.method public forEachKey(Lg/a/C;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->forEach(Lg/a/C;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public forEachValue(Lg/a/Ab;)Z
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    array-length v3, v0
+
+    :goto_0
+    add-int/lit8 v4, v3, -0x1
+
+    if-lez v3, :cond_1
+
+    .line 4
+    aget-byte v3, v0, v4
+
+    if-ne v3, v2, :cond_0
+
+    aget-wide v5, v1, v4
+
+    invoke-interface {p1, v5, v6}, Lg/a/Ab;->a(J)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    move v3, v4
+
+    goto :goto_0
+
+    :cond_1
+    return v2
+.end method
+
+.method public get(B)J
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->index(B)I
+
+    move-result p1
+
+    if-gez p1, :cond_0
+
+    const-wide/16 v0, 0x0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aget-wide v1, v0, p1
+
+    move-wide v0, v1
+
+    :goto_0
+    return-wide v0
+.end method
+
+.method public getValues()[J
+    .locals 8
+
+    .line 1
+    invoke-virtual {p0}, Lg/a/Aa;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [J
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    .line 3
+    iget-object v2, p0, Lg/a/Ub;->_states:[B
+
+    if-eqz v2, :cond_1
+
+    .line 4
+    array-length v3, v2
+
+    const/4 v4, 0x0
+
+    :goto_0
+    add-int/lit8 v5, v3, -0x1
+
+    if-lez v3, :cond_1
+
+    .line 5
+    aget-byte v3, v2, v5
+
+    const/4 v6, 0x1
+
+    if-ne v3, v6, :cond_0
+
+    add-int/lit8 v3, v4, 0x1
+
+    .line 6
+    aget-wide v6, v1, v5
+
+    aput-wide v6, v0, v4
+
+    move v4, v3
+
+    :cond_0
+    move v3, v5
+
+    goto :goto_0
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 1
+    new-instance v0, Lgnu/trove/TByteLongHashMap$b;
+
+    invoke-direct {v0, p0}, Lgnu/trove/TByteLongHashMap$b;-><init>(Lgnu/trove/TByteLongHashMap;)V
+
+    .line 2
+    invoke-virtual {p0, v0}, Lgnu/trove/TByteLongHashMap;->forEachEntry(Lg/a/y;)Z
+
+    .line 3
+    iget v0, v0, Lgnu/trove/TByteLongHashMap$b;->a:I
+
+    return v0
+.end method
+
+.method public increment(B)Z
+    .locals 2
+
+    const-wide/16 v0, 0x1
+
+    .line 1
+    invoke-virtual {p0, p1, v0, v1}, Lgnu/trove/TByteLongHashMap;->adjustValue(BJ)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public iterator()Lg/a/x;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lg/a/x;
+
+    invoke-direct {v0, p0}, Lg/a/x;-><init>(Lgnu/trove/TByteLongHashMap;)V
+
+    return-object v0
+.end method
+
+.method public keys()[B
+    .locals 7
+
+    .line 1
+    invoke-virtual {p0}, Lg/a/Aa;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 3
+    iget-object v2, p0, Lg/a/Ub;->_states:[B
+
+    if-eqz v2, :cond_1
+
+    .line 4
+    array-length v3, v2
+
+    const/4 v4, 0x0
+
+    :goto_0
+    add-int/lit8 v5, v3, -0x1
+
+    if-lez v3, :cond_1
+
+    .line 5
+    aget-byte v3, v2, v5
+
+    const/4 v6, 0x1
+
+    if-ne v3, v6, :cond_0
+
+    add-int/lit8 v3, v4, 0x1
+
+    .line 6
+    aget-byte v6, v1, v5
+
+    aput-byte v6, v0, v4
+
+    move v4, v3
+
+    :cond_0
+    move v3, v5
+
+    goto :goto_0
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public put(BJ)J
+    .locals 9
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->insertionIndex(B)I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-gez v0, :cond_0
+
+    neg-int v0, v0
+
+    sub-int/2addr v0, v2
+
+    .line 2
+    iget-object v3, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aget-wide v4, v3, v0
+
+    const/4 v3, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v4, 0x0
+
+    const/4 v3, 0x1
+
+    .line 3
+    :goto_0
+    iget-object v6, p0, Lg/a/Ub;->_states:[B
+
+    aget-byte v7, v6, v0
+
+    .line 4
+    iget-object v8, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    aput-byte p1, v8, v0
+
+    .line 5
+    aput-byte v2, v6, v0
+
+    .line 6
+    iget-object p1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aput-wide p2, p1, v0
+
+    if-eqz v3, :cond_2
+
+    if-nez v7, :cond_1
+
+    const/4 v1, 0x1
+
+    .line 7
+    :cond_1
+    invoke-virtual {p0, v1}, Lg/a/Aa;->postInsertHook(Z)V
+
+    :cond_2
+    return-wide v4
+.end method
+
+.method public rehash(I)V
+    .locals 8
+
+    .line 1
+    invoke-virtual {p0}, Lg/a/Ub;->capacity()I
+
+    move-result v0
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 3
+    iget-object v2, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    .line 4
+    iget-object v3, p0, Lg/a/Ub;->_states:[B
+
+    .line 5
+    new-array v4, p1, [B
+
+    iput-object v4, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 6
+    new-array v4, p1, [J
+
+    iput-object v4, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    .line 7
+    new-array p1, p1, [B
+
+    iput-object p1, p0, Lg/a/Ub;->_states:[B
+
+    :goto_0
+    add-int/lit8 p1, v0, -0x1
+
+    if-lez v0, :cond_1
+
+    .line 8
+    aget-byte v0, v3, p1
+
+    const/4 v4, 0x1
+
+    if-ne v0, v4, :cond_0
+
+    .line 9
+    aget-byte v0, v1, p1
+
+    .line 10
+    invoke-virtual {p0, v0}, Lgnu/trove/TByteHash;->insertionIndex(B)I
+
+    move-result v5
+
+    .line 11
+    iget-object v6, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    aput-byte v0, v6, v5
+
+    .line 12
+    iget-object v0, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aget-wide v6, v2, p1
+
+    aput-wide v6, v0, v5
+
+    .line 13
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    aput-byte v4, v0, v5
+
+    :cond_0
+    move v0, p1
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+.end method
+
+.method public remove(B)J
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteHash;->index(B)I
+
+    move-result p1
+
+    if-ltz p1, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    aget-wide v1, v0, p1
+
+    .line 3
+    invoke-virtual {p0, p1}, Lgnu/trove/TByteLongHashMap;->removeAt(I)V
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v1, 0x0
+
+    :goto_0
+    return-wide v1
+.end method
+
+.method public removeAt(I)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    const-wide/16 v1, 0x0
+
+    aput-wide v1, v0, p1
+
+    .line 2
+    invoke-super {p0, p1}, Lgnu/trove/TByteHash;->removeAt(I)V
+
+    return-void
+.end method
+
+.method public retainEntries(Lg/a/y;)Z
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteHash;->_set:[B
+
+    .line 3
+    iget-object v2, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    array-length v4, v0
+
+    const/4 v5, 0x1
+
+    :goto_0
+    add-int/lit8 v6, v4, -0x1
+
+    if-lez v4, :cond_1
+
+    .line 5
+    aget-byte v4, v0, v6
+
+    if-ne v4, v5, :cond_0
+
+    aget-byte v4, v1, v6
+
+    aget-wide v7, v2, v6
+
+    invoke-interface {p1, v4, v7, v8}, Lg/a/y;->a(BJ)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    .line 6
+    invoke-virtual {p0, v6}, Lgnu/trove/TByteLongHashMap;->removeAt(I)V
+
+    move v4, v6
+
+    const/4 v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move v4, v6
+
+    goto :goto_0
+
+    :cond_1
+    return v3
+.end method
+
+.method public setUp(I)I
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lgnu/trove/TByteHash;->setUp(I)I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne p1, v1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    new-array p1, v0, [J
+
+    :goto_0
+    iput-object p1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2
+    new-instance v1, Lg/a/w;
+
+    invoke-direct {v1, p0, v0}, Lg/a/w;-><init>(Lgnu/trove/TByteLongHashMap;Ljava/lang/StringBuilder;)V
+
+    invoke-virtual {p0, v1}, Lgnu/trove/TByteLongHashMap;->forEachEntry(Lg/a/y;)Z
+
+    const/16 v1, 0x7d
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x7b
+
+    .line 4
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->insert(IC)Ljava/lang/StringBuilder;
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public transformValues(Lg/a/nb;)V
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lg/a/Ub;->_states:[B
+
+    .line 2
+    iget-object v1, p0, Lgnu/trove/TByteLongHashMap;->_values:[J
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    array-length v2, v0
+
+    :goto_0
+    add-int/lit8 v3, v2, -0x1
+
+    if-lez v2, :cond_1
+
+    .line 4
+    aget-byte v2, v0, v3
+
+    const/4 v4, 0x1
+
+    if-ne v2, v4, :cond_0
+
+    .line 5
+    aget-wide v4, v1, v3
+
+    invoke-interface {p1, v4, v5}, Lg/a/nb;->a(J)J
+
+    move-result-wide v4
+
+    aput-wide v4, v1, v3
+
+    :cond_0
+    move v2, v3
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+.end method

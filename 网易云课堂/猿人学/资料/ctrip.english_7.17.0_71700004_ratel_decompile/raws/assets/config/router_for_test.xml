@@ -1,0 +1,18 @@
+<Routers>
+    <ModuleRouterList>
+        <ModuleRouter class="com.ctrip.ibu.framework.router.test.HotelModuleRouterTest"
+                      module="hotel">
+            <Page name="hotelDetail"
+                  class="com.ctrip.ibu.framework.router.test.HotelDetailActivity"/>
+        </ModuleRouter>
+
+        <ModuleRouter class="com.ctrip.ibu.framework.router.test.FlightModuleRouterTest"
+                      module="flight"/>
+
+        <ModuleRouter class="com.ctrip.ibu.train.base.router.TrainModuleRouter" module="train"/>
+    </ModuleRouterList>
+    <UrlRouterList>
+        <UrlRouter class="com.ctrip.ibu.framework.router.test.FlightUrlRouterTest" module="flight"/>
+        <UrlRouter class="com.ctrip.ibu.framework.router.test.HotelUrlRouter" module="flight"/>
+    </UrlRouterList>
+</Routers>
