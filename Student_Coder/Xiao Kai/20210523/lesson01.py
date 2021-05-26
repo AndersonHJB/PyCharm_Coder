@@ -5,14 +5,13 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-x = 1
-x = x + 10
-print(x)
-# 代码美化：option + command + L
-name1 = "lilei"
-name2 = name1
-print(name2)
+str1 = "0123456789"
+print(str1[0:9:2])
+# 程序：user input ：不管多长的字符串，我只要提取偶数位。
+# 引导式教学
+# 1. 长度未知
+# 2. 步长 2
+# 1
 
-name1 = 'lilei'
-name1 = "hanmeimei"
-print(name1)
+print(str1[0:len(str1):2])
+print(str1[::-1])

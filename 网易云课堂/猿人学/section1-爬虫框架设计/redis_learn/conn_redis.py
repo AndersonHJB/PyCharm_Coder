@@ -11,7 +11,7 @@ from redis import StrictRedis, Redis
 redis = Redis(host='localhost', port=6379, db=0, decode_responses=True, encoding="gbk")
 # redis = StrictRedis(host='localhost', port=6379, db=0, password='foobared') # 有密码的话，代码示例
 redis.set('name12', 'aiyuechuang11')
-print(redis.exists("name3"))
+print(redis.acl_list())
 
 # print(dir(Redis))
 # print(Redis.__dir__())

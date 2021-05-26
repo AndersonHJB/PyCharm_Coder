@@ -13,14 +13,15 @@ from UrlDB import UrlDB
 
 
 class UrlPool:
-    '''URL Pool for crawler to manage URLs
+    '''
+    URL Pool for crawler to manage URLs
     '''
 
     def __init__(self, pool_name):
         self.name = pool_name
         self.db = UrlDB(pool_name)
 
-        self.waiting = {}  # {host: set([urls]), } 按host分组，记录等待下载的URL
+        self.waiting = {}  # {host: set([urls]), } 按 host 分组，记录等待下载的 URL
         self.pending = {}  # {url: pended_time, } 记录已被取出（self.pop()）但还未被更新状态（正在下载）的URL
         self.failure = {}  # {url: times,} 记录失败的URL的次数
         self.failure_threshold = 3
