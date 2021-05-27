@@ -17,7 +17,6 @@ Cities = [
     (2, "深圳"),
 ]
 
-
 # 每个字段都可以设置默认值，使用 default 就好。文本的值你也可以设置成默认的文本
 class Job(models.Model):
     job_type = models.SmallIntegerField(blank=False, choices=JobTypes, verbose_name="职位类别")
