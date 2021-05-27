@@ -1,0 +1,141 @@
+/*
+Theme Name: Winter Solstice
+Theme URI: https://sumowp.com/twenty-seventeen-child-theme
+Author: sumowp.com
+Author URI: https://sumowp.com
+Description: Winter Solstice is a holiday season child theme using the parent theme Twenty Seventeen. This responsive WordPress child theme inherits all Twenty Seventeen theme features and functionalities, including multiple sections on the front page, widgets, social menus, custom-header, logo upload, custom color, WooCommerce compatible, and more. This Twenty Seventeen child theme can be used on e-commerce sites. Should most likely integrate with WooCommerce, the most popular WordPress e-commerce plugin.
+Version: 1.1.1
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: holiday, one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce, blog, photography
+Text Domain: winter-solstice
+
+Template: twentyseventeen
+
+(C) 2017-2018 sumowp.com
+
+*/
+
+.site-branding {
+	text-align: center;
+}
+
+.site-title {
+    text-transform: none;
+	font-size: 28px;
+	font-size: 1.8rem;
+}
+
+
+.site-title {
+    
+}
+
+.navigation-top > .wrap {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+	padding-right: 30px;
+}
+
+.title-area, .main-navigation {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+body .site-title, body.has-header-image .site-title, body.has-header-video .site-title, 
+body .site-title a, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	display: inline-block;
+    color: #444;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.site-description, body.has-header-image .site-description, body.has-header-video .site-description {
+	opacity: 1;
+	font-weight: 700;
+    text-shadow: 0 0 6px #000;
+}
+
+.site-branding h1,
+.site-branding h2,
+.site-branding h3,
+.site-branding p {
+	color: #fff;
+	opacity: 1;
+    text-shadow: 0 0 6px #000;
+}
+
+#top-menu {
+	text-align: right;
+}
+
+#top-menu ul {
+	text-align: left;
+}
+
+.menu-toggle .icon {
+    margin-right: 0;
+    height: 1.4em;
+    width: 1.4em;
+}
+
+.site-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.site-info p {
+	margin: 0;
+}
+
+@media screen and ( max-width: 767px) {
+
+	#top-menu {
+	    position: absolute;
+	    z-index: 33;
+	    width: 100%;
+	    left: 0;
+	    text-align: left;
+	}
+
+	.main-navigation {
+		text-align: right;
+	}
+
+	.js .menu-toggle {
+	    display: inline-block;
+	}
+
+	.menu-toggle {
+		padding: 1em 0;
+		margin: 2px 0 2px;
+	}
+
+	.menu-toggle:focus {
+	    outline: none;
+	}
+}
+
+@media screen and ( min-width: 30em) {
+
+	.site-branding {
+	    padding: 6em 0;
+	}	
+
+}
+
+@media screen and ( min-width: 48em) {
+	.site-description {
+	    font-size: 32px;
+	}
+	.copyright {
+		float: left;
+	}
+
+	.credit {
+		float: right;
+	}
+}
