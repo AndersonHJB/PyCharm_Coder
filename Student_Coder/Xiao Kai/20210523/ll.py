@@ -5,20 +5,28 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-import json
+import pickle
 
-class Student(object):
-    def __init__(self, name, age, score):
-        self.name = name
-        self.age = age
-        self.score = score
+D = {
+	'name': 'bob',
+	'major': {
+		'english',
+		'math'
+	},
+	'd': [1, 2, 3, 4, 5, 6, 7]
+}
 
-s = Student('Bob', 20, 88)
+with open('D.pik', 'wb') as f:
+	pickle.dump(D, f)
 
-def student2dict(std):
-    return {
-        'name': std.name,
-        'age': std.age,
-        'score': std.score
-    }
-print(json.dumps(s, default=student2dict))
+with open('D.pik', 'rb') as f:
+	D = pickle.load(f)
+	# print(type(D))
+	# print(D)
+	
+pik = pickle.dumps(D)
+print(pik)
+
+D = pickle.loads(pik)
+print(type(D))
+print(D)
