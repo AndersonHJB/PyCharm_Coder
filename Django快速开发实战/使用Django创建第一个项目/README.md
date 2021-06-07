@@ -258,6 +258,8 @@ Quit the server with CONTROL-C.
 
 # 3. 产品体验优化：快速迭代完善应用
 
+## 3.1 添加默认值
+
 我们先把上门的尾巴先解决掉，添加默认值。「用户、日期」
 
 ![image-20210516121840790](README.assets/image-20210516121840790.png)
@@ -305,6 +307,10 @@ class Job(models.Model):
 
 ![](README.assets/image-20210522235055370.png)
 
+
+
+## 3.2 修改管理界面的显示
+
 默认生成了。接下来我们需要优化如下页面：
 
 ![](README.assets/image-20210516122131800.png)
@@ -337,6 +343,10 @@ admin.site.register(Job, JobAdmin)
 效果：
 
 ![image-20210516152117792](README.assets/image-20210516152117792.png)
+
+
+
+## 3.3 隐藏内容
 
 我们希望把下面的部分进行隐藏：
 
@@ -371,6 +381,8 @@ exclude = ('creator', 'created_date', 'modified_date')  # 隐藏不想显示的
 
 
 
+
+## 3.4 再次添加一个新职位
 
 接下来，我们可以再添加一个职位：
 
