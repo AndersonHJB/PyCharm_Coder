@@ -1,5 +1,9 @@
 # 1. 使用 Django 创建第一个项目
 
+框架的目标是要学会**要用**，这是最重要的！之后才是考虑进阶。
+
+
+
 ## 1.1 创建会议室管理项目，项目名为 meetingroom
 
 ```python
@@ -137,7 +141,7 @@ python manage.py startapp jobs
 
 ![](README.assets/image-20210426171837607.png)
 
-接下来，在 app jobs 中的 `models.py` 里面，定义我们的职位模型。
+接下来，在 app jobs 中的 `models.py` 里面，定义我们的职位模型。官方的文档：[https://docs.djangoproject.com/zh-hans/3.2/ref/models/fields/](https://docs.djangoproject.com/zh-hans/3.2/ref/models/fields/)
 
 ```python
 from django.db import models
@@ -193,6 +197,8 @@ Quit the server with CONTROL-C.
 我们发现并没有我们的 Job，那是我们还没有在 jobs 里面的 `admin.py` 后台注册。
 
 ![](README.assets/image-20210515143832853.png)
+
+**补充：** [Django 管理站点](https://docs.djangoproject.com/zh-hans/3.2/ref/contrib/admin/)：https://docs.djangoproject.com/zh-hans/3.2/ref/contrib/admin/
 
 这回我们看后台：
 
