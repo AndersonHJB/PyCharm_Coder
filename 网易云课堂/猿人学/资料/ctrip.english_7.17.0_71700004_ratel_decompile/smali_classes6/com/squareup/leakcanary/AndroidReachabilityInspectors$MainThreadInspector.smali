@@ -1,0 +1,76 @@
+.class public Lcom/squareup/leakcanary/AndroidReachabilityInspectors$MainThreadInspector;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/squareup/leakcanary/Reachability$Inspector;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/squareup/leakcanary/AndroidReachabilityInspectors;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "MainThreadInspector"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public expectedReachability(Lcom/squareup/leakcanary/LeakTraceElement;)Lcom/squareup/leakcanary/Reachability;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/lang/Thread;
+
+    invoke-virtual {p1, v0}, Lcom/squareup/leakcanary/LeakTraceElement;->isInstanceOf(Ljava/lang/Class;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    sget-object p1, Lcom/squareup/leakcanary/Reachability;->UNKNOWN:Lcom/squareup/leakcanary/Reachability;
+
+    return-object p1
+
+    :cond_0
+    const-string v0, "name"
+
+    .line 3
+    invoke-virtual {p1, v0}, Lcom/squareup/leakcanary/LeakTraceElement;->getFieldReferenceValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "main"
+
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    sget-object p1, Lcom/squareup/leakcanary/Reachability;->REACHABLE:Lcom/squareup/leakcanary/Reachability;
+
+    return-object p1
+
+    .line 6
+    :cond_1
+    sget-object p1, Lcom/squareup/leakcanary/Reachability;->UNKNOWN:Lcom/squareup/leakcanary/Reachability;
+
+    return-object p1
+.end method
