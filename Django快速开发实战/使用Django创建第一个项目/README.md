@@ -403,6 +403,42 @@ exclude = ('creator', 'created_date', 'modified_date')  # 隐藏不想显示的
 
 ![image-20210607215146586](README.assets/image-20210607215146586.png)
 
+本节代码：[https://github.com/AndersonHJB/Django_Leraning/tree/main/03-产品体验优化：快速迭代完善应用](https://github.com/AndersonHJB/Django_Leraning/tree/main/03-产品体验优化：快速迭代完善应用)
+
+
+
+# 4. 添加自定义页面：让匿名用户可以浏览职位列表页
+
+接下来，我们为我们的匿名用户（候选人）添加两个页面。使之可以浏览我们的职位列表，和看到每个职位详情。
+
+![image-20210608101930678](README.assets/image-20210608101930678.png)
+
+- 列表页是独立页面，使用自定义的页面
+- 添加如下页面
+    - 职位列表页
+    - 职位详情页
+- 匿名用户可以访问
+
+
+
+## 4.1 Django 的自定义模板
+
+- Django 模板包含了输出的 HTML 页面的静态部分的内容
+- 模板里面的动态内容在运行时被替换
+- 在 views 里面指定每个 URL 使用哪个模板来渲染页面
+- 模版继承与块(Template Inheritance & Block)
+    - 模板继承允许定义一个骨架模板，骨架包含站点上的公共元素(如头部导航，尾部链接)
+    - 骨架模板里面可以定义 Block 块，每一个 Block 块都可以在继承的页面上重新定义/覆盖
+    - 一个页面可以继承自另一个页面
+
+
+
+
+
+
+
+
+
 
 
 
