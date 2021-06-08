@@ -1,0 +1,36 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.0.RELEASE'
+    id 'java'
+}
+
+//apply plugin: 'io.spring.dependency-management'
+
+group = 'com.virjar'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.7'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    implementation 'io.netty:netty-codec:4.0.44.Final'
+//    implementation 'io.netty:netty-handler:4.0.44.Final'
+//    implementation 'io.netty:netty-transport-udt:4.0.44.Final'
+
+    implementation 'org.springframework.boot:spring-boot-starter:2.0.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest:2.0.0.RELEASE'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    implementation 'com.google.guava:guava:23.0'
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'commons-io:commons-io:2.6'
+    // https://mvnrepository.com/artifact/commons-codec/commons-codec
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'
+// https://mvnrepository.com/artifact/joda-time/joda-time
+    compile group: 'joda-time', name: 'joda-time', version: '2.10.6'
+
+    compile 'com.alibaba:fastjson:1.2.10'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+}

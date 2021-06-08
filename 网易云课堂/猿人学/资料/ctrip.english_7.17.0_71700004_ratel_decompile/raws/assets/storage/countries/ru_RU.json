@@ -1,0 +1,1719 @@
+{
+    "nationalities": [
+        {
+            "headletter": "А", 
+            "ename": "Andorra", 
+            "code": "AD", 
+            "cname": "Андорра", 
+            "callingCode": "376"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "United Arab Emirates", 
+            "code": "AE", 
+            "cname": "Объединенные Арабские Эмираты", 
+            "callingCode": "971"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Afghanistan", 
+            "code": "AF", 
+            "cname": "Афганистан", 
+            "callingCode": "93"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Antigua and Barbuda", 
+            "code": "AG", 
+            "cname": "Антигуа и Барбуда", 
+            "callingCode": "1268"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Anguilla", 
+            "code": "AI", 
+            "cname": "Ангилья", 
+            "callingCode": "1264"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Albania", 
+            "code": "AL", 
+            "cname": "Албания", 
+            "callingCode": "355"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Armenia", 
+            "code": "AM", 
+            "cname": "Армения", 
+            "callingCode": "374"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Angola", 
+            "code": "AO", 
+            "cname": "Ангола", 
+            "callingCode": "244"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Antarctica", 
+            "code": "AQ", 
+            "cname": "Антарктида", 
+            "callingCode": "672"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Argentina", 
+            "code": "AR", 
+            "cname": "Аргентина", 
+            "callingCode": "54"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "American Samoa", 
+            "code": "AS", 
+            "cname": "Американское Самоа", 
+            "callingCode": "1684"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Austria", 
+            "code": "AT", 
+            "cname": "Австрия", 
+            "callingCode": "43"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Australia", 
+            "code": "AU", 
+            "cname": "Австралия", 
+            "callingCode": "61"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Aruba", 
+            "code": "AW", 
+            "cname": "Аруба", 
+            "callingCode": "297"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Azerbaijan", 
+            "code": "AZ", 
+            "cname": "Азербайджан", 
+            "callingCode": "994"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bosnia and Herzegovina", 
+            "code": "BA", 
+            "cname": "Босния и Герцеговина", 
+            "callingCode": "387"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Barbados", 
+            "code": "BB", 
+            "cname": "Барбадос", 
+            "callingCode": "1246"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bangladesh", 
+            "code": "BD", 
+            "cname": "Бангладеш", 
+            "callingCode": "880"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Belgium", 
+            "code": "BE", 
+            "cname": "Бельгия", 
+            "callingCode": "32"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Burkina Faso", 
+            "code": "BF", 
+            "cname": "Буркина-Фасо", 
+            "callingCode": "226"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bulgaria", 
+            "code": "BG", 
+            "cname": "Болгария", 
+            "callingCode": "359"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bahrain", 
+            "code": "BH", 
+            "cname": "Бахрейн", 
+            "callingCode": "973"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Burundi", 
+            "code": "BI", 
+            "cname": "Бурунди", 
+            "callingCode": "257"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Benin", 
+            "code": "BJ", 
+            "cname": "Бенин", 
+            "callingCode": "229"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Barthélemy", 
+            "code": "BL", 
+            "cname": "Сен-Бартелеми", 
+            "callingCode": "590"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bermuda", 
+            "code": "BM", 
+            "cname": "Бермудские острова", 
+            "callingCode": "1441"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Brunei", 
+            "code": "BN", 
+            "cname": "Бруней", 
+            "callingCode": "673"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bolivia", 
+            "code": "BO", 
+            "cname": "Боливия", 
+            "callingCode": "591"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Caribbean Netherlands", 
+            "code": "BQ", 
+            "cname": "Карибские Нидерланды", 
+            "callingCode": "599"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Brazil", 
+            "code": "BR", 
+            "cname": "Бразилия", 
+            "callingCode": "55"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bahamas", 
+            "code": "BS", 
+            "cname": "Багамские Острова", 
+            "callingCode": "1242"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Bhutan", 
+            "code": "BT", 
+            "cname": "Бутан", 
+            "callingCode": "975"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Bouvet Island", 
+            "code": "BV", 
+            "cname": "Остров Буве", 
+            "callingCode": "47"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Botswana", 
+            "code": "BW", 
+            "cname": "Ботсвана", 
+            "callingCode": "267"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Belarus", 
+            "code": "BY", 
+            "cname": "Беларусь", 
+            "callingCode": "375"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "Belize", 
+            "code": "BZ", 
+            "cname": "Белиз", 
+            "callingCode": "501"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Canada", 
+            "code": "CA", 
+            "cname": "Канада", 
+            "callingCode": "1"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cocos (Keeling) Islands", 
+            "code": "CC", 
+            "cname": "Кокосовые (Килинг) острова", 
+            "callingCode": "61"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Congo (Democratic Republic of the)", 
+            "code": "CD", 
+            "cname": "Конго, Демократическая республика", 
+            "callingCode": "243"
+        }, 
+        {
+            "headletter": "Ц", 
+            "ename": "Central African Republic", 
+            "code": "CF", 
+            "cname": "Центральноафриканская Республика", 
+            "callingCode": "236"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Congo (Republic of the)", 
+            "code": "CG", 
+            "cname": "Конго, Республика", 
+            "callingCode": "242"
+        }, 
+        {
+            "headletter": "Ш", 
+            "ename": "Switzerland", 
+            "code": "CH", 
+            "cname": "Швейцария", 
+            "callingCode": "41"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Côte d'Ivoire", 
+            "code": "CI", 
+            "cname": "Кот-д'Ивуар", 
+            "callingCode": "225"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Cook Islands", 
+            "code": "CK", 
+            "cname": "Острова Кука", 
+            "callingCode": "682"
+        }, 
+        {
+            "headletter": "Ч", 
+            "ename": "Chile", 
+            "code": "CL", 
+            "cname": "Чили", 
+            "callingCode": "56"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cameroon", 
+            "code": "CM", 
+            "cname": "Камерун", 
+            "callingCode": "237"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "China", 
+            "code": "CN", 
+            "cname": "Китай", 
+            "callingCode": "86"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Colombia", 
+            "code": "CO", 
+            "cname": "Колумбия", 
+            "callingCode": "57"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Costa Rica", 
+            "code": "CR", 
+            "cname": "Коста-Рика", 
+            "callingCode": "506"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cuba", 
+            "code": "CU", 
+            "cname": "Куба", 
+            "callingCode": "53"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cape Verde", 
+            "code": "CV", 
+            "cname": "Кабо-Верде", 
+            "callingCode": "238"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Curaçao", 
+            "code": "CW", 
+            "cname": "Кюрасао", 
+            "callingCode": "599"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Christmas Island", 
+            "code": "CX", 
+            "cname": "Остров Рождества", 
+            "callingCode": "61"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cyprus", 
+            "code": "CY", 
+            "cname": "Кипр", 
+            "callingCode": "357"
+        }, 
+        {
+            "headletter": "Ч", 
+            "ename": "Czech Republic", 
+            "code": "CZ", 
+            "cname": "Чехия", 
+            "callingCode": "420"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Germany", 
+            "code": "DE", 
+            "cname": "Германия", 
+            "callingCode": "49"
+        }, 
+        {
+            "headletter": "Д", 
+            "ename": "Djibouti", 
+            "code": "DJ", 
+            "cname": "Джибути", 
+            "callingCode": "253"
+        }, 
+        {
+            "headletter": "Д", 
+            "ename": "Denmark", 
+            "code": "DK", 
+            "cname": "Дания", 
+            "callingCode": "45"
+        }, 
+        {
+            "headletter": "Д", 
+            "ename": "Dominica", 
+            "code": "DM", 
+            "cname": "Доминика", 
+            "callingCode": "1767"
+        }, 
+        {
+            "headletter": "Д", 
+            "ename": "Dominican Republic", 
+            "code": "DO", 
+            "cname": "Доминиканская Республика", 
+            "callingCode": "1809"
+        }, 
+        {
+            "headletter": "А", 
+            "ename": "Algeria", 
+            "code": "DZ", 
+            "cname": "Алжир", 
+            "callingCode": "213"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Ecuador", 
+            "code": "EC", 
+            "cname": "Эквадор", 
+            "callingCode": "593"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Estonia", 
+            "code": "EE", 
+            "cname": "Эстония", 
+            "callingCode": "372"
+        }, 
+        {
+            "headletter": "Е", 
+            "ename": "Egypt", 
+            "code": "EG", 
+            "cname": "Египет", 
+            "callingCode": "20"
+        }, 
+        {
+            "headletter": "З", 
+            "ename": "Western Sahara", 
+            "code": "EH", 
+            "cname": "Западная Сахара", 
+            "callingCode": "212"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Eritrea", 
+            "code": "ER", 
+            "cname": "Эритрея", 
+            "callingCode": "291"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Spain", 
+            "code": "ES", 
+            "cname": "Испания", 
+            "callingCode": "34"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Ethiopia", 
+            "code": "ET", 
+            "cname": "Эфиопия", 
+            "callingCode": "251"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "Finland", 
+            "code": "FI", 
+            "cname": "Финляндия", 
+            "callingCode": "358"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "Fiji", 
+            "code": "FJ", 
+            "cname": "Фиджи", 
+            "callingCode": "679"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "Falkland Islands", 
+            "code": "FK", 
+            "cname": "Фолклендские Острова (Мальвинские)", 
+            "callingCode": "500"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Micronesia", 
+            "code": "FM", 
+            "cname": "Микронезия", 
+            "callingCode": "691"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "Faroe Islands", 
+            "code": "FO", 
+            "cname": "Фарерские острова", 
+            "callingCode": "298"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "France", 
+            "code": "FR", 
+            "cname": "Франция", 
+            "callingCode": "33"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Gabon", 
+            "code": "GA", 
+            "cname": "Габон", 
+            "callingCode": "241"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "United Kingdom", 
+            "code": "GB", 
+            "cname": "Великобритания", 
+            "callingCode": "44"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Grenada", 
+            "code": "GD", 
+            "cname": "Гренада", 
+            "callingCode": "1473"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Georgia", 
+            "code": "GE", 
+            "cname": "Грузия", 
+            "callingCode": "995"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "French Guiana", 
+            "code": "GF", 
+            "cname": "Французская Гвиана", 
+            "callingCode": "594"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Ghana", 
+            "code": "GH", 
+            "cname": "Гана", 
+            "callingCode": "233"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Gibraltar", 
+            "code": "GI", 
+            "cname": "Гибралтар", 
+            "callingCode": "350"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Greenland", 
+            "code": "GL", 
+            "cname": "Гренландия", 
+            "callingCode": "299"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Gambia", 
+            "code": "GM", 
+            "cname": "Гамбия", 
+            "callingCode": "220"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guinea", 
+            "code": "GN", 
+            "cname": "Гвинея", 
+            "callingCode": "224"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guadeloupe", 
+            "code": "GP", 
+            "cname": "Гваделупа", 
+            "callingCode": "590"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Equatorial Guinea", 
+            "code": "GQ", 
+            "cname": "Экваториальная Гвинея", 
+            "callingCode": "240"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Greece", 
+            "code": "GR", 
+            "cname": "Греция", 
+            "callingCode": "30"
+        }, 
+        {
+            "headletter": "Ю", 
+            "ename": "South Georgia and the South Sandwich Islands", 
+            "code": "GS", 
+            "cname": "Южная Георгия и острова Южный Сандвич", 
+            "callingCode": "500"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guatemala", 
+            "code": "GT", 
+            "cname": "Гватемала", 
+            "callingCode": "502"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guam", 
+            "code": "GU", 
+            "cname": "Гуам", 
+            "callingCode": "1671"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guinea-bissau", 
+            "code": "GW", 
+            "cname": "Гвинея-Бисау", 
+            "callingCode": "245"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Guyana", 
+            "code": "GY", 
+            "cname": "Гайана", 
+            "callingCode": "592"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Hong Kong, China", 
+            "code": "HK", 
+            "cname": "Гонконг, Китай", 
+            "callingCode": "852"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Heard Island and McDonald Islands", 
+            "code": "HM", 
+            "cname": "Острова Херд и Макдональд", 
+            "callingCode": "672"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Honduras", 
+            "code": "HN", 
+            "cname": "Гондурас", 
+            "callingCode": "504"
+        }, 
+        {
+            "headletter": "Х", 
+            "ename": "Croatia", 
+            "code": "HR", 
+            "cname": "Хорватия", 
+            "callingCode": "385"
+        }, 
+        {
+            "headletter": "Г", 
+            "ename": "Haiti", 
+            "code": "HT", 
+            "cname": "Гаити", 
+            "callingCode": "509"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Hungary", 
+            "code": "HU", 
+            "cname": "Венгрия", 
+            "callingCode": "36"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Indonesia", 
+            "code": "ID", 
+            "cname": "Индонезия", 
+            "callingCode": "62"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Ireland", 
+            "code": "IE", 
+            "cname": "Ирландия", 
+            "callingCode": "353"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Israel", 
+            "code": "IL", 
+            "cname": "Израиль", 
+            "callingCode": "972"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "India", 
+            "code": "IN", 
+            "cname": "Индия", 
+            "callingCode": "91"
+        }, 
+        {
+            "headletter": "Б", 
+            "ename": "British Indian Ocean Territory", 
+            "code": "IO", 
+            "cname": "Британская территория Индийского океана", 
+            "callingCode": "246"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Iraq", 
+            "code": "IQ", 
+            "cname": "Ирак", 
+            "callingCode": "964"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Iran", 
+            "code": "IR", 
+            "cname": "Иран", 
+            "callingCode": "98"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Iceland", 
+            "code": "IS", 
+            "cname": "Исландия", 
+            "callingCode": "354"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Italy", 
+            "code": "IT", 
+            "cname": "Италия", 
+            "callingCode": "39"
+        }, 
+        {
+            "headletter": "Я", 
+            "ename": "Jamaica", 
+            "code": "JM", 
+            "cname": "Ямайка", 
+            "callingCode": "1876"
+        }, 
+        {
+            "headletter": "И", 
+            "ename": "Jordan", 
+            "code": "JO", 
+            "cname": "Иордания", 
+            "callingCode": "962"
+        }, 
+        {
+            "headletter": "Я", 
+            "ename": "Japan", 
+            "code": "JP", 
+            "cname": "Япония", 
+            "callingCode": "81"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Kenya", 
+            "code": "KE", 
+            "cname": "Кения", 
+            "callingCode": "254"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Kyrgyzstan", 
+            "code": "KG", 
+            "cname": "Кыргызстан", 
+            "callingCode": "996"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cambodia", 
+            "code": "KH", 
+            "cname": "Камбоджа", 
+            "callingCode": "855"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Kiribati", 
+            "code": "KI", 
+            "cname": "Кирибати", 
+            "callingCode": "686"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Comoros", 
+            "code": "KM", 
+            "cname": "Коморские Острова", 
+            "callingCode": "269"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Kitts and Nevis", 
+            "code": "KN", 
+            "cname": "Сент-Китс и Невис", 
+            "callingCode": "1869"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Korea (Democratic People's Republic of)", 
+            "code": "KP", 
+            "cname": "КНДР", 
+            "callingCode": "850"
+        }, 
+        {
+            "headletter": "Ю", 
+            "ename": "South Korea", 
+            "code": "KR", 
+            "cname": "Южная Корея", 
+            "callingCode": "82"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Kuwait", 
+            "code": "KW", 
+            "cname": "Кувейт", 
+            "callingCode": "965"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Cayman Islands", 
+            "code": "KY", 
+            "cname": "Каймановы о-ва", 
+            "callingCode": "1345"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Kazakhstan", 
+            "code": "KZ", 
+            "cname": "Казахстан", 
+            "callingCode": "7"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Laos", 
+            "code": "LA", 
+            "cname": "Лаос", 
+            "callingCode": "856"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Lebanon", 
+            "code": "LB", 
+            "cname": "Ливан", 
+            "callingCode": "961"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Lucia", 
+            "code": "LC", 
+            "cname": "Сент-Люсия", 
+            "callingCode": "1758"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Liechtenstein", 
+            "code": "LI", 
+            "cname": "Лихтенштейн", 
+            "callingCode": "423"
+        }, 
+        {
+            "headletter": "Ш", 
+            "ename": "Sri Lanka", 
+            "code": "LK", 
+            "cname": "Шри-Ланка", 
+            "callingCode": "94"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Liberia", 
+            "code": "LR", 
+            "cname": "Либерия", 
+            "callingCode": "231"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Lesotho", 
+            "code": "LS", 
+            "cname": "Лесото", 
+            "callingCode": "266"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Lithuania", 
+            "code": "LT", 
+            "cname": "Литва", 
+            "callingCode": "370"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Luxembourg", 
+            "code": "LU", 
+            "cname": "Люксембург", 
+            "callingCode": "352"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Latvia", 
+            "code": "LV", 
+            "cname": "Латвия", 
+            "callingCode": "371"
+        }, 
+        {
+            "headletter": "Л", 
+            "ename": "Libya", 
+            "code": "LY", 
+            "cname": "Ливия", 
+            "callingCode": "218"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Morocco", 
+            "code": "MA", 
+            "cname": "Марокко", 
+            "callingCode": "212"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Monaco", 
+            "code": "MC", 
+            "cname": "Монако", 
+            "callingCode": "377"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Moldova", 
+            "code": "MD", 
+            "cname": "Молдова", 
+            "callingCode": "373"
+        }, 
+        {
+            "headletter": "Ч", 
+            "ename": "Montenegro", 
+            "code": "ME", 
+            "cname": "Черногория", 
+            "callingCode": "382"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Martin", 
+            "code": "MF", 
+            "cname": "Сен-Мартен", 
+            "callingCode": "590"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Madagascar", 
+            "code": "MG", 
+            "cname": "Мадагаскар", 
+            "callingCode": "261"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Marshall Islands", 
+            "code": "MH", 
+            "cname": "Маршалловы острова", 
+            "callingCode": "692"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "North Macedonia", 
+            "code": "MK", 
+            "cname": "Северная Македония", 
+            "callingCode": "389"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mali", 
+            "code": "ML", 
+            "cname": "Мали", 
+            "callingCode": "223"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Myanmar", 
+            "code": "MM", 
+            "cname": "Мьянма", 
+            "callingCode": "95"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mongolia", 
+            "code": "MN", 
+            "cname": "Монголия", 
+            "callingCode": "976"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Macau, China", 
+            "code": "MO", 
+            "cname": "Макао, Китай", 
+            "callingCode": "853"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Northern Mariana Islands", 
+            "code": "MP", 
+            "cname": "Северные Марианские острова", 
+            "callingCode": "1670"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Martinique", 
+            "code": "MQ", 
+            "cname": "Мартиника", 
+            "callingCode": "596"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mauritania", 
+            "code": "MR", 
+            "cname": "Мавритания", 
+            "callingCode": "222"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Montserrat", 
+            "code": "MS", 
+            "cname": "Монтсеррат", 
+            "callingCode": "1664"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Malta", 
+            "code": "MT", 
+            "cname": "Мальта", 
+            "callingCode": "356"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mauritius", 
+            "code": "MU", 
+            "cname": "Маврикий", 
+            "callingCode": "230"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Maldives", 
+            "code": "MV", 
+            "cname": "Мальдивские Острова", 
+            "callingCode": "960"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Malawi", 
+            "code": "MW", 
+            "cname": "Малави", 
+            "callingCode": "265"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mexico", 
+            "code": "MX", 
+            "cname": "Мексика", 
+            "callingCode": "52"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Malaysia", 
+            "code": "MY", 
+            "cname": "Малайзия", 
+            "callingCode": "60"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mozambique", 
+            "code": "MZ", 
+            "cname": "Мозамбик", 
+            "callingCode": "258"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Namibia", 
+            "code": "NA", 
+            "cname": "Намибия", 
+            "callingCode": "264"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "New Caledonia", 
+            "code": "NC", 
+            "cname": "Новая Каледония", 
+            "callingCode": "687"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Niger", 
+            "code": "NE", 
+            "cname": "Нигер", 
+            "callingCode": "227"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Norfolk Island", 
+            "code": "NF", 
+            "cname": "Остров Норфолк", 
+            "callingCode": "672"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Nigeria", 
+            "code": "NG", 
+            "cname": "Нигерия", 
+            "callingCode": "234"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Nicaragua", 
+            "code": "NI", 
+            "cname": "Никарагуа", 
+            "callingCode": "505"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Netherlands", 
+            "code": "NL", 
+            "cname": "Нидерланды", 
+            "callingCode": "31"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Norway", 
+            "code": "NO", 
+            "cname": "Норвегия", 
+            "callingCode": "47"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Nepal", 
+            "code": "NP", 
+            "cname": "Непал", 
+            "callingCode": "977"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Nauru", 
+            "code": "NR", 
+            "cname": "Науру", 
+            "callingCode": "674"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "Niue", 
+            "code": "NU", 
+            "cname": "Ниуэ", 
+            "callingCode": "683"
+        }, 
+        {
+            "headletter": "Н", 
+            "ename": "New Zealand", 
+            "code": "NZ", 
+            "cname": "Новая Зеландия", 
+            "callingCode": "64"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Oman", 
+            "code": "OM", 
+            "cname": "Оман", 
+            "callingCode": "968"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Panama", 
+            "code": "PA", 
+            "cname": "Панама", 
+            "callingCode": "507"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Peru", 
+            "code": "PE", 
+            "cname": "Перу", 
+            "callingCode": "51"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "French Polynesia", 
+            "code": "PF", 
+            "cname": "Французская Полинезия", 
+            "callingCode": "689"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Papua New Guinea", 
+            "code": "PG", 
+            "cname": "Папуа-Новая Гвинея", 
+            "callingCode": "675"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "Philippines", 
+            "code": "PH", 
+            "cname": "Филиппины", 
+            "callingCode": "63"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Pakistan", 
+            "code": "PK", 
+            "cname": "Пакистан", 
+            "callingCode": "92"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Poland", 
+            "code": "PL", 
+            "cname": "Польша", 
+            "callingCode": "48"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Pierre and Miquelon", 
+            "code": "PM", 
+            "cname": "Сен-Пьер и Микелон", 
+            "callingCode": "508"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Pitcairn", 
+            "code": "PN", 
+            "cname": "Острова Питкэрн", 
+            "callingCode": "64"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Puerto Rico", 
+            "code": "PR", 
+            "cname": "Пуэрто-Рико", 
+            "callingCode": "1787|1939"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Palestine", 
+            "code": "PS", 
+            "cname": "Палестина", 
+            "callingCode": "970"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Portugal", 
+            "code": "PT", 
+            "cname": "Португалия", 
+            "callingCode": "351"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Palau", 
+            "code": "PW", 
+            "cname": "Палау", 
+            "callingCode": "680"
+        }, 
+        {
+            "headletter": "П", 
+            "ename": "Paraguay", 
+            "code": "PY", 
+            "cname": "Парагвай", 
+            "callingCode": "595"
+        }, 
+        {
+            "headletter": "К", 
+            "ename": "Qatar", 
+            "code": "QA", 
+            "cname": "Катар", 
+            "callingCode": "974"
+        }, 
+        {
+            "headletter": "Р", 
+            "ename": "Reunion", 
+            "code": "RE", 
+            "cname": "Реюньон", 
+            "callingCode": "262"
+        }, 
+        {
+            "headletter": "Р", 
+            "ename": "Romania", 
+            "code": "RO", 
+            "cname": "Румыния", 
+            "callingCode": "40"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Serbia", 
+            "code": "RS", 
+            "cname": "Сербия", 
+            "callingCode": "381"
+        }, 
+        {
+            "headletter": "Р", 
+            "ename": "Russia", 
+            "code": "RU", 
+            "cname": "Россия", 
+            "callingCode": "7"
+        }, 
+        {
+            "headletter": "Р", 
+            "ename": "Rwanda", 
+            "code": "RW", 
+            "cname": "Руанда", 
+            "callingCode": "250"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saudi Arabia", 
+            "code": "SA", 
+            "cname": "Саудовская Аравия", 
+            "callingCode": "966"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Solomon Islands", 
+            "code": "SB", 
+            "cname": "Соломоновы Острова", 
+            "callingCode": "677"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Seychelles", 
+            "code": "SC", 
+            "cname": "Сейшельские острова", 
+            "callingCode": "248"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Sudan", 
+            "code": "SD", 
+            "cname": "Судан", 
+            "callingCode": "249"
+        }, 
+        {
+            "headletter": "Ш", 
+            "ename": "Sweden", 
+            "code": "SE", 
+            "cname": "Швеция", 
+            "callingCode": "46"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Singapore", 
+            "code": "SG", 
+            "cname": "Сингапур", 
+            "callingCode": "65"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Saint Helena, Ascension and Tristan da Cunha", 
+            "code": "SH", 
+            "cname": "Острова Святой Елены, Вознесения и Тристан-да-Кунья", 
+            "callingCode": "290"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Slovenia", 
+            "code": "SI", 
+            "cname": "Словения", 
+            "callingCode": "386"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Svalbard and Jan Mayen", 
+            "code": "SJ", 
+            "cname": "Острова Шпицберген и Ян-Майен", 
+            "callingCode": "47"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Slovakia", 
+            "code": "SK", 
+            "cname": "Словакия", 
+            "callingCode": "421"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Sierra Leone", 
+            "code": "SL", 
+            "cname": "Сьерра-Леоне", 
+            "callingCode": "232"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "San Marino", 
+            "code": "SM", 
+            "cname": "Сан-Марино", 
+            "callingCode": "378"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Senegal", 
+            "code": "SN", 
+            "cname": "Сенегал", 
+            "callingCode": "221"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Somalia", 
+            "code": "SO", 
+            "cname": "Сомали", 
+            "callingCode": "252"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Suriname", 
+            "code": "SR", 
+            "cname": "Суринам", 
+            "callingCode": "597"
+        }, 
+        {
+            "headletter": "Ю", 
+            "ename": "South Sudan", 
+            "code": "SS", 
+            "cname": "Южный Судан", 
+            "callingCode": "211"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Sao Tome and Principe", 
+            "code": "ST", 
+            "cname": "Сан-Томе и Принсипи", 
+            "callingCode": "239"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "El Salvador", 
+            "code": "SV", 
+            "cname": "Сальвадор", 
+            "callingCode": "503"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Sint Maarten", 
+            "code": "SX", 
+            "cname": "Синт-Мартен", 
+            "callingCode": "1721"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Syria", 
+            "code": "SY", 
+            "cname": "Сирия", 
+            "callingCode": "963"
+        }, 
+        {
+            "headletter": "Э", 
+            "ename": "Eswatini", 
+            "code": "SZ", 
+            "cname": "Эсватини", 
+            "callingCode": "268"
+        }, 
+        {
+            "headletter": "О", 
+            "ename": "Turks and Caicos Islands", 
+            "code": "TC", 
+            "cname": "Острова Теркс и Кайкос", 
+            "callingCode": "1649"
+        }, 
+        {
+            "headletter": "Ч", 
+            "ename": "Chad", 
+            "code": "TD", 
+            "cname": "Чад", 
+            "callingCode": "235"
+        }, 
+        {
+            "headletter": "Ф", 
+            "ename": "French Southern Territories", 
+            "code": "TF", 
+            "cname": "Французские Южные Территории", 
+            "callingCode": "262"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Togo", 
+            "code": "TG", 
+            "cname": "Того", 
+            "callingCode": "228"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Thailand", 
+            "code": "TH", 
+            "cname": "Таиланд", 
+            "callingCode": "66"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tajikistan", 
+            "code": "TJ", 
+            "cname": "Таджикистан", 
+            "callingCode": "992"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tokelau", 
+            "code": "TK", 
+            "cname": "Токелау", 
+            "callingCode": "690"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Timor-Leste", 
+            "code": "TL", 
+            "cname": "Восточный Тимор", 
+            "callingCode": "670"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Turkmenistan", 
+            "code": "TM", 
+            "cname": "Туркменистан", 
+            "callingCode": "993"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tunisia", 
+            "code": "TN", 
+            "cname": "Тунис", 
+            "callingCode": "216"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tonga", 
+            "code": "TO", 
+            "cname": "Тонга", 
+            "callingCode": "676"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Turkey", 
+            "code": "TR", 
+            "cname": "Турция", 
+            "callingCode": "90"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Trinidad and Tobago", 
+            "code": "TT", 
+            "cname": "Тринидад и Тобаго", 
+            "callingCode": "1868"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tuvalu", 
+            "code": "TV", 
+            "cname": "Тувалу", 
+            "callingCode": "688"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Taiwan, China", 
+            "code": "TW", 
+            "cname": "Тайвань, Китай", 
+            "callingCode": "886"
+        }, 
+        {
+            "headletter": "Т", 
+            "ename": "Tanzania", 
+            "code": "TZ", 
+            "cname": "Танзания", 
+            "callingCode": "255"
+        }, 
+        {
+            "headletter": "У", 
+            "ename": "Ukraine", 
+            "code": "UA", 
+            "cname": "Украина", 
+            "callingCode": "380"
+        }, 
+        {
+            "headletter": "У", 
+            "ename": "Uganda", 
+            "code": "UG", 
+            "cname": "Уганда", 
+            "callingCode": "256"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "United States Minor outlying Islands", 
+            "code": "UM", 
+            "cname": "Малые отдаленные острова Соединенных Штатов", 
+            "callingCode": "1"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "United States", 
+            "code": "US", 
+            "cname": "США", 
+            "callingCode": "1"
+        }, 
+        {
+            "headletter": "У", 
+            "ename": "Uruguay", 
+            "code": "UY", 
+            "cname": "Уругвай", 
+            "callingCode": "598"
+        }, 
+        {
+            "headletter": "У", 
+            "ename": "Uzbekistan", 
+            "code": "UZ", 
+            "cname": "Узбекистан", 
+            "callingCode": "998"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Vatican", 
+            "code": "VA", 
+            "cname": "Ватикан", 
+            "callingCode": "379"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Saint Vincent and the Grenadines", 
+            "code": "VC", 
+            "cname": "Сент-Винсент и Гренадины", 
+            "callingCode": "1784"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Venezuela", 
+            "code": "VE", 
+            "cname": "Венесуэла", 
+            "callingCode": "58"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Virgin Islands, British", 
+            "code": "VG", 
+            "cname": "Виргинские острова (Великобритания)", 
+            "callingCode": "1284"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Virgin Islands, U.S.", 
+            "code": "VI", 
+            "cname": "Виргинские острова (США)", 
+            "callingCode": "1340"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Vietnam", 
+            "code": "VN", 
+            "cname": "Вьетнам", 
+            "callingCode": "84"
+        }, 
+        {
+            "headletter": "В", 
+            "ename": "Vanuatu", 
+            "code": "VU", 
+            "cname": "Вануату", 
+            "callingCode": "678"
+        }, 
+        {
+            "headletter": "У", 
+            "ename": "Wallis and Futuna", 
+            "code": "WF", 
+            "cname": "Уоллис и Футуна", 
+            "callingCode": "681"
+        }, 
+        {
+            "headletter": "С", 
+            "ename": "Samoa", 
+            "code": "WS", 
+            "cname": "Самоа", 
+            "callingCode": "685"
+        }, 
+        {
+            "headletter": "Й", 
+            "ename": "Yemen", 
+            "code": "YE", 
+            "cname": "Йемен", 
+            "callingCode": "967"
+        }, 
+        {
+            "headletter": "М", 
+            "ename": "Mayotte", 
+            "code": "YT", 
+            "cname": "Майотта", 
+            "callingCode": "262"
+        }, 
+        {
+            "headletter": "Ю", 
+            "ename": "South Africa", 
+            "code": "ZA", 
+            "cname": "ЮАР", 
+            "callingCode": "27"
+        }, 
+        {
+            "headletter": "З", 
+            "ename": "Zambia", 
+            "code": "ZM", 
+            "cname": "Замбия", 
+            "callingCode": "260"
+        }, 
+        {
+            "headletter": "З", 
+            "ename": "Zimbabwe", 
+            "code": "ZW", 
+            "cname": "Зимбабве", 
+            "callingCode": "263"
+        }
+    ]
+}

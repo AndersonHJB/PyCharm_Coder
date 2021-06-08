@@ -1,0 +1,744 @@
+{
+    "localeList": [
+        {
+            "language": "ENGLISH", 
+            "locale": "en_XX", 
+            "site": "en", 
+            "flagUrl": "", 
+            "localeName": "English", 
+            "host": "trip.com", 
+            "topCurrency": [
+                "USD", 
+                "CNY", 
+                "HKD", 
+                "SGD", 
+                "EUR"
+            ], 
+            "rank": 0
+        }, 
+        {
+            "language": "ENGLISH", 
+            "locale": "en_US", 
+            "site": "en", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/english.png", 
+            "localeName": "English", 
+            "host": "trip.com", 
+            "topCurrency": [
+                "USD", 
+                "CNY", 
+                "HKD", 
+                "SGD", 
+                "EUR"
+            ], 
+            "rank": 1
+        }, 
+        {
+            "language": "TC", 
+            "locale": "zh_HK", 
+            "site": "hk", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/zh-Hant.png", 
+            "localeName": "繁體中文", 
+            "host": "hk.trip.com", 
+            "topCurrency": [
+                "HKD", 
+                "CNY", 
+                "TWD", 
+                "USD"
+            ], 
+            "rank": 2
+        }, 
+        {
+            "language": "KR", 
+            "locale": "ko_KR", 
+            "site": "kr", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/kr.png", 
+            "localeName": "한국어", 
+            "host": "ko.trip.com", 
+            "topCurrency": [
+                "KRW", 
+                "CNY", 
+                "USD"
+            ], 
+            "rank": 3
+        }, 
+        {
+            "language": "JP", 
+            "locale": "ja_JP", 
+            "site": "jp", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/jp.png", 
+            "localeName": "日本語", 
+            "host": "jp.trip.com", 
+            "topCurrency": [
+                "JPY", 
+                "CNY", 
+                "USD"
+            ], 
+            "rank": 4
+        }, 
+        {
+            "language": "SG", 
+            "locale": "en_SG", 
+            "site": "sg", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/sg.png", 
+            "localeName": "English (Singapore)", 
+            "host": "sg.trip.com", 
+            "topCurrency": [
+                "SGD", 
+                "CNY", 
+                "USD"
+            ], 
+            "rank": 5
+        }, 
+        {
+            "language": "ENGLISH", 
+            "locale": "en_AU", 
+            "site": "au", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/au.png", 
+            "localeName": "English (Australia)", 
+            "host": "au.trip.com", 
+            "topCurrency": [
+                "AUD", 
+                "CNY", 
+                "USD"
+            ], 
+            "rank": 6
+        }, 
+        {
+            "language": "ENGLISH", 
+            "locale": "en_NZ", 
+            "site": "nz", 
+            "flagUrl": "", 
+            "localeName": "English (New Zealand)", 
+            "host": "nz.trip.com", 
+            "topCurrency": [
+                "NZD", 
+                "USD", 
+                "AUD", 
+                "CNY"
+            ], 
+            "rank": 7
+        }, 
+        {
+            "language": "", 
+            "locale": "zh_TW", 
+            "site": "tw", 
+            "flagUrl": "", 
+            "localeName": "繁體中文", 
+            "host": "tw.trip.com", 
+            "topCurrency": [
+                "TWD", 
+                "CNY", 
+                "HKD", 
+                "USD"
+            ], 
+            "rank": 16
+        }, 
+        {
+            "language": "", 
+            "locale": "en_HK", 
+            "site": "hk", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "hk.trip.com", 
+            "topCurrency": [
+                "HKD", 
+                "CNY", 
+                "TWD", 
+                "USD"
+            ], 
+            "rank": 17
+        }, 
+        {
+            "language": "", 
+            "locale": "en_GB", 
+            "site": "gb", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "uk.trip.com", 
+            "topCurrency": [
+                "GBP", 
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 101
+        }, 
+        {
+            "language": "FR", 
+            "locale": "fr_FR", 
+            "site": "fr", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/fr.png", 
+            "localeName": "Français", 
+            "host": "fr.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 102
+        }, 
+        {
+            "language": "DE", 
+            "locale": "de_DE", 
+            "site": "de", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/de.png", 
+            "localeName": "Deutsch", 
+            "host": "de.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 103
+        }, 
+        {
+            "language": "ES", 
+            "locale": "es_ES", 
+            "site": "es", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/es.png", 
+            "localeName": "Español", 
+            "host": "es.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 104
+        }, 
+        {
+            "language": "", 
+            "locale": "it_IT", 
+            "site": "it", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "it.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 105
+        }, 
+        {
+            "language": "RU", 
+            "locale": "ru_RU", 
+            "site": "ru", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/ru.png", 
+            "localeName": "Pусский", 
+            "host": "ru.trip.com", 
+            "topCurrency": [
+                "RUB", 
+                "CNY", 
+                "USD"
+            ], 
+            "rank": 106
+        }, 
+        {
+            "language": "", 
+            "locale": "th_TH", 
+            "site": "th", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/th.png", 
+            "localeName": "ภาษาไทย", 
+            "host": "th.trip.com", 
+            "topCurrency": [
+                "THB", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 301
+        }, 
+        {
+            "language": "", 
+            "locale": "id_ID", 
+            "site": "id", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/id.png", 
+            "localeName": "Bahasa Indonesia", 
+            "host": "id.trip.com", 
+            "topCurrency": [
+                "IDR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 302
+        }, 
+        {
+            "language": "", 
+            "locale": "ms_MY", 
+            "site": "my", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/my.png", 
+            "localeName": "Bahasa Malaysia", 
+            "host": "my.trip.com", 
+            "topCurrency": [
+                "MYR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 303
+        }, 
+        {
+            "language": "", 
+            "locale": "tl_PH", 
+            "site": "ph", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/ph.png", 
+            "localeName": "Tagalog", 
+            "host": "ph.trip.com", 
+            "topCurrency": [
+                "PHP", 
+                "HKD", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 304
+        }, 
+        {
+            "language": "", 
+            "locale": "vi_VN", 
+            "site": "vn", 
+            "flagUrl": "https://pages.english.ctrip.com/flags/vn.png", 
+            "localeName": "Tiếng Việt", 
+            "host": "vn.trip.com", 
+            "topCurrency": [
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 305
+        }, 
+        {
+            "language": "", 
+            "locale": "en_MY", 
+            "site": "my", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "my.trip.com", 
+            "topCurrency": [
+                "MYR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 306
+        }, 
+        {
+            "language": "", 
+            "locale": "en_IL", 
+            "site": "il", 
+            "flagUrl": "", 
+            "localeName": "Israel", 
+            "host": "il.trip.com", 
+            "topCurrency": [
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 307
+        }, 
+        {
+            "language": "", 
+            "locale": "en_SA", 
+            "site": "sa", 
+            "flagUrl": "", 
+            "localeName": "Saudi Arabia", 
+            "host": "sa.trip.com", 
+            "topCurrency": [
+                "SAR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 308
+        }, 
+        {
+            "language": "", 
+            "locale": "en_AE", 
+            "site": "ae", 
+            "flagUrl": "", 
+            "localeName": "United Arab Emirates", 
+            "host": "ae.trip.com", 
+            "topCurrency": [
+                "AED", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 309
+        }, 
+        {
+            "language": "", 
+            "locale": "nl_NL", 
+            "site": "NL", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "nl.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 350
+        }, 
+        {
+            "language": "", 
+            "locale": "pl_PL", 
+            "site": "pl", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "pl.trip.com", 
+            "topCurrency": [
+                "PLN", 
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 351
+        }, 
+        {
+            "language": "", 
+            "locale": "el_GR", 
+            "site": "GR", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "gr.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 352
+        }, 
+        {
+            "language": "", 
+            "locale": "tr_TR", 
+            "site": "tr", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "tr.trip.com", 
+            "topCurrency": [
+                "TRY", 
+                "EUR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 353
+        }, 
+        {
+            "language": "", 
+            "locale": "pt_BR", 
+            "site": "BR", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "br.trip.com", 
+            "topCurrency": [
+                "BRL", 
+                "USD", 
+                "EUR", 
+                "CNY"
+            ], 
+            "rank": 354
+        }, 
+        {
+            "language": "", 
+            "locale": "en_IE", 
+            "site": "ie", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ie.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "GBP", 
+                "USD"
+            ], 
+            "rank": 410
+        }, 
+        {
+            "language": "", 
+            "locale": "de_AT", 
+            "site": "at", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "at.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD", 
+                "GBP"
+            ], 
+            "rank": 411
+        }, 
+        {
+            "language": "", 
+            "locale": "de_CH", 
+            "site": "ch", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ch.trip.com", 
+            "topCurrency": [
+                "CHF", 
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 412
+        }, 
+        {
+            "language": "", 
+            "locale": "nl_BE", 
+            "site": "be", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "be.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 413
+        }, 
+        {
+            "language": "", 
+            "locale": "fr_BE", 
+            "site": "be", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "be.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 414
+        }, 
+        {
+            "language": "", 
+            "locale": "en_CH", 
+            "site": "ch", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ch.trip.com", 
+            "topCurrency": [
+                "CHF", 
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 415
+        }, 
+        {
+            "language": "", 
+            "locale": "fr_CH", 
+            "site": "ch", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ch.trip.com", 
+            "topCurrency": [
+                "CHF", 
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 416
+        }, 
+        {
+            "language": "", 
+            "locale": "en_BE", 
+            "site": "be", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "be.trip.com", 
+            "topCurrency": [
+                "EUR", 
+                "USD"
+            ], 
+            "rank": 417
+        }, 
+        {
+            "language": "", 
+            "locale": "ar_XX", 
+            "site": "ar", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ar.trip.com", 
+            "topCurrency": [
+                "USD", 
+                "CNY", 
+                "EUR"
+            ], 
+            "rank": 401
+        }, 
+        {
+            "language": "", 
+            "locale": "ar_SA", 
+            "site": "ar", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ar.trip.com", 
+            "topCurrency": [
+                "SAR", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 403
+        }, 
+        {
+            "language": "", 
+            "locale": "ar_AE", 
+            "site": "ar", 
+            "flagUrl": "", 
+            "localeName": "", 
+            "host": "ar.trip.com", 
+            "topCurrency": [
+                "AED", 
+                "USD", 
+                "CNY"
+            ], 
+            "rank": 402
+        }
+    ], 
+    "timestamp": 1594093468000, 
+    "currencyList": [
+        {
+            "symbol": "￥", 
+            "sharkKey": "key.currency.china.cny", 
+            "name": "CNY"
+        }, 
+        {
+            "symbol": "＄", 
+            "sharkKey": "key.currency.usd", 
+            "name": "USD"
+        }, 
+        {
+            "symbol": "€", 
+            "sharkKey": "key.currency.eur", 
+            "name": "EUR"
+        }, 
+        {
+            "symbol": "￡", 
+            "sharkKey": "key.currency.gbp", 
+            "name": "GBP"
+        }, 
+        {
+            "symbol": "＄", 
+            "sharkKey": "key.currency.aud", 
+            "name": "AUD"
+        }, 
+        {
+            "symbol": "＄", 
+            "sharkKey": "key.currency.cad", 
+            "name": "CAD"
+        }, 
+        {
+            "symbol": "Fr", 
+            "sharkKey": "key.currency.chf", 
+            "name": "CHF"
+        }, 
+        {
+            "symbol": "$", 
+            "sharkKey": "key.currency.hk", 
+            "name": "HKD"
+        }, 
+        {
+            "symbol": "￥", 
+            "sharkKey": "key.currency.jpy", 
+            "name": "JPY"
+        }, 
+        {
+            "symbol": "₩", 
+            "sharkKey": "key.currency.krw", 
+            "name": "KRW"
+        }, 
+        {
+            "symbol": "RM", 
+            "sharkKey": "key.currency.myr", 
+            "name": "MYR"
+        }, 
+        {
+            "symbol": "＄", 
+            "sharkKey": "key.currency.nzd", 
+            "name": "NZD"
+        }, 
+        {
+            "symbol": "＄", 
+            "sharkKey": "key.currency.sgd", 
+            "name": "SGD"
+        }, 
+        {
+            "symbol": "₱", 
+            "sharkKey": "key.currency.php", 
+            "name": "PHP"
+        }, 
+        {
+            "symbol": "руб", 
+            "sharkKey": "key.currency.rub", 
+            "name": "RUB"
+        }, 
+        {
+            "symbol": "$", 
+            "sharkKey": "key.currency.twd", 
+            "name": "TWD"
+        }, 
+        {
+            "symbol": "฿", 
+            "sharkKey": "key.currency.thb", 
+            "name": "THB"
+        }, 
+        {
+            "symbol": "Rp", 
+            "sharkKey": "key.currency.idr", 
+            "name": "IDR"
+        }, 
+        {
+            "symbol": "Rs", 
+            "sharkKey": "key.currency.inr", 
+            "name": "INR"
+        }, 
+        {
+            "symbol": "zł", 
+            "sharkKey": "key.currency.pln", 
+            "name": "PLN"
+        }, 
+        {
+            "symbol": "R$", 
+            "sharkKey": "key.currency.brl", 
+            "name": "BRL"
+        }, 
+        {
+            "symbol": "₺", 
+            "sharkKey": "key.currency.try", 
+            "name": "TRY"
+        }, 
+        {
+            "symbol": "₫", 
+            "sharkKey": "key.currency.vnd", 
+            "name": "VND"
+        }, 
+        {
+            "symbol": "SR", 
+            "sharkKey": "key.currency.sar", 
+            "name": "SAR"
+        }, 
+        {
+            "symbol": "د.إ", 
+            "sharkKey": "key.currency.aed", 
+            "name": "AED"
+        }, 
+        {
+            "symbol": "P", 
+            "sharkKey": "key.currency.mop", 
+            "name": "MOP"
+        }, 
+        {
+            "symbol": "MXN", 
+            "sharkKey": "key.currency.mxn", 
+            "name": "MXN"
+        }, 
+        {
+            "symbol": "ARS", 
+            "sharkKey": "key.currency.ars", 
+            "name": "ARS"
+        }, 
+        {
+            "symbol": "SEK", 
+            "sharkKey": "key.currency.sek", 
+            "name": "SEK"
+        }, 
+        {
+            "symbol": "UAH", 
+            "sharkKey": "key.currency.uah", 
+            "name": "UAH"
+        }, 
+        {
+            "symbol": "DKK", 
+            "sharkKey": "key.currency.dkk", 
+            "name": "DKK"
+        }
+    ]
+}

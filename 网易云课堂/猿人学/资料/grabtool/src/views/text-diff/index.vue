@@ -1,0 +1,128 @@
+<template>
+
+  <d2-container>
+    <template>
+      <a href="https://github.com/ddchef/vue-code-diff/blob/master/src/App.vue" target="_blank">Github Source Code</a>
+      <el-form>
+        <el-row :gutter="10">
+          <el-col :span="12">
+            <el-form-item label="旧数据：">
+              <el-input
+                v-model="oldStr"
+                type="textarea"
+                :rows="3"
+                placeholder="请输入旧数据"
+              ></el-input>
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="新数据：">
+              <el-input
+                v-model="newStr"
+                type="textarea"
+                :rows="3"
+                placeholder="请输入新数据"
+              ></el-input>
+            </el-form-item>
+          </el-col>
+          <el-col :span="6">
+            <el-form-item label="展示效果：">
+              <el-switch
+                v-model="fotmat"
+                active-text="line-by-line"
+                inactive-text="side-by-side"
+              ></el-switch>
+            </el-form-item>
+          </el-col>
+          <el-col :span="6">
+            <el-form-item label="差异化范围：">
+              <el-input-number
+                v-model="context"
+                placeholder=""
+              ></el-input-number>
+            </el-form-item>
+          </el-col>
+          <el-col :span="6">
+            <el-form-item label="sort：">
+              <el-button type="primary" @click="sortContent">sort</el-button>
+            </el-form-item>
+          </el-col>
+          <el-col :span="6">
+            <el-form-item label="clear：">
+              <el-button type="primary" @click="handleClearLocalStorage">清除</el-button>
+            </el-form-item>
+          </el-col>
+        </el-row>
+      </el-form>
+
+      <code-diff
+        :old-string="oldStr"
+        :new-string="newStr"
+        :context="context"
+        :output-format="outputFormat"
+      />
+    </template>
+  </d2-container>
+</template>
+
+<script>
+  import codeDiff from './code-diff/index.js'
+
+  export default {
+    name: 'App',
+    components: {
+      codeDiff
+    },
+    data () {
+      return {
+        oldStr: '',
+        newStr: '',
+        fotmat: false,
+        context: 10
+      }
+    },
+    computed: {
+      outputFormat () {
+        return this.fotmat ? 'line-by-line' : 'side-by-side'
+      }
+    },
+    watch: {
+      oldStr (v) {
+        localStorage.setItem('oldStr', v)
+      },
+      newStr (v) {
+        localStorage.setItem('newStr', v)
+      }
+    },
+    created () {
+      this.oldStr = localStorage.getItem('oldStr') || ''
+      this.newStr = localStorage.getItem('newStr') || ''
+    },
+    methods: {
+      handleClearLocalStorage () {
+        this.newStr = ''
+        this.oldStr = ''
+        localStorage.setItem('newStr', '')
+        localStorage.setItem('oldStr', '')
+      },
+      sortContent () {
+        let newStrArray = this.newStr.split('\n')
+        newStrArray.sort(function (it1, it2) {
+          return it1.localeCompare(it2)
+        })
+
+        let oldStrArray = this.oldStr.split('\n')
+        oldStrArray.sort(function (it1, it2) {
+          return it1.localeCompare(it2)
+        })
+
+        this.newStr = newStrArray.join('\n')
+        this.oldStr = oldStrArray.join('\n')
+
+        localStorage.setItem('newStr', this.newStr)
+        localStorage.setItem('oldStr', this.oldStr)
+
+      }
+    }
+  }
+</script>

@@ -1,0 +1,103 @@
+<CMPCCalleeList>
+    <!--样例-->
+    <!--<CMPCCallee class="com.ctrip.ibu.framework.cmpc.test.MyCtripCallee" module="myctrip"/>-->
+    <CMPCCallee class="com.ctrip.ibu.car.common.share.CarCallee" module="car">
+        <method name="GetCarMarketView">
+            <desc>机票完成页租车交叉销售模块</desc>
+        </method>
+    </CMPCCallee>
+    <CMPCCallee class="com.ctrip.ibu.hotel.common.share.HotelCallee" module="hotel">
+        <method name="ClearAllViewedHotels">
+            <desc>清空已查看过的酒店记录。参数为空。HotelListModel.clearAllViewedHotels();</desc>
+        </method>
+        <method name="TobeReviewedHotelOrdersCount">
+            <desc>待点评订单的数量。返回值为int类型</desc>
+        </method>
+        <method name="GetHotelMarketView">
+            <desc>机票完成页酒店交叉销售模块</desc>
+        </method>
+        <method name="promotionHotelCityTitle">
+            <desc>促销首页提供酒店搜索城市id，返回值为int类型</desc>
+        </method>
+        <method name="obtainABTestData">
+            <desc>获取酒店产线EHotelABTest的实验</desc>
+        </method>
+        <method name="obtainDebugCenterConfig">
+            <desc>获取酒店debug center配置文件</desc>
+        </method>
+        <method name="startTraceMethodCost">
+            <desc>开始全局插桩方法耗时统计数据</desc>
+        </method>
+        <method name="endTraceMethodCost">
+            <desc>结束全局插桩方法耗时统计数据</desc>
+        </method>
+    </CMPCCallee>
+
+    <CMPCCallee class="com.ctrip.ibu.hotel.debug.cmpc.HotelDebugCallee" module="hotel-debug">
+        <method name="init">
+            <desc>初始化酒店debug模块</desc>
+        </method>
+        <method name="getMultiSelectorMap">
+            <desc>获取multiSelector的选择</desc>
+        </method>
+        <method name="getNetworkConfig">
+            <desc>获取Debug网络配置</desc>
+        </method>
+    </CMPCCallee>
+
+    <CMPCCallee class="com.ctrip.ibu.myctrip.share.MyCtripCallee" module="myctrip"/>
+    <CMPCCallee class="com.ctrip.ibu.myctrip.share.MyTripCallee" module="mytrip"/>
+    <CMPCCallee class="com.ctrip.ibu.flight.common.FlightCallee" module="flight">
+        <!--设置我携订单列表中继续支付提示是否展示-->
+        <method name="SetKeyMyBookingPayTip"/>
+        <!--设置我携订单列表中重新提交提示是否展示-->
+        <method name="SetKeyMyBookingResubmitTip"/>
+        <!--强制关注某个航班动态-->
+        <method name="MyFlightStateMgrRequest"/>
+        <!--获取我携订单列表中继续支付提示是否展示-->
+        <method name="IsMyBookingPayTipShowed"/>
+        <!--获取我携订单列表中重新提交提示是否展示-->
+        <method name="IsMyBookingResubmitTipShowed"/>
+        <!--进入航班动态页面入口-->
+        <method name="GotoFlightStatus"/>
+        <!--退出APP时清空机票缓存的热门出发和到达城市-->
+        <method name="ClearHotCitiesData"/>
+        <!--获取机票首页Fragment-->
+        <method name="GetFlightMainFragment"/>
+        <!--获取机票首页Fragment Tag-->
+        <method name="GetFlightMainFragmentTag"/>
+        <!--获取机票Hybrid plugin-->
+        <method name="GetFlightHybridPlugin"/>
+    </CMPCCallee>
+
+    <CMPCCallee class="com.ctrip.ibu.train.base.cmpc.TrainCallee" module="train"/>
+    <CMPCCallee class="com.ctrip.ibu.english.base.CommonCallee" module="common">
+        <!--获取默认国家代码 -->
+        <method name="getDefaultCountryCode" returnType="String"/>
+    </CMPCCallee>
+    <CMPCCallee class="com.ctrip.ibu.account.share.AccountCallee" module="account"/>
+    <CMPCCallee class="com.ctrip.ibu.user.router.UserCallee" module="user"/>
+    <CMPCCallee class="com.ctrip.ibu.schedule.support.share.ScheduleCallee" module="schedule"/>
+    <CMPCCallee class="com.ctrip.ibu.framework.baseview.widget.support.BaseViewCallee"
+                module="baseview"/>
+    <CMPCCallee class="ctrip.android.pay.bus.PaymentCallee" module="payment"/>
+    <CMPCCallee class="com.ctrip.ibu.travelguide.common.cmpc.TravelGuideCallee"
+                module="travelguide">
+        <!--机票完成页、酒店完成页交叉销售模块-->
+        <method name="TraveGuideCross"/>
+    </CMPCCallee>
+
+    <CMPCCallee class="com.ctrip.ibu.ddt.cmpc.MarketProductSearchCMPC" module="tour">
+        <!--ddt交叉销售模块-->
+        <method name="TourOutSideProdRecommed"/>
+    </CMPCCallee>
+
+    <CMPCCallee class="ctrip.android.call.cmpc.VoipCallee" module="ctcall">
+        <method name="ctcall/makeVoipCall">
+            <desc>拨打Voip电话</desc>
+        </method>
+    </CMPCCallee>
+
+    <CMPCCallee class="com.ctrip.ibu.tripsearch.module.cmpc.TripSearchCallee" module="tripsearch"/>
+
+</CMPCCalleeList>

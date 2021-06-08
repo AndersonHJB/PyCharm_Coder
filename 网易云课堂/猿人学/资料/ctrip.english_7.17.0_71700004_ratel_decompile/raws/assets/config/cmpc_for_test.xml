@@ -1,0 +1,3 @@
+<CMPCCalleeList>
+    <CMPCCallee class="com.ctrip.ibu.framework.cmpc.test.MyCtripCallee" module="myctrip"/>
+</CMPCCalleeList>

@@ -1,0 +1,270 @@
+<Routers>
+    <ModuleRouterList>
+        <!--样例-->
+        <!--<ModuleRouter class="com.ctrip.ibu.framework.router.test.HotelModuleRouterTest" module="hotel"/>-->
+
+        <!--valet-->
+        <ModuleRouter class="com.ctrip.valet.ValetModuleRouter" module="valet">
+            <Page name="ValetEntrance">
+                <param name="key.onlineChat.entrance" optional="false" type="String" />
+                <param name="key.onlineChat.channel" optional="true" type="String" />
+                <param name="key.onlineChat.productID" optional="true" type="String" /><!--可选参数-->
+                <param name="key.onlineChat.orderID" optional="true" type="String" />
+            </Page>
+            <Page name="imCustomServiceNew">
+                <param name="imBizType" optional="false" type="int" />
+                <param name="imPageId" optional="true" type="String" />
+                <param name="imExt" optional="true" type="String" /><!--可选参数-->
+            </Page>
+        </ModuleRouter>
+
+        <!-- 兼容iOS Chat -->
+        <ModuleRouter class="com.ctrip.valet.ValetModuleRouter" module="servicechat">
+            <Page name="imCustomServiceNew">
+                <param name="imBizType" optional="false" type="int" />
+                <param name="imPageId" optional="true" type="String" />
+                <param name="imExt" optional="true" type="String" /><!--可选参数-->
+            </Page>
+            <Page name="offLinePush">
+                <param name="ext" optional="true" type="String" />
+            </Page>
+        </ModuleRouter>
+
+        <!--common-->
+        <ModuleRouter class="com.ctrip.ibu.english.base.CommonModuleRouter" module="common">
+            <Page name="OnlineChat">
+                <param name="key.onlineChat.entrance" optional="false" type="String" />
+                <param name="key.onlineChat.channel" optional="true" type="String" />
+                <param name="key.onlineChat.productID" optional="true" type="String" /><!--可选参数-->
+                <param name="key.onlineChat.orderID" optional="true" type="String" />
+            </Page>
+
+            <Page name="SelectCountry">
+                <param name="key.selected.country.code" optional="false" type="String" />
+                <param name="key.display.country.code" optional="true" type="boolean" />
+            </Page>
+        </ModuleRouter>
+
+        <!--business-->
+        <ModuleRouter class="com.ctrip.ibu.framework.common.router.BusinessRouter"
+            module="business">
+            <Page name="systemBrowser"></Page>
+        </ModuleRouter>
+
+        <!--Hotel-->
+        <ModuleRouter class="com.ctrip.ibu.hotel.common.router.HotelModuleRouter" module="hotel">
+            <Page name="HotelMain" class="com.ctrip.ibu.hotel.module.HotelMainActivity" />
+            <Page name="HotelMainFromHome" class="com.ctrip.ibu.hotel.module.HotelMainActivity">
+                从Home进Hotel会初始化数据库。
+            </Page>
+            <Page name="HotelList" class="com.ctrip.ibu.hotel.module.list.HotelsActivity">
+                <param name="Key.KeyIsSearchNearBy" type="boolean" />
+                <param name="Key.KeyId" type="int" />
+                <param name="Key.KeyTitle" type="String" />
+                <param name="Key.KeyCityDescription" type="String" />
+                <param name="Key.KeyFirstDate" type="DateTime" />
+                <param name="Key.KeySecondDate" type="DateTime" />
+            </Page>
+            <Page name="HotelDetail" class="com.ctrip.ibu.hotel.module.detail.HotelDetailActivity">
+                <param name="Key.KeyFlag" type="boolean" />
+                <param name="Key.KeyId" type="int" />
+                <param name="Key.KeyCityId" type="String" />
+                <param name="Key.KeyFirstDate" type="DateTime" />
+                <param name="Key.KeySecondDate" type="DateTime" />
+                <param name="Key.KeyUrl" type="String" />
+            </Page>
+            <Page name="HotelMyWishList"
+                class="com.ctrip.ibu.hotel.module.wishlist.MyWishListActivity" />
+            <Page name="HotelOrderDetail"
+                class="com.ctrip.ibu.hotel.module.order.HotelOrderDetailActivity">
+                <param name="Key.KeyId" type="long" />
+            </Page>
+            <Page name="HotelBookAgain"
+                class="com.ctrip.ibu.hotel.module.detail.HotelDetailActivity">
+                <param name="Key.KeyHotelId" type="int" />
+                <param name="Key.KeyCityId" type="String" />
+                <param name="Key.KeyFirstDate" type="DateTime" />
+                <param name="Key.KeySecondDate" type="DateTime" />
+            </Page>
+            <Page name="BookHotel" class="com.ctrip.ibu.hotel.module.HotelMainActivity">
+                <param name="Key.KeyCityId" type="int" />
+                <param name="Key.KeyCityName" type="String" />
+                <param name="Key.KeyHotelByKeyword" type="String" />
+                <param name="Key.KeyCheckInDate" type="DateTime" />
+                <param name="Key.KeyCheckOutDate" type="DateTime" />
+            </Page>
+            <Page name="HotelVoucher" class="com.ctrip.ibu.hotel.module.HotelVoucherActivity">
+                <param name="Key.KeyOrderID" type="long" />
+            </Page>
+            <Page name="HotelReviewOrdersEmpty"
+                class="com.ctrip.ibu.hotel.module.HotelTobeReviewedOrdersEmptyActivity" />
+            <Page name="HotelDebugBussinessConfig" class="HotelBusinessConfigActivity" />
+        </ModuleRouter>
+
+        <!--Hotel-debug-->
+        <ModuleRouter class="com.ctrip.ibu.hotel.debug.router.HotelDebugRouter"
+            module="hotel-debug">
+            <Page name="DebugCenter" class="com.ctrip.ibu.hotel.debug.HotelDebugConfigActivity" />
+        </ModuleRouter>
+
+
+        <!--Train-->
+        <ModuleRouter class="com.ctrip.ibu.train.base.router.TrainModuleRouter" module="train">
+            <Page name="trainMain" class="com.ctrip.ibu.train.module.TrainMainActivity">
+                <param name="Key.KeyDepartStationName" type="String" />
+                <param name="Key.KeyDepartStationNameCn" type="String" />
+                <param name="Key.KeyArrStationName" type="String" />
+                <param name="Key.KeyArrStationNameCn" type="String" />
+            </Page>
+            <Page name="trainOrderDetail"
+                class="com.ctrip.ibu.train.module.TrainOrderDetailActivity" />
+            <Page name="trainPickUp" class="com.ctrip.ibu.train.module.TrainPickUpActivity" />
+
+        </ModuleRouter>
+
+        <!--Flight-->
+        <ModuleRouter class="com.ctrip.ibu.flight.common.router.FlightModuleRouter" module="flight">
+            <!--这个机票搜索首页可以传所有参数进来也可以什么都不传，如果仅仅是跳转到搜索首页就直接调用就行了，如果需要传搜索参数再传递下面的参数-->
+        </ModuleRouter>
+
+        <!--myctrip-->
+        <ModuleRouter class="com.ctrip.ibu.myctrip.share.MyTripModuleRouter" module="mytrip">
+
+        </ModuleRouter>
+
+        <!--此项不需要修改，仅做兼容使用，请修改 mytrip 对应配置-->
+        <ModuleRouter class="com.ctrip.ibu.myctrip.share.MyTripModuleRouter" module="myctrip" />
+        <!--此项不需要修改，仅做兼容使用，请修改 mytrip 对应配置-->
+
+        <!--schedule-->
+
+        <ModuleRouter class="com.ctrip.ibu.schedule.support.share.ScheduleModuleRouter"
+            module="schedule"></ModuleRouter>
+
+
+        <ModuleRouter class="com.ctrip.ibu.account.share.AccountModuleRouter" module="loginservice">
+            <Page name="turnRight"
+                class="com.ctrip.ibu.account.module.member.turnright.TurnRightActivity"></Page>
+            <Page name="register"
+                class="com.ctrip.ibu.account.module.member.register.RegisterActivity">
+                <param name="keyAccount" type="String" />
+                <param name="keyRefUrl" type="String" />
+                <param name="keySource" type="String" />
+                <param name="keyReturnOrigin" type="Boolean" />
+                <param name="keyBusinessType" type="EBusinessTypeV2" />
+            </Page>
+        </ModuleRouter>
+
+        <!--accout-->
+        <ModuleRouter class="com.ctrip.ibu.account.share.AccountModuleRouter" module="account">
+            <Page name="register"
+                class="com.ctrip.ibu.account.module.member.register.RegisterActivity">
+                <param name="keyAccount" type="String" />
+                <param name="keyRefUrl" type="String" />
+                <param name="keySource" type="String" />
+                <param name="keyReturnOrigin" type="Boolean" />
+                <param name="keyBusinessType" type="EBusinessTypeV2" />
+            </Page>
+            <Page name="resetPassword"
+                class="com.ctrip.ibu.account.module.member.password.ResetPasswordActivity">
+                <param name="keyAccount" type="String" />
+                <param name="keySource" type="String" />
+            </Page>
+            <Page name="loginIn" class="com.ctrip.ibu.account.module.login.a.LoginActivity">
+                <param name="keyAccount" type="String" />
+                <param name="keyRefUrl" type="String" />
+                <param name="keySource" type="String" />
+                <param name="keyShowGuestBook" type="Boolean" />
+                <param name="keyShowRegister" type="Boolean" />
+                <param name="keyReturnOrigin" type="Boolean" />
+                <param name="keyBusinessType" type="EBusinessTypeV2" />
+            </Page>
+            <Page name="guestToMember"
+                class="com.ctrip.ibu.account.module.member.turnright.TurnRightActivity">
+                <param name="keyAccount" type="String" />
+                <param name="keyRefUrl" type="String" />
+                <param name="keySource" type="String" />
+                <param name="keyReturnOrigin" type="Boolean" />
+            </Page>
+            <Page name="userDetail"
+                class="com.ctrip.ibu.account.module.userinfo.mvp.view.UserInfoDetailActivity">
+                <param name="userEmail" type="String" />
+                <param name="reservedEmail" type="String" />
+                <param name="hasPin" type="String" />
+                <param name="cMoney" type="String" />
+            </Page>
+
+            <Page name="turnRight"
+                class="com.ctrip.ibu.account.module.member.turnright.TurnRightActivity"></Page>
+            <Page name="userInfoEdit"
+                class="com.ctrip.ibu.account.module.userinfo.mvp.view.UserInfoEditActivity">
+                <param name="source" type="String" />
+            </Page>
+        </ModuleRouter>
+
+        <ModuleRouter class="com.ctrip.ibu.user.router.UserModuleRoute" module="user">
+
+            <Page name="OrderQueryVerificationActivity"
+                class="com.ctrip.ibu.user.order.OrderQueryVerificationActivity"></Page>
+            <Page name="searchbookings"
+                class="com.ctrip.ibu.user.order.OrderQueryVerificationActivity"></Page>
+        </ModuleRouter>
+
+        <!--baseview-->
+        <ModuleRouter class="com.ctrip.ibu.framework.baseview.widget.BaseviewRouter"
+            module="baseview">
+            <Page name="CalendarActivity"
+                class="com.ctrip.ibu.framework.baseview.widget.calendar.CalendarActivity"></Page>
+            <Page name="IBUImagePreviewActivity"
+                class="com.ctrip.ibu.framework.baseview.widget.image.IBUImagePreviewActivity"></Page>
+            <Page name="CompositeCalendarActivity"
+                  class="com.ctrip.ibu.framework.baseview.widget.calendar.CompositeCalendarActivity"></Page>
+            <Page name="LocationSelectActivity"
+                  class="com.ctrip.ibu.framework.baseview.widget.location.LocationSelectActivity"></Page>
+        </ModuleRouter>
+
+        <ModuleRouter class="com.ctrip.ibu.debug.module.DebugRouter"
+            module="debugcenter">
+        </ModuleRouter>
+
+        <!--ddt-->
+        <ModuleRouter class="com.ctrip.ibu.ddt.DdtRouter" module="ddt" />
+
+        <!--CRN-->
+        <ModuleRouter class="com.ctrip.ibu.crnplugin.CRNSchemeRouter" module="crn" />
+
+        <!--TravelGuide-->
+        <ModuleRouter class="com.ctrip.ibu.travelguide.common.router.TravelGuideModuleRouter"
+            module="travelguide">
+            <Page name="main" class="com.ctrip.ibu.travelguide.TravelGuideActivity" />
+        </ModuleRouter>
+
+        <!--TripSearch-->
+        <ModuleRouter class="com.ctrip.ibu.tripsearch.TripSearchModuleRouter" module="tripsearch" />
+
+        <!--pay-->
+        <ModuleRouter class="ctrip.android.pay.startup.PayRouter" module="pay">
+            <Page name="mycard" class="ctrip.android.pay.view.MyBankCardsActivity"/>
+            <Page name="paytest" class="ctrip.android.pay.view.test.SettingCtripPayTestActivity"/>
+        </ModuleRouter>
+
+        <!--wireless-->
+        <ModuleRouter class="com.ctrip.ibu.hybrid.HybridSchemeRouter" module="wireless" />
+
+        <ModuleRouter class="com.ctrip.ibu.english.base.scheme.router.HTTPRouter" module="webview" />
+
+    </ModuleRouterList>
+
+    <SchemeRouterList>
+        <SchemeRouter class="com.ctrip.ibu.english.base.scheme.router.NativeRouter"
+            module="ctripglobal" />
+        <SchemeRouter class="com.ctrip.ibu.english.base.scheme.router.HTTPRouter" module="http" />
+        <SchemeRouter class="com.ctrip.ibu.english.base.scheme.router.HTTPRouter" module="https" />
+        <SchemeRouter class="com.ctrip.ibu.crnplugin.CRNSchemeRouter" module="crn" />
+        <SchemeRouter class="com.ctrip.ibu.framework.common.debug.IbuDebugRouter"
+            module="tripdebug" />
+        <SchemeRouter class="com.ctrip.ibu.framework.common.debug.IbuDebugRouter"
+            module="ctrip-ubt" />
+    </SchemeRouterList>
+
+</Routers>

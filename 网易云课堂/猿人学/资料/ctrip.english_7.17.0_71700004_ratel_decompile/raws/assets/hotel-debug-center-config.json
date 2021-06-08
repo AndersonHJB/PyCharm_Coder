@@ -1,0 +1,175 @@
+{
+  "easySwitch": [
+    {
+      "name": "ubt实时埋点监控",
+      "tag": "ubt_monitor",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "预加载监控",
+      "tag": "preload_monitor",
+      "defaultState": true,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "API实时报文>",
+      "tag": "network_data",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "列表可视化监控",
+      "tag": "list_monitor",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "地图切换",
+      "tag": "map_switch",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "直连分段监控",
+      "tag": "segmentload_monitor",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "boom崩溃catch",
+      "tag": "boom_catch",
+      "defaultState": false,
+      "isImportant": true,
+      "isShow": true
+    },
+    {
+      "name": "页面FPS监控",
+      "tag": "fps_monitor",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "埋点打印",
+      "tag": "trace_content_log",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "模拟接口失败",
+      "tag": "anolog_request_failed",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "酒店/房型ID/起价标志",
+      "tag": "hotel_room_start_price_flag_and_id_show",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "显示酒店/房型ID",
+      "tag": "hotel_room_id_show",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "StrictMode",
+      "tag": "strict_mode_vm_policy",
+      "defaultState": true,
+      "isShow": true
+    },
+    {
+      "name": "方法插桩耗时统计",
+      "tag": "method_cost_time",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "JNI AntiTest",
+      "tag": "jni_anti_test",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "选择的权益的数量详情",
+      "tag": "reward_selected_count_details",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "关闭CrashActivity",
+      "tag": "close_crash_activity",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "地图边界打点",
+      "tag": "open_map_bound_marker",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "爬虫命中测试",
+      "tag": "open_hit_spider",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "ignore Trial popup window shown",
+      "tag": "ignore_trial_popup_window_shown",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "Force RatePlan not PB",
+      "tag": "force_rate_plan_not_pb",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "mock video",
+      "tag": "open_mock_video",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "首页总是显示亲子提示",
+      "tag": "always_show_child_tip",
+      "defaultState": false,
+      "isShow": true
+    },
+    {
+      "name": "关闭MobileConfig实时刷新",
+      "tag": "close_mobile_config_refresh",
+      "defaultState": false,
+      "isShow": true
+    }
+  ],
+  "multiSelector": [
+    {
+      "name": "预加载列表方案",
+      "tag": "preloadlist_plan",
+      "states": "全量,线上,智能路径,老方案",
+      "isShow": true
+    },
+    {
+      "name": "日历切换",
+      "tag": "calendar_switch",
+      "states": "线上,新日历,老日历",
+      "isShow": true
+    },
+    {
+      "name": "内存适配方案",
+      "tag": "memory_switch",
+      "states": "线上,High,Mini,Low",
+      "isShow": true
+    }
+  ]
+}

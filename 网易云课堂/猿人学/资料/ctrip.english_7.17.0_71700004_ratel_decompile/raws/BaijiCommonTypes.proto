@@ -1,0 +1,61 @@
+syntax = "proto2";
+
+import "descriptor.proto";
+
+package com.ctrip.soa;
+option java_package="com.ctrip.soa";
+option objc_class_prefix = "SOA";
+
+message ResponseStatusType {
+	optional DateTime Timestamp = 1;
+	optional AckCodeType Ack = 2;
+	optional ErrorDataType Errors = 3;
+}
+
+message DateTime {
+	optional sint64 value = 1;
+	optional int32 scale = 2;
+}
+
+enum AckCodeType {
+	Success = 1;
+	Failure = 2;
+	Warning = 3;
+	PartialFailure = 4;
+}
+
+message ErrorDataType {
+	optional string Message = 1;
+	optional string ErrorCode = 2;
+	optional string StackTrace = 3;
+	optional SeverityCodeType SeverityCode = 4;
+	repeated ErrorFieldType ErrorFields = 5;
+	optional ErrorClassificationCodeType ErrorClassification = 6;
+}
+
+enum ErrorClassificationCodeType {
+	ServiceError = 0;
+	ValidationError = 1;
+	FrameworkError = 2;
+	SLAError = 3;
+	SecurityError = 4;
+}
+
+enum SeverityCodeType {
+	// prefix Severity to avoid conflict with AckCodeType's Warning
+	SeverityError = 0;
+	SeverityWarning = 1;
+}
+
+message ErrorFieldType {
+	optional string FieldName = 1;
+	optional string ErrorCode = 2;
+	optional string Message = 3;
+}
+
+message ExtensionType {
+	optional string Id = 1;
+	optional string Version = 2;
+	optional string ContentType = 3;
+	optional string Value = 4;
+}

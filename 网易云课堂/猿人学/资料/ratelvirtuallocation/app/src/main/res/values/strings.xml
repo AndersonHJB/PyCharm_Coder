@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">筋斗云</string>
+    <string name="app_introduce">   筋斗云是一款虚拟定位软件，让你随心所欲的改变手机地理位置！本项目改造自:https://github.com/littleRich/VirtualLocation </string>
+    <string name="app_version_copyright">当前版本：1.0.0(build 20200827) \n@2017 ratel.virjar.com All right reserved</string>
+    <string name="item_application_name">应用程序名</string>
+</resources>

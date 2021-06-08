@@ -1,0 +1,41 @@
+syntax = "proto2";
+
+package com.ctrip.ibu.soa.foundation.contract.common;
+option java_package="com.ctrip.ibu.soa.foundation.contract.common";
+option objc_class_prefix="IBU";
+
+message RequestHead {
+    optional string uid = 1;
+    optional string language = 2;
+    optional Source source = 3;
+    optional string group = 4;
+    optional string currency = 5;
+    optional string version = 6;
+    optional string token = 7;
+    optional string tokenValidTime = 8;
+    optional string ip = 9;
+    optional int32 isQuickBooking = 10;
+    optional string deviceID = 11;
+    optional string apiKey = 12;
+    optional string clientSign = 13;
+    optional int64 clientSignTime = 14;
+    optional string clientID = 15;
+    optional string deviceBrand = 16;
+    optional string deviceModel = 17;
+    optional string osVersion = 18;
+    optional string ticket = 19;
+    optional string locale = 20;
+}
+
+enum Source {
+	ANDROID = 1;
+	IOS = 2;
+	WAP = 3;
+	Online = 4;
+}
+
+message ResponseHead {
+	optional string errorCode = 1;
+    optional string errorMessage = 2;
+    optional string showErrorMsg = 3;
+}

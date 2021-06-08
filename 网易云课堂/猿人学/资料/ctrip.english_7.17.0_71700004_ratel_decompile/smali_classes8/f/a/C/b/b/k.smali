@@ -1,0 +1,14 @@
+.class public abstract synthetic Lf/a/C/b/b/k;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lctrip/android/view/hybrid3/plugin/JSCoreWorker;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

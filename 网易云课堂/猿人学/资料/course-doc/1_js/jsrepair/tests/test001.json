@@ -1,0 +1,87 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "||",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "i"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "params"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "asyncType"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0"
+            }
+          },
+          "right": {
+            "type": "AssignmentExpression",
+            "operator": "=",
+            "left": {
+              "type": "Identifier",
+              "name": "m"
+            },
+            "right": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "i"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "params"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "asyncType"
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "AssignmentExpression",
+          "operator": "=",
+          "left": {
+            "type": "Identifier",
+            "name": "a"
+          },
+          "right": {
+            "type": "Literal",
+            "value": 5,
+            "raw": "5"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}
