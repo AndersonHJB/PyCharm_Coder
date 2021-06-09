@@ -27,9 +27,9 @@ class UrlPool:
         self.failure_threshold = 3
         self.pending_threshold = 10  # pending的最大时间，过期要重新下载
         self.waiting_count = 0  # self.waiting 字典里面的url的个数
-        self.max_hosts = ['', 0]  # [host: url_count] 目前pool中url最多的host及其url数量
-        self.hub_pool = {}  # {url: last_query_time, }  存放hub url
-        self.hub_refresh_span = 0
+        self.max_hosts = ['', 0]  # [host: url_count] 目前 pool 中 url 最多的 host 及其 url 数量
+        self.hub_pool = {}  # {url: last_query_time, }  存放 hub url
+        self.hub_refresh_span = 0  # 刷新时间间隔
         self.load_cache()
 
     def __del__(self):

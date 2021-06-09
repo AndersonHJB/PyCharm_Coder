@@ -17,7 +17,8 @@ class Pickle_Study():
             with open(path, 'rb') as f:
                 self.waiting = pickle.load(f)
             # cc = [len(v) for k, v in self.waiting.items()]
-            cc = [v for k, v in self.waiting.items()]
+            # cc = [v for k, v in self.waiting.items()]
+            cc = [v for v in self.waiting.values()]
             print("cc", cc)
             # print("self.waiting", type(self.waiting))
             print('saved pool loaded! urls:', len(cc))
