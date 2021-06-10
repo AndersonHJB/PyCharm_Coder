@@ -28,6 +28,8 @@ class Job(models.Model):
     created_date = models.DateTimeField(verbose_name="创建日期", default=datetime.now)
     modified_date = models.DateTimeField(verbose_name="修改时间", default=datetime.now)
 
+    def __str__(self):
+        return self.job_name
 # # 每个字段都可以设置默认值，使用 default 就好。文本的值你也可以设置成默认的文本
 # class Job(models.Model):
 #     job_type = models.SmallIntegerField(blank=False, choices=JobTypes, verbose_name="职位类别", default=JobTypes[0])
