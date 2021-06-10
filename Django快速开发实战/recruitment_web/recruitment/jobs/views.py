@@ -9,7 +9,9 @@ from jobs.models import Job
 from jobs.models import Cities, JobTypes
 
 def joblist(request):
-    joblist = Job.objects.order_by('job_type')  # 从数据库获取
+    job_list = Job.objects.order_by('job_type')  # 从数据库获取
     template = loader.get_template('joblist.html')  # 加载模版
     """定义上下文——map"""
-    context = {'job_list': joblist}
+    context = {'job_list': job_list}
+    for job in job_list:
+        job.city_name = Cities[job.job_city]
