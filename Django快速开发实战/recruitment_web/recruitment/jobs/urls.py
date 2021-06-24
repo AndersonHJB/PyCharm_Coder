@@ -5,10 +5,18 @@
 # @Software: PyCharm
 # @Blog    ：http://www.aiyc.top
 # @公众号   ：AI悦创
-from django.conf.urls import url
-from jobs import views
+# 课程方法
+# from django.conf.urls import url
+# from jobs import views
+#
+# urlpatterns = [
+# 	# 职位列表
+# 	url(r"^joblist/", views.joblist, name="joblist")
+# ]
+# 比较好理解的方法
+from django.urls import path
+from . import views
 
 urlpatterns = [
-	# 职位列表
-	url(r"^joblist/", views.joblist, name="joblist")
+	path('joblist/', views.joblist, name='joblist'),
 ]
