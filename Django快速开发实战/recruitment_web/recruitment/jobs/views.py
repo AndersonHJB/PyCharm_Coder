@@ -18,3 +18,6 @@ def joblist(request):
 		job.city_name = Cities[job.job_city][1]  # 工作地点
 		job.job_type = JobTypes[job.job_type][1]  # 职位类别
 	return HttpResponse(template.render(context))
+
+def detail(request, job_id):
+	job = Job.objects.get(pk=job_id)
