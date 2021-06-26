@@ -9,3 +9,10 @@ class IntList(object):
 	def __init__(self):
 		self.first = None
 		self.rest = None
+
+l = IntList()
+
+
+# print("第一节车厢：{}".format(l1.first))
+# print("第二节车厢：{}".format(l1.rest.first))
+# print("第三节车厢：{}".format(l1.rest.rest.first))
