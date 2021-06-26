@@ -14,9 +14,10 @@
 # 	url(r"^joblist/", views.joblist, name="joblist")
 # ]
 # 比较好理解的方法
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
 	path('joblist/', views.joblist, name='joblist'),
+	re_path(r'job/(?P<job_id>\d+)/$', views.detail, name='detail')
 ]

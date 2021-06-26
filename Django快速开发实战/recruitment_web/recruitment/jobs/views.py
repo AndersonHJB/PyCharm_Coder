@@ -1,6 +1,6 @@
 # Create your views here.
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.template import loader
 
 from jobs.models import Job
@@ -19,5 +19,13 @@ def joblist(request):
 		job.job_type = JobTypes[job.job_type][1]  # 职位类别
 	return HttpResponse(template.render(context))
 
+
 def detail(request, job_id):
-	job = Job.objects.get(pk=job_id)
+	try:
+		job = Job.objects.get(pk=job_id)
+		job.city_name = Cities[job.job_city][1]  # 工作地点
+	# job.job_type = JobTypes[job.job_type][1]  # 职位类别
+	except Job.DoesNotExist:
+		raise Http404("Job matching query does not exist.")
+	
+	return render(request, 'detail_page_job.html', {'job': job})
