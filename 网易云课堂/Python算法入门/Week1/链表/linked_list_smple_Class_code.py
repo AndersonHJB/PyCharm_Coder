@@ -21,6 +21,12 @@ l.rest.rest = None
 l.rest.rest = IntList()
 l.rest.rest.first = 15
 
+l.rest.rest.rest = IntList()
+l.rest.rest.rest.first = 20
+
+l.rest.rest.rest.rest = IntList()
+l.rest.rest.rest.rest.first = 25
+
 # print("第一节车厢：{}".format(l1.first))
 # print("第二节车厢：{}".format(l1.rest.first))
 # print("第三节车厢：{}".format(l1.rest.rest.first))
