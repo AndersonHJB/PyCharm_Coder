@@ -11,7 +11,15 @@ class IntList(object):
 		self.rest = None
 
 l = IntList()
+l.first = 5
+l.rest = None
 
+l.rest = IntList()
+l.rest.first = 10
+l.rest.rest = None
+
+l.rest.rest = IntList()
+l.rest.rest.first = 15
 
 # print("第一节车厢：{}".format(l1.first))
 # print("第二节车厢：{}".format(l1.rest.first))
